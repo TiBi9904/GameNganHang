@@ -1,0 +1,2737 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://mbbank.game/ -->
+<html class="" lang="vi">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width,initial-scale=1,user-scalable=0" name="viewport" />
+    <meta content="index, follow" name="robots" />
+    <meta content="" property="og:url" />
+    <meta content="article" property="og:type" />
+    <link href="https://mbbank.games/themes/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta content="MBbank.game - Chơi Game MB Bank Kiếm Tiền" property="og:title" />
+    <link href="https://mbbank.games/themes/images/favicon.ico" rel="apple-touch-icon" />
+    <link href="https://mbbank.game/" rel="canonical" />
+    <meta content="Tham gia mini game MB Bank với hệ thống trả thưởng tự động, giúp bạn kiếm tiền nhanh chóng dễ dàng!"
+        name="description" />
+    <meta content="mbbank.game, chơi game mb bank kiếm tiền," name="keywords" />
+    <meta content="Tham gia mini game MB Bank với hệ thống trả thưởng tự động, giúp bạn kiếm tiền nhanh chóng dễ dàng!"
+        property="og:description" />
+    <meta content="default" name="theme-color" />
+    <meta content="https://i.imgur.com/19hZ5WO.png" property="og:image" />
+    <title>
+        MBbank.game - Chơi Game MB Bank Kiếm Tiền
+    </title>
+    <link href="./MBbank/simple-notify.min.css" rel="stylesheet" />
+    <link href="./MBbank/app.css" rel="stylesheet" />
+    <link rel="icon" href="https://mbbank.games/themes/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://mbbank.games/themes/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.6/dist/simple-notify.min.css" />
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="./MBbank/sweetalert2@11">
+    </script>
+    <style>
+        :root {
+            --swal2-outline: 0 0 0 3px rgba(100, 150, 200, 0.5);
+            --swal2-container-padding: 0.625em;
+            --swal2-backdrop: rgba(0, 0, 0, 0.4);
+            --swal2-backdrop-transition: background-color 0.1s;
+            --swal2-width: 32em;
+            --swal2-padding: 0 0 1.25em;
+            --swal2-border: none;
+            --swal2-border-radius: 0.3125rem;
+            --swal2-background: white;
+            --swal2-color: #545454;
+            --swal2-footer-border-color: #eee;
+            --swal2-show-animation: swal2-show 0.3s;
+            --swal2-hide-animation: swal2-hide 0.15s forwards;
+            --swal2-icon-zoom: 1;
+            --swal2-icon-animations: true;
+            --swal2-title-padding: 0.8em 1em 0;
+            --swal2-html-container-padding: 1em 1.6em 0.3em;
+            --swal2-input-border-radius: 0.1875em;
+            --swal2-input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;
+            --swal2-input-background: transparent;
+            --swal2-input-transition: border-color 0.2s, box-shadow 0.2s;
+            --swal2-progress-step-background: #add8e6;
+            --swal2-validation-message-background: #f0f0f0;
+            --swal2-validation-message-color: #666;
+            --swal2-close-button-position: initial;
+            --swal2-close-button-inset: auto;
+            --swal2-close-button-font-size: 2.5em;
+            --swal2-close-button-color: #ccc;
+            --swal2-close-button-transition: color 0.2s, box-shadow 0.2s;
+            --swal2-close-button-outline: initial;
+            --swal2-close-button-box-shadow: inset 0 0 0 3px transparent;
+            --swal2-close-button-focus-box-shadow: inset var(--swal2-outline);
+            --swal2-close-button-hover-transform: none;
+            --swal2-button-transition: background-color 0.2s, box-shadow 0.2s;
+            --swal2-confirm-button-border: 0;
+            --swal2-confirm-button-border-radius: 0.25em;
+            --swal2-confirm-button-background-color: #7066e0;
+            --swal2-confirm-button-color: #fff;
+            --swal2-deny-button-border: 0;
+            --swal2-deny-button-border-radius: 0.25em;
+            --swal2-deny-button-background-color: #dc3741;
+            --swal2-deny-button-color: #fff;
+            --swal2-cancel-button-border: 0;
+            --swal2-cancel-button-border-radius: 0.25em;
+            --swal2-cancel-button-background-color: #6e7881;
+            --swal2-cancel-button-color: #fff;
+            --swal2-toast-show-animation: swal2-toast-show 0.5s;
+            --swal2-toast-hide-animation: swal2-toast-hide 0.1s forwards;
+            --swal2-toast-border: none;
+            --swal2-toast-box-shadow: 0 0 1px hsl(0deg 0% 0% / 0.075), 0 1px 2px hsl(0deg 0% 0% / 0.075), 1px 2px 4px hsl(0deg 0% 0% / 0.075), 1px 3px 8px hsl(0deg 0% 0% / 0.075), 2px 4px 16px hsl(0deg 0% 0% / 0.075)
+        }
+
+        [data-swal2-theme=dark] {
+            --swal2-dark-theme-black: #19191a;
+            --swal2-dark-theme-white: #e1e1e1;
+            --swal2-background: var(--swal2-dark-theme-black);
+            --swal2-color: var(--swal2-dark-theme-white);
+            --swal2-footer-border-color: #555;
+            --swal2-input-background: color-mix(in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10%);
+            --swal2-validation-message-background: color-mix(in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10%);
+            --swal2-validation-message-color: var(--swal2-dark-theme-white)
+        }
+
+        @media(prefers-color-scheme: dark) {
+            [data-swal2-theme=auto] {
+                --swal2-dark-theme-black: #19191a;
+                --swal2-dark-theme-white: #e1e1e1;
+                --swal2-background: var(--swal2-dark-theme-black);
+                --swal2-color: var(--swal2-dark-theme-white);
+                --swal2-footer-border-color: #555;
+                --swal2-input-background: color-mix(in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10%);
+                --swal2-validation-message-background: color-mix(in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10%);
+                --swal2-validation-message-color: var(--swal2-dark-theme-white)
+            }
+        }
+
+        body.swal2-shown:not(.swal2-no-backdrop, .swal2-toast-shown) {
+            overflow: hidden
+        }
+
+        body.swal2-height-auto {
+            height: auto !important
+        }
+
+        body.swal2-no-backdrop .swal2-container {
+            background-color: rgba(0, 0, 0, 0) !important;
+            pointer-events: none
+        }
+
+        body.swal2-no-backdrop .swal2-container .swal2-popup {
+            pointer-events: all
+        }
+
+        body.swal2-no-backdrop .swal2-container .swal2-modal {
+            box-shadow: 0 0 10px var(--swal2-backdrop)
+        }
+
+        body.swal2-toast-shown .swal2-container {
+            box-sizing: border-box;
+            width: 360px;
+            max-width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            pointer-events: none
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-top {
+            inset: 0 auto auto 50%;
+            transform: translateX(-50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-top-end,
+        body.swal2-toast-shown .swal2-container.swal2-top-right {
+            inset: 0 0 auto auto
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-top-start,
+        body.swal2-toast-shown .swal2-container.swal2-top-left {
+            inset: 0 auto auto 0
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-center-start,
+        body.swal2-toast-shown .swal2-container.swal2-center-left {
+            inset: 50% auto auto 0;
+            transform: translateY(-50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-center {
+            inset: 50% auto auto 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-center-end,
+        body.swal2-toast-shown .swal2-container.swal2-center-right {
+            inset: 50% 0 auto auto;
+            transform: translateY(-50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-bottom-start,
+        body.swal2-toast-shown .swal2-container.swal2-bottom-left {
+            inset: auto auto 0 0
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-bottom {
+            inset: auto auto 0 50%;
+            transform: translateX(-50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-bottom-end,
+        body.swal2-toast-shown .swal2-container.swal2-bottom-right {
+            inset: auto 0 0 auto
+        }
+
+        @media print {
+            body.swal2-shown:not(.swal2-no-backdrop, .swal2-toast-shown) {
+                overflow-y: scroll !important
+            }
+
+            body.swal2-shown:not(.swal2-no-backdrop, .swal2-toast-shown)>[aria-hidden=true] {
+                display: none
+            }
+
+            body.swal2-shown:not(.swal2-no-backdrop, .swal2-toast-shown) .swal2-container {
+                position: static !important
+            }
+        }
+
+        div:where(.swal2-container) {
+            display: grid;
+            position: fixed;
+            z-index: 1060;
+            inset: 0;
+            box-sizing: border-box;
+            grid-template-areas: "top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";
+            grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);
+            height: 100%;
+            padding: var(--swal2-container-padding);
+            overflow-x: hidden;
+            transition: var(--swal2-backdrop-transition);
+            -webkit-overflow-scrolling: touch
+        }
+
+        div:where(.swal2-container).swal2-backdrop-show,
+        div:where(.swal2-container).swal2-noanimation {
+            background: var(--swal2-backdrop)
+        }
+
+        div:where(.swal2-container).swal2-backdrop-hide {
+            background: rgba(0, 0, 0, 0) !important
+        }
+
+        div:where(.swal2-container).swal2-top-start,
+        div:where(.swal2-container).swal2-center-start,
+        div:where(.swal2-container).swal2-bottom-start {
+            grid-template-columns: minmax(0, 1fr) auto auto
+        }
+
+        div:where(.swal2-container).swal2-top,
+        div:where(.swal2-container).swal2-center,
+        div:where(.swal2-container).swal2-bottom {
+            grid-template-columns: auto minmax(0, 1fr) auto
+        }
+
+        div:where(.swal2-container).swal2-top-end,
+        div:where(.swal2-container).swal2-center-end,
+        div:where(.swal2-container).swal2-bottom-end {
+            grid-template-columns: auto auto minmax(0, 1fr)
+        }
+
+        div:where(.swal2-container).swal2-top-start>.swal2-popup {
+            align-self: start
+        }
+
+        div:where(.swal2-container).swal2-top>.swal2-popup {
+            grid-column: 2;
+            place-self: start center
+        }
+
+        div:where(.swal2-container).swal2-top-end>.swal2-popup,
+        div:where(.swal2-container).swal2-top-right>.swal2-popup {
+            grid-column: 3;
+            place-self: start end
+        }
+
+        div:where(.swal2-container).swal2-center-start>.swal2-popup,
+        div:where(.swal2-container).swal2-center-left>.swal2-popup {
+            grid-row: 2;
+            align-self: center
+        }
+
+        div:where(.swal2-container).swal2-center>.swal2-popup {
+            grid-column: 2;
+            grid-row: 2;
+            place-self: center center
+        }
+
+        div:where(.swal2-container).swal2-center-end>.swal2-popup,
+        div:where(.swal2-container).swal2-center-right>.swal2-popup {
+            grid-column: 3;
+            grid-row: 2;
+            place-self: center end
+        }
+
+        div:where(.swal2-container).swal2-bottom-start>.swal2-popup,
+        div:where(.swal2-container).swal2-bottom-left>.swal2-popup {
+            grid-column: 1;
+            grid-row: 3;
+            align-self: end
+        }
+
+        div:where(.swal2-container).swal2-bottom>.swal2-popup {
+            grid-column: 2;
+            grid-row: 3;
+            place-self: end center
+        }
+
+        div:where(.swal2-container).swal2-bottom-end>.swal2-popup,
+        div:where(.swal2-container).swal2-bottom-right>.swal2-popup {
+            grid-column: 3;
+            grid-row: 3;
+            place-self: end end
+        }
+
+        div:where(.swal2-container).swal2-grow-row>.swal2-popup,
+        div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup {
+            grid-column: 1/4;
+            width: 100%
+        }
+
+        div:where(.swal2-container).swal2-grow-column>.swal2-popup,
+        div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup {
+            grid-row: 1/4;
+            align-self: stretch
+        }
+
+        div:where(.swal2-container).swal2-no-transition {
+            transition: none !important
+        }
+
+        div:where(.swal2-container)[popover] {
+            width: auto;
+            border: 0
+        }
+
+        div:where(.swal2-container) div:where(.swal2-popup) {
+            display: none;
+            position: relative;
+            box-sizing: border-box;
+            grid-template-columns: minmax(0, 100%);
+            width: var(--swal2-width);
+            max-width: 100%;
+            padding: var(--swal2-padding);
+            border: var(--swal2-border);
+            border-radius: var(--swal2-border-radius);
+            background: var(--swal2-background);
+            color: var(--swal2-color);
+            font-family: inherit;
+            font-size: 1rem;
+            container-name: swal2-popup
+        }
+
+        div:where(.swal2-container) div:where(.swal2-popup):focus {
+            outline: none
+        }
+
+        div:where(.swal2-container) div:where(.swal2-popup).swal2-loading {
+            overflow-y: hidden
+        }
+
+        div:where(.swal2-container) div:where(.swal2-popup).swal2-draggable {
+            cursor: grab
+        }
+
+        div:where(.swal2-container) div:where(.swal2-popup).swal2-draggable div:where(.swal2-icon) {
+            cursor: grab
+        }
+
+        div:where(.swal2-container) div:where(.swal2-popup).swal2-dragging {
+            cursor: grabbing
+        }
+
+        div:where(.swal2-container) div:where(.swal2-popup).swal2-dragging div:where(.swal2-icon) {
+            cursor: grabbing
+        }
+
+        div:where(.swal2-container) h2:where(.swal2-title) {
+            position: relative;
+            max-width: 100%;
+            margin: 0;
+            padding: var(--swal2-title-padding);
+            color: inherit;
+            font-size: 1.875em;
+            font-weight: 600;
+            text-align: center;
+            text-transform: none;
+            word-wrap: break-word;
+            cursor: initial
+        }
+
+        div:where(.swal2-container) div:where(.swal2-actions) {
+            display: flex;
+            z-index: 1;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            margin: 1.25em auto 0;
+            padding: 0
+        }
+
+        div:where(.swal2-container) div:where(.swal2-loader) {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 2.2em;
+            height: 2.2em;
+            margin: 0 1.875em;
+            animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+            border-width: .25em;
+            border-style: solid;
+            border-radius: 100%;
+            border-color: #2778c4 rgba(0, 0, 0, 0) #2778c4 rgba(0, 0, 0, 0)
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled) {
+            margin: .3125em;
+            padding: .625em 1.1em;
+            transition: var(--swal2-button-transition);
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0);
+            font-weight: 500
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):not([disabled]) {
+            cursor: pointer
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+            border: var(--swal2-confirm-button-border);
+            border-radius: var(--swal2-confirm-button-border-radius);
+            background: initial;
+            background-color: var(--swal2-confirm-button-background-color);
+            color: var(--swal2-confirm-button-color);
+            font-size: 1em
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm):hover {
+            background-color: color-mix(in srgb, var(--swal2-confirm-button-background-color), black 10%)
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm):active {
+            background-color: color-mix(in srgb, var(--swal2-confirm-button-background-color), black 20%)
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-deny) {
+            border: var(--swal2-deny-button-border);
+            border-radius: var(--swal2-deny-button-border-radius);
+            background: initial;
+            background-color: var(--swal2-deny-button-background-color);
+            color: var(--swal2-deny-button-color);
+            font-size: 1em
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-deny):hover {
+            background-color: color-mix(in srgb, var(--swal2-deny-button-background-color), black 10%)
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-deny):active {
+            background-color: color-mix(in srgb, var(--swal2-deny-button-background-color), black 20%)
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel) {
+            border: var(--swal2-cancel-button-border);
+            border-radius: var(--swal2-cancel-button-border-radius);
+            background: initial;
+            background-color: var(--swal2-cancel-button-background-color);
+            color: var(--swal2-cancel-button-color);
+            font-size: 1em
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel):hover {
+            background-color: color-mix(in srgb, var(--swal2-cancel-button-background-color), black 10%)
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel):active {
+            background-color: color-mix(in srgb, var(--swal2-cancel-button-background-color), black 20%)
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled):focus-visible {
+            outline: none;
+            box-shadow: var(--swal2-action-button-outline)
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled)[disabled]:not(.swal2-loading) {
+            opacity: .4
+        }
+
+        div:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner {
+            border: 0
+        }
+
+        div:where(.swal2-container) div:where(.swal2-footer) {
+            margin: 1em 0 0;
+            padding: 1em 1em 0;
+            border-top: 1px solid var(--swal2-footer-border-color);
+            color: inherit;
+            font-size: 1em;
+            text-align: center;
+            cursor: initial
+        }
+
+        div:where(.swal2-container) .swal2-timer-progress-bar-container {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            grid-column: auto !important;
+            overflow: hidden;
+            border-bottom-right-radius: var(--swal2-border-radius);
+            border-bottom-left-radius: var(--swal2-border-radius)
+        }
+
+        div:where(.swal2-container) div:where(.swal2-timer-progress-bar) {
+            width: 100%;
+            height: .25em;
+            background: rgba(0, 0, 0, .2)
+        }
+
+        div:where(.swal2-container) img:where(.swal2-image) {
+            max-width: 100%;
+            margin: 2em auto 1em;
+            cursor: initial
+        }
+
+        div:where(.swal2-container) button:where(.swal2-close) {
+            position: var(--swal2-close-button-position);
+            inset: var(--swal2-close-button-inset);
+            z-index: 2;
+            align-items: center;
+            justify-content: center;
+            width: 1.2em;
+            height: 1.2em;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: -1.2em;
+            padding: 0;
+            overflow: hidden;
+            transition: var(--swal2-close-button-transition);
+            border: none;
+            border-radius: var(--swal2-border-radius);
+            outline: var(--swal2-close-button-outline);
+            background: rgba(0, 0, 0, 0);
+            color: var(--swal2-close-button-color);
+            font-family: monospace;
+            font-size: var(--swal2-close-button-font-size);
+            cursor: pointer;
+            justify-self: end
+        }
+
+        div:where(.swal2-container) button:where(.swal2-close):hover {
+            transform: var(--swal2-close-button-hover-transform);
+            background: rgba(0, 0, 0, 0);
+            color: #f27474
+        }
+
+        div:where(.swal2-container) button:where(.swal2-close):focus-visible {
+            outline: none;
+            box-shadow: var(--swal2-close-button-focus-box-shadow)
+        }
+
+        div:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner {
+            border: 0
+        }
+
+        div:where(.swal2-container) div:where(.swal2-html-container) {
+            z-index: 1;
+            justify-content: center;
+            margin: 0;
+            padding: var(--swal2-html-container-padding);
+            overflow: auto;
+            color: inherit;
+            font-size: 1.125em;
+            font-weight: normal;
+            line-height: normal;
+            text-align: center;
+            word-wrap: break-word;
+            word-break: break-word;
+            cursor: initial
+        }
+
+        div:where(.swal2-container) input:where(.swal2-input),
+        div:where(.swal2-container) input:where(.swal2-file),
+        div:where(.swal2-container) textarea:where(.swal2-textarea),
+        div:where(.swal2-container) select:where(.swal2-select),
+        div:where(.swal2-container) div:where(.swal2-radio),
+        div:where(.swal2-container) label:where(.swal2-checkbox) {
+            margin: 1em 2em 3px
+        }
+
+        div:where(.swal2-container) input:where(.swal2-input),
+        div:where(.swal2-container) input:where(.swal2-file),
+        div:where(.swal2-container) textarea:where(.swal2-textarea) {
+            box-sizing: border-box;
+            width: auto;
+            transition: var(--swal2-input-transition);
+            border: 1px solid #d9d9d9;
+            border-radius: var(--swal2-input-border-radius);
+            background: var(--swal2-input-background);
+            box-shadow: var(--swal2-input-box-shadow);
+            color: inherit;
+            font-size: 1.125em
+        }
+
+        div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,
+        div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,
+        div:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror {
+            border-color: #f27474 !important;
+            box-shadow: 0 0 2px #f27474 !important
+        }
+
+        div:where(.swal2-container) input:where(.swal2-input):focus,
+        div:where(.swal2-container) input:where(.swal2-file):focus,
+        div:where(.swal2-container) textarea:where(.swal2-textarea):focus {
+            border: 1px solid #b4dbed;
+            outline: none;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06), 0 0 0 3px rgba(100, 150, 200, .5)
+        }
+
+        div:where(.swal2-container) input:where(.swal2-input)::placeholder,
+        div:where(.swal2-container) input:where(.swal2-file)::placeholder,
+        div:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder {
+            color: #ccc
+        }
+
+        div:where(.swal2-container) .swal2-range {
+            margin: 1em 2em 3px;
+            background: var(--swal2-background)
+        }
+
+        div:where(.swal2-container) .swal2-range input {
+            width: 80%
+        }
+
+        div:where(.swal2-container) .swal2-range output {
+            width: 20%;
+            color: inherit;
+            font-weight: 600;
+            text-align: center
+        }
+
+        div:where(.swal2-container) .swal2-range input,
+        div:where(.swal2-container) .swal2-range output {
+            height: 2.625em;
+            padding: 0;
+            font-size: 1.125em;
+            line-height: 2.625em
+        }
+
+        div:where(.swal2-container) .swal2-input {
+            height: 2.625em;
+            padding: 0 .75em
+        }
+
+        div:where(.swal2-container) .swal2-file {
+            width: 75%;
+            margin-right: auto;
+            margin-left: auto;
+            background: var(--swal2-input-background);
+            font-size: 1.125em
+        }
+
+        div:where(.swal2-container) .swal2-textarea {
+            height: 6.75em;
+            padding: .75em
+        }
+
+        div:where(.swal2-container) .swal2-select {
+            min-width: 50%;
+            max-width: 100%;
+            padding: .375em .625em;
+            background: var(--swal2-input-background);
+            color: inherit;
+            font-size: 1.125em
+        }
+
+        div:where(.swal2-container) .swal2-radio,
+        div:where(.swal2-container) .swal2-checkbox {
+            align-items: center;
+            justify-content: center;
+            background: var(--swal2-background);
+            color: inherit
+        }
+
+        div:where(.swal2-container) .swal2-radio label,
+        div:where(.swal2-container) .swal2-checkbox label {
+            margin: 0 .6em;
+            font-size: 1.125em
+        }
+
+        div:where(.swal2-container) .swal2-radio input,
+        div:where(.swal2-container) .swal2-checkbox input {
+            flex-shrink: 0;
+            margin: 0 .4em
+        }
+
+        div:where(.swal2-container) label:where(.swal2-input-label) {
+            display: flex;
+            justify-content: center;
+            margin: 1em auto 0
+        }
+
+        div:where(.swal2-container) div:where(.swal2-validation-message) {
+            align-items: center;
+            justify-content: center;
+            margin: 1em 0 0;
+            padding: .625em;
+            overflow: hidden;
+            background: var(--swal2-validation-message-background);
+            color: var(--swal2-validation-message-color);
+            font-size: 1em;
+            font-weight: 300
+        }
+
+        div:where(.swal2-container) div:where(.swal2-validation-message)::before {
+            content: "!";
+            display: inline-block;
+            width: 1.5em;
+            min-width: 1.5em;
+            height: 1.5em;
+            margin: 0 .625em;
+            border-radius: 50%;
+            background-color: #f27474;
+            color: #fff;
+            font-weight: 600;
+            line-height: 1.5em;
+            text-align: center
+        }
+
+        div:where(.swal2-container) .swal2-progress-steps {
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 100%;
+            margin: 1.25em auto;
+            padding: 0;
+            background: rgba(0, 0, 0, 0);
+            font-weight: 600
+        }
+
+        div:where(.swal2-container) .swal2-progress-steps li {
+            display: inline-block;
+            position: relative
+        }
+
+        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step {
+            z-index: 20;
+            flex-shrink: 0;
+            width: 2em;
+            height: 2em;
+            border-radius: 2em;
+            background: #2778c4;
+            color: #fff;
+            line-height: 2em;
+            text-align: center
+        }
+
+        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
+            background: #2778c4
+        }
+
+        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step {
+            background: var(--swal2-progress-step-background);
+            color: #fff
+        }
+
+        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {
+            background: var(--swal2-progress-step-background)
+        }
+
+        div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line {
+            z-index: 10;
+            flex-shrink: 0;
+            width: 2.5em;
+            height: .4em;
+            margin: 0 -1px;
+            background: #2778c4
+        }
+
+        div:where(.swal2-icon) {
+            position: relative;
+            box-sizing: content-box;
+            justify-content: center;
+            width: 5em;
+            height: 5em;
+            margin: 2.5em auto .6em;
+            zoom: var(--swal2-icon-zoom);
+            border: .25em solid rgba(0, 0, 0, 0);
+            border-radius: 50%;
+            border-color: #000;
+            font-family: inherit;
+            line-height: 5em;
+            cursor: default;
+            user-select: none
+        }
+
+        div:where(.swal2-icon) .swal2-icon-content {
+            display: flex;
+            align-items: center;
+            font-size: 3.75em
+        }
+
+        div:where(.swal2-icon).swal2-error {
+            border-color: #f27474;
+            color: #f27474
+        }
+
+        div:where(.swal2-icon).swal2-error .swal2-x-mark {
+            position: relative;
+            flex-grow: 1
+        }
+
+        div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line] {
+            display: block;
+            position: absolute;
+            top: 2.3125em;
+            width: 2.9375em;
+            height: .3125em;
+            border-radius: .125em;
+            background-color: #f27474
+        }
+
+        div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left] {
+            left: 1.0625em;
+            transform: rotate(45deg)
+        }
+
+        div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right] {
+            right: 1em;
+            transform: rotate(-45deg)
+        }
+
+        @container swal2-popup style(--swal2-icon-animations:true) {
+            div:where(.swal2-icon).swal2-error.swal2-icon-show {
+                animation: swal2-animate-error-icon .5s
+            }
+
+            div:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark {
+                animation: swal2-animate-error-x-mark .5s
+            }
+        }
+
+        div:where(.swal2-icon).swal2-warning {
+            border-color: #f8bb86;
+            color: #f8bb86
+        }
+
+        @container swal2-popup style(--swal2-icon-animations:true) {
+            div:where(.swal2-icon).swal2-warning.swal2-icon-show {
+                animation: swal2-animate-error-icon .5s
+            }
+
+            div:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content {
+                animation: swal2-animate-i-mark .5s
+            }
+        }
+
+        div:where(.swal2-icon).swal2-info {
+            border-color: #3fc3ee;
+            color: #3fc3ee
+        }
+
+        @container swal2-popup style(--swal2-icon-animations:true) {
+            div:where(.swal2-icon).swal2-info.swal2-icon-show {
+                animation: swal2-animate-error-icon .5s
+            }
+
+            div:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content {
+                animation: swal2-animate-i-mark .8s
+            }
+        }
+
+        div:where(.swal2-icon).swal2-question {
+            border-color: #87adbd;
+            color: #87adbd
+        }
+
+        @container swal2-popup style(--swal2-icon-animations:true) {
+            div:where(.swal2-icon).swal2-question.swal2-icon-show {
+                animation: swal2-animate-error-icon .5s
+            }
+
+            div:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content {
+                animation: swal2-animate-question-mark .8s
+            }
+        }
+
+        div:where(.swal2-icon).swal2-success {
+            border-color: #a5dc86;
+            color: #a5dc86
+        }
+
+        div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line] {
+            position: absolute;
+            width: 3.75em;
+            height: 7.5em;
+            border-radius: 50%
+        }
+
+        div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left] {
+            top: -0.4375em;
+            left: -2.0635em;
+            transform: rotate(-45deg);
+            transform-origin: 3.75em 3.75em;
+            border-radius: 7.5em 0 0 7.5em
+        }
+
+        div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right] {
+            top: -0.6875em;
+            left: 1.875em;
+            transform: rotate(-45deg);
+            transform-origin: 0 3.75em;
+            border-radius: 0 7.5em 7.5em 0
+        }
+
+        div:where(.swal2-icon).swal2-success .swal2-success-ring {
+            position: absolute;
+            z-index: 2;
+            top: -0.25em;
+            left: -0.25em;
+            box-sizing: content-box;
+            width: 100%;
+            height: 100%;
+            border: .25em solid rgba(165, 220, 134, .3);
+            border-radius: 50%
+        }
+
+        div:where(.swal2-icon).swal2-success .swal2-success-fix {
+            position: absolute;
+            z-index: 1;
+            top: .5em;
+            left: 1.625em;
+            width: .4375em;
+            height: 5.625em;
+            transform: rotate(-45deg)
+        }
+
+        div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            height: .3125em;
+            border-radius: .125em;
+            background-color: #a5dc86
+        }
+
+        div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip] {
+            top: 2.875em;
+            left: .8125em;
+            width: 1.5625em;
+            transform: rotate(45deg)
+        }
+
+        div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long] {
+            top: 2.375em;
+            right: .5em;
+            width: 2.9375em;
+            transform: rotate(-45deg)
+        }
+
+        @container swal2-popup style(--swal2-icon-animations:true) {
+            div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip {
+                animation: swal2-animate-success-line-tip .75s
+            }
+
+            div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long {
+                animation: swal2-animate-success-line-long .75s
+            }
+
+            div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right {
+                animation: swal2-rotate-success-circular-line 4.25s ease-in
+            }
+        }
+
+        [class^=swal2] {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+
+        .swal2-show {
+            animation: var(--swal2-show-animation)
+        }
+
+        .swal2-hide {
+            animation: var(--swal2-hide-animation)
+        }
+
+        .swal2-noanimation {
+            transition: none
+        }
+
+        .swal2-scrollbar-measure {
+            position: absolute;
+            top: -9999px;
+            width: 50px;
+            height: 50px;
+            overflow: scroll
+        }
+
+        .swal2-rtl .swal2-close {
+            margin-right: initial;
+            margin-left: 0
+        }
+
+        .swal2-rtl .swal2-timer-progress-bar {
+            right: 0;
+            left: auto
+        }
+
+        .swal2-toast {
+            box-sizing: border-box;
+            grid-column: 1/4 !important;
+            grid-row: 1/4 !important;
+            grid-template-columns: min-content auto min-content;
+            padding: 1em;
+            overflow-y: hidden;
+            border: var(--swal2-toast-border);
+            background: var(--swal2-background);
+            box-shadow: var(--swal2-toast-box-shadow);
+            pointer-events: all
+        }
+
+        .swal2-toast>* {
+            grid-column: 2
+        }
+
+        .swal2-toast h2:where(.swal2-title) {
+            margin: .5em 1em;
+            padding: 0;
+            font-size: 1em;
+            text-align: initial
+        }
+
+        .swal2-toast .swal2-loading {
+            justify-content: center
+        }
+
+        .swal2-toast input:where(.swal2-input) {
+            height: 2em;
+            margin: .5em;
+            font-size: 1em
+        }
+
+        .swal2-toast .swal2-validation-message {
+            font-size: 1em
+        }
+
+        .swal2-toast div:where(.swal2-footer) {
+            margin: .5em 0 0;
+            padding: .5em 0 0;
+            font-size: .8em
+        }
+
+        .swal2-toast button:where(.swal2-close) {
+            grid-column: 3/3;
+            grid-row: 1/99;
+            align-self: center;
+            width: .8em;
+            height: .8em;
+            margin: 0;
+            font-size: 2em
+        }
+
+        .swal2-toast div:where(.swal2-html-container) {
+            margin: .5em 1em;
+            padding: 0;
+            overflow: initial;
+            font-size: 1em;
+            text-align: initial
+        }
+
+        .swal2-toast div:where(.swal2-html-container):empty {
+            padding: 0
+        }
+
+        .swal2-toast .swal2-loader {
+            grid-column: 1;
+            grid-row: 1/99;
+            align-self: center;
+            width: 2em;
+            height: 2em;
+            margin: .25em
+        }
+
+        .swal2-toast .swal2-icon {
+            grid-column: 1;
+            grid-row: 1/99;
+            align-self: center;
+            width: 2em;
+            min-width: 2em;
+            height: 2em;
+            margin: 0 .5em 0 0
+        }
+
+        .swal2-toast .swal2-icon .swal2-icon-content {
+            display: flex;
+            align-items: center;
+            font-size: 1.8em;
+            font-weight: bold
+        }
+
+        .swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
+            width: 2em;
+            height: 2em
+        }
+
+        .swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+            top: .875em;
+            width: 1.375em
+        }
+
+        .swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+            left: .3125em
+        }
+
+        .swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+            right: .3125em
+        }
+
+        .swal2-toast div:where(.swal2-actions) {
+            justify-content: flex-start;
+            height: auto;
+            margin: 0;
+            margin-top: .5em;
+            padding: 0 .5em
+        }
+
+        .swal2-toast button:where(.swal2-styled) {
+            margin: .25em .5em;
+            padding: .4em .6em;
+            font-size: 1em
+        }
+
+        .swal2-toast .swal2-success {
+            border-color: #a5dc86
+        }
+
+        .swal2-toast .swal2-success [class^=swal2-success-circular-line] {
+            position: absolute;
+            width: 1.6em;
+            height: 3em;
+            border-radius: 50%
+        }
+
+        .swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {
+            top: -0.8em;
+            left: -0.5em;
+            transform: rotate(-45deg);
+            transform-origin: 2em 2em;
+            border-radius: 4em 0 0 4em
+        }
+
+        .swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {
+            top: -0.25em;
+            left: .9375em;
+            transform-origin: 0 1.5em;
+            border-radius: 0 4em 4em 0
+        }
+
+        .swal2-toast .swal2-success .swal2-success-ring {
+            width: 2em;
+            height: 2em
+        }
+
+        .swal2-toast .swal2-success .swal2-success-fix {
+            top: 0;
+            left: .4375em;
+            width: .4375em;
+            height: 2.6875em
+        }
+
+        .swal2-toast .swal2-success [class^=swal2-success-line] {
+            height: .3125em
+        }
+
+        .swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {
+            top: 1.125em;
+            left: .1875em;
+            width: .75em
+        }
+
+        .swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {
+            top: .9375em;
+            right: .1875em;
+            width: 1.375em
+        }
+
+        @container swal2-popup style(--swal2-icon-animations:true) {
+            .swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {
+                animation: swal2-toast-animate-success-line-tip .75s
+            }
+
+            .swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {
+                animation: swal2-toast-animate-success-line-long .75s
+            }
+        }
+
+        .swal2-toast.swal2-show {
+            animation: var(--swal2-toast-show-animation)
+        }
+
+        .swal2-toast.swal2-hide {
+            animation: var(--swal2-toast-hide-animation)
+        }
+
+        @keyframes swal2-show {
+            0% {
+                transform: scale(0.7)
+            }
+
+            45% {
+                transform: scale(1.05)
+            }
+
+            80% {
+                transform: scale(0.95)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        @keyframes swal2-hide {
+            0% {
+                transform: scale(1);
+                opacity: 1
+            }
+
+            100% {
+                transform: scale(0.5);
+                opacity: 0
+            }
+        }
+
+        @keyframes swal2-animate-success-line-tip {
+            0% {
+                top: 1.1875em;
+                left: .0625em;
+                width: 0
+            }
+
+            54% {
+                top: 1.0625em;
+                left: .125em;
+                width: 0
+            }
+
+            70% {
+                top: 2.1875em;
+                left: -0.375em;
+                width: 3.125em
+            }
+
+            84% {
+                top: 3em;
+                left: 1.3125em;
+                width: 1.0625em
+            }
+
+            100% {
+                top: 2.8125em;
+                left: .8125em;
+                width: 1.5625em
+            }
+        }
+
+        @keyframes swal2-animate-success-line-long {
+            0% {
+                top: 3.375em;
+                right: 2.875em;
+                width: 0
+            }
+
+            65% {
+                top: 3.375em;
+                right: 2.875em;
+                width: 0
+            }
+
+            84% {
+                top: 2.1875em;
+                right: 0;
+                width: 3.4375em
+            }
+
+            100% {
+                top: 2.375em;
+                right: .5em;
+                width: 2.9375em
+            }
+        }
+
+        @keyframes swal2-rotate-success-circular-line {
+            0% {
+                transform: rotate(-45deg)
+            }
+
+            5% {
+                transform: rotate(-45deg)
+            }
+
+            12% {
+                transform: rotate(-405deg)
+            }
+
+            100% {
+                transform: rotate(-405deg)
+            }
+        }
+
+        @keyframes swal2-animate-error-x-mark {
+            0% {
+                margin-top: 1.625em;
+                transform: scale(0.4);
+                opacity: 0
+            }
+
+            50% {
+                margin-top: 1.625em;
+                transform: scale(0.4);
+                opacity: 0
+            }
+
+            80% {
+                margin-top: -0.375em;
+                transform: scale(1.15)
+            }
+
+            100% {
+                margin-top: 0;
+                transform: scale(1);
+                opacity: 1
+            }
+        }
+
+        @keyframes swal2-animate-error-icon {
+            0% {
+                transform: rotateX(100deg);
+                opacity: 0
+            }
+
+            100% {
+                transform: rotateX(0deg);
+                opacity: 1
+            }
+        }
+
+        @keyframes swal2-rotate-loading {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes swal2-animate-question-mark {
+            0% {
+                transform: rotateY(-360deg)
+            }
+
+            100% {
+                transform: rotateY(0)
+            }
+        }
+
+        @keyframes swal2-animate-i-mark {
+            0% {
+                transform: rotateZ(45deg);
+                opacity: 0
+            }
+
+            25% {
+                transform: rotateZ(-25deg);
+                opacity: .4
+            }
+
+            50% {
+                transform: rotateZ(15deg);
+                opacity: .8
+            }
+
+            75% {
+                transform: rotateZ(-5deg);
+                opacity: 1
+            }
+
+            100% {
+                transform: rotateX(0);
+                opacity: 1
+            }
+        }
+
+        @keyframes swal2-toast-show {
+            0% {
+                transform: translateY(-0.625em) rotateZ(2deg)
+            }
+
+            33% {
+                transform: translateY(0) rotateZ(-2deg)
+            }
+
+            66% {
+                transform: translateY(0.3125em) rotateZ(2deg)
+            }
+
+            100% {
+                transform: translateY(0) rotateZ(0deg)
+            }
+        }
+
+        @keyframes swal2-toast-hide {
+            100% {
+                transform: rotateZ(1deg);
+                opacity: 0
+            }
+        }
+
+        @keyframes swal2-toast-animate-success-line-tip {
+            0% {
+                top: .5625em;
+                left: .0625em;
+                width: 0
+            }
+
+            54% {
+                top: .125em;
+                left: .125em;
+                width: 0
+            }
+
+            70% {
+                top: .625em;
+                left: -0.25em;
+                width: 1.625em
+            }
+
+            84% {
+                top: 1.0625em;
+                left: .75em;
+                width: .5em
+            }
+
+            100% {
+                top: 1.125em;
+                left: .1875em;
+                width: .75em
+            }
+        }
+
+        @keyframes swal2-toast-animate-success-line-long {
+            0% {
+                top: 1.625em;
+                right: 1.375em;
+                width: 0
+            }
+
+            65% {
+                top: 1.25em;
+                right: .9375em;
+                width: 0
+            }
+
+            84% {
+                top: .9375em;
+                right: 0;
+                width: 1.125em
+            }
+
+            100% {
+                top: .9375em;
+                right: .1875em;
+                width: 1.375em
+            }
+        }
+    </style>
+    <script src="./MBbank/theme-color.js">
+    </script>
+    <script src="./MBbank/jquery.min.js">
+    </script>
+    <script src="./MBbank/qrcode.min.js">
+    </script>
+    <script>
+        function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-VCJMEK8E4V")
+    </script>
+    <style>
+        @media (max-width: 500px) {
+            .hiddenmb {
+                display: none;
+            }
+        }
+
+        .info-user {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .info-user span {
+            color: green;
+        }
+
+        .noti-warn {
+            text-align: left;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body class="" style="padding-right: 0px;">
+    <div id="global-loader" style="display: none;">
+    </div>
+    <div class="page">
+        <div class="page-main">
+            <main class="container">
+                <div class="mainbar">
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="content text-center">
+                            <div class="py-3"
+                                data-text="Hệ thống game MB Bank Kiếm Tiền Tự Động|Uy tín, giao dịch tự động 24/7"
+                                id="mainTitle">
+                                <div class="py-3"
+                                    data-text="Hệ thống game MB Bank Kiếm Tiền Tự Động|Uy tín, giao dịch tự động 24/7"
+                                    id="mainTitle">
+                                    <h1 class="font-weight-bold text-primary h2 cursor">
+                                        Hệ thống game MB Bank Kiếm Tiền Tự Động
+                                    </h1>
+                                    <p class="text-danger noti-warn">
+                                        Lưu ý: Bạn cần có tài khoản MB Bank để nhận tiền thưởng khi chơi game.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center mb-3 d-none" id="list-game">
+                                <div style="padding: 5px">
+                                    <button class="btn btn-primary games"
+                                        data-description="Với nội dung : &lt;b&gt;C&lt;/b&gt; hoặc &lt;b&gt;L&lt;/b&gt; (nếu đuôi mã giao dịch có các số sau)"
+                                        data-name="Chẳn Lẻ" data-type="CL_Game">
+                                        <b>
+                                            Chẳn Lẻ
+                                        </b>
+                                    </button>
+                                </div>
+                            </div>
+                            <h3 class="info-user">
+                                Xin Chào
+                            </h3>
+                            <div class="row justify-content-center">
+                                <div style="padding: 5px">
+                                    <button class="btn btn-outline-primary" data-target="#notiModal"
+                                        data-toggle="modal">
+                                        <b>
+                                            <i class="fas fa-book">
+                                            </i>
+                                            Hướng dẫn chơi
+                                        </b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <sections id="how_to_play">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="content h-100">
+                                <h3>
+                                    Lưu ý: Xem kỹ Hướng dẫn chơi trước khi chơi
+                                </h3>
+                                <p id="gameNoti">
+                                    Với nội dung :
+                                    <b>
+                                        C
+                                    </b>
+                                    hoặc
+                                    <b>
+                                        L
+                                    </b>
+                                    (nếu đuôi mã giao dịch có các số sau)
+                                </p>
+                                <div class="table-responsive mb-3">
+                                    <table
+                                        class="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                                        <thead class="badge-primary text-white">
+                                            <tr>
+                                                <th class="text-white">
+                                                    Nội dung
+                                                </th>
+                                                <th class="text-white">
+                                                    Kết quả
+                                                </th>
+                                                <th class="text-white">
+                                                    Tỉ lệ
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tableReward">
+                                            <tr>
+                                                <td>
+                                                    <b>
+                                                        686868112233 L
+                                                    </b>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-info">
+                                                        1
+                                                    </span>
+                                                    -
+                                                    <span class="badge badge-info">
+                                                        3
+                                                    </span>
+                                                    -
+                                                    <span class="badge badge-info">
+                                                        5
+                                                    </span>
+                                                    -
+                                                    <span class="badge badge-info">
+                                                        7
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <strong>
+                                                        <span style="color: red;">
+                                                            x
+                                                        </span>
+                                                        2.4
+                                                    </strong>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <b>
+                                                        686868112233 C
+                                                    </b>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-info">
+                                                        2
+                                                    </span>
+                                                    -
+                                                    <span class="badge badge-info">
+                                                        4
+                                                    </span>
+                                                    -
+                                                    <span class="badge badge-info">
+                                                        6
+                                                    </span>
+                                                    -
+                                                    <span class="badge badge-info">
+                                                        8
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <strong>
+                                                        <span style="color: red;">
+                                                            x
+                                                        </span>
+                                                        2.4
+                                                    </strong>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center mb-3">
+                                    <div class="d-inline-flex align-items-center justify-content-center">
+                                        <h5 class="mx-2 my-0">
+                                            <span class="badge badge-success">
+                                                Tiền thưởng
+                                            </span>
+                                        </h5>
+                                        <b>
+                                            =
+                                        </b>
+                                        <h5 class="mx-2 my-0">
+                                            <span class="badge badge-secondary">
+                                                Tiền đặt
+                                            </span>
+                                        </h5>
+                                        <b>
+                                            x
+                                        </b>
+                                        <h5 class="mx-2 my-0">
+                                            <span class="badge badge-secondary">
+                                                Tỉ lệ
+                                            </span>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <p>
+                                    <strong>
+                                        Dùng app MB BANK quét mã QR sau:
+                                    </strong>
+                                </p>
+                                <div class="text-center mb-3">
+                                    <img src="data:image/png;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAHqAeoDASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAAAAgGBwkFBAEDAv/EAGMQAAECBAIEBQsNCwcMAgMAAwECAwAEBQYHEQgSITETGDeUsxQXQVFVVnF1kdLTFRYiMjZhc3SBlbGy0SMkMzQ1U1RykpO0JSZSY4SkwSdCQ0RFRmJkhaHD48LhZYKDdqLx/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAMFBAYHAQL/xAAnEQEAAgIBAwIGAwAAAAAAAAAAAQIDBBEFEjEhQQYTYXGRwSIyQv/aAAwDAQACEQMRAD8AamCCFAx7xivu1cWK7RqDXepKbLcBwTPUbDmrrMNrV7JSCT7JRO09mAb+CEA4weJ/fN/cJX0cHGDxP75v7hK+jgH/AIIQDjB4n9839wlfRwcYPE/vm/uEr6OAf+CEA4weJ/fN/cJX0cHGDxP75v7hK+jgH/ghAOMHif3zf3CV9HBxg8T++b+4Svo4B/4IQDjB4n9839wlfRw3Oj9clWuzC+m1e4JvquoPOPpW7waG8wl1SRsQANwHYgLGgggVsBgCCElxKxwxDo2IVyUym3DwMjJ1F9hhvqKXVqISshIzLZJ2DeTnEa4weJ/fN/cJX0cA/wDBCAcYPE/vm/uEr6ODjB4n9839wlfRwD/wQgHGDxP75v7hK+jiQYfY54i1a/bap1QuLhpKcqctLvt9RSyddtbqUqGYbBGYJ2g5wDvwQQp+kVi1e1oYkv0q3a11HIJlmXA11Iw5kpSSSc1oJ/7wDYQQoOAeMV93VivRKNXq71XTZkP8Kz1Iw3rarDik+ySgEeySDsPYhvoAggggCCCCAIIXvSqxEumxZq3EWrVOoEzbcwp8dTtO65SW9X26VZZax3duKesvHbEepXfQ5KduLhJWZnmGXUdQyw1kKcSlQzDeYzBO6AeWCAQQBBEExyr1StjC2u1ehzPUtRlm21NO8GleqS6hJ9ioEHYojaITvjB4nd839wlfRwD/AMEIBxg8T++b+4Svo4OMHif3zf3CV9HAP/BCAjSCxO75v7hK+jh6rWmnp62qVNzS+EmH5Rl1xWQGspTaSTkNm8mA6kEUDpW4g3PYibYNqVPqDq0zXD/e7TuvqcFq+3SrLLXVuy3xR1vY94lTddp0vMXJrsuzLTa09QywzSVgEZhvtGAe+CPido+WPsAQQQQBBBFVaSV2VqzcO/VO253qKe6sZa4XgkOexUFZjJaSOwOxAWrBCAcYPE7vm/uEr6OHjsWemapZVAn55zhZuap8u+85qhOstTSVKOQyAzJOwbIDuQQR+E+4pqSmHGzktLalA9ogGA/eCEBVpBYnA+6bsfoEr6OPnGDxP75v7hK+jgH/AIIQDjB4n9839wlfRwcYPE/vm/uEr6OAf+CEA4weJ/fN/cJX0cHGDxP75v7hK+jgH/ghAOMHif3zf3CV9HBxg8T++b+4Svo4B/4IQDjB4n9839wlfRwcYPE/vm/uEr6OAf8AggggCEA0o+Xa5v7L/CtQ/wDCAaUfLtc39l/hWoCG2FZ1UvivJo9DSwqcLS3QHnODTqp37fliyeLTiB+ZpnPR9kGiHywM/EZj6Ew9EAi/FpxA/M0zno+yDi04gfmaZz0fZD0QQCL8WnED8zTOej7IOLTiB+ZpnPR9kPRBAIvxacQPzNM56PsjwV/R+vahUOoVafapwlJFhcw6UTYUrUSMzkMtpyG6H3iG4zck14eKpnozAZvHYcofbRT5FKN8NM9MuEJV7Y+GH20U+RSjfDTPTLgJ9fF102y7dfrVaLyZJlSEKLTeurNSgkbPCYrI6S2H5BHD1PmR+2PbpXcitW+HlumTCFQEixEqstXb9uGqyBWZSdn35hkrTqqKFLJGY7ByMR2CCAIIIICe4c4V3HiDJzkzbyJRTco4ltzh3w2c1AkZbNuwRZdiaPd8UW+Leqk6zThKyNRl5l4omwo6iHUqVkMtpyBiaaEXudub42z0aoZiAIV7H3Bi7b3xDfrFEakVSSpZlsF2ZCFZpBB2ZQ0MEAm9h4a3Bg9dUlfN4olW6DS9cTCpV8PODhUKZRkgAZ+zcT8mZ7EW5xlrA/PVPmR+2OtpS8hdyeGV/iWoQJPth4YDT+2K3KXJQJCsU0uGTnWg80XE6qtU9sdiOTiJfdGsCkS9SuBUwmWffEsgstcIdcpUrdnuySY5uBPJBaXi9v8AxiuNNbk1o/jdHQvQHX4y2H/5+p8yP2wcZbD/APP1PmR+2EXggGoxTaVpDO057Dr7qiiJcRN9Xfe+ReKSjVzz1vwas+1s7cRm0dHi+qVddGqE0zTep5WdYfc1ZwE6qXEqOQy27AYl2g5+JXf8LK/VehpIAEVxf+MdrWJXU0mvOTqZtTKXxwMuXE6qioDbnv8AYmLHhItMjlYY8WMfXdgLUvfFC3cWrXnrItFc05XaslLcsmZZLLZKFpdVmsk5exbV4TkIqDi04gfmaZz0fZHC0aOW62PhXegcjQUboBF+LTiB+ZpnPR9kRjELB+6bCobdVr7ckmUcfTLJLMwHFa6kqUNmW7JBjQ+KD00OSqR8bs9E9AJQIda29IqxKdb1Lk336lw0vKtNLykyRrJQAdufbEJRBANXioeMQKYMOvupoXCmc6u+98uH1OD1c89b8CvPtbO3EIp+j3fFGnpepzjNOErJOJmXSmbCjqIIUrIZbTkDE00Gfb3p4JL/AM8MvdnuYq/xN7o1QFUDSWw/H+nqfb/Ej9sHGWw//P1PmR+2EYVv+SPkA/trY82Zc1wSNGpbtQVOzjnBNByVKU55E7Tns3Ra4OYzjO/R75ZbV+Of/BUaHp9qPBAVdeWOdn2jcs7Q6w7PpnpQpDgalStPskJWMjnt2KEV5iPeVKxzt71pWIp5yscMic1ZxvgEcG3mFeyOe32Y2RSWk9y5XP8ArS/8M1Hf0PeVv/pz/wBKID8uLTiB+ZpnPR9kOdZNPmKTZtCp06ECalJCXl3QhWskLQ2lKsj2RmDtjtQQBHmqn5Nmvgl/VMemPNVPybNfBL+qYDLVW/5BFg4d4R3Pf9ImKjb7cmqWYf6nXw0wGzr6oVuy3ZKEV8rf8ghzdCjk8rXjQ9C3AU7xacQPzNM56Psg4tOIH5mmc9H2Q9EEAi/FpxA/M0zno+yDi04gfmaZz0fZD0QQCL8WnED8zTOej7IOLTiB+ZpnPR9kPRBAZ04i4U3Jh/ISk5cKJRLM06Wm+AfDh1gM9oy7UQGHB02/cpbnx5zo4T6A1UggggCEA0o+Xa5v7L/CtQ/8IBpR8u1zf2X+FagOvoh8sDPxGY+hMPRCL6IfLAz8RmPoTD0QGe+JV93dKYi3TLSt015iXZqs02203UXkpQkPLASkBWQAAyAERzrh3p333F85v+dBipynXf44nOnXEWgJT1w70777i+c3/Og64d6d99xfOb/nRFoIB2dEGt1WuWbWnq1U56ovN1AIQ5NzC3lJTwSTkConIZndFk4zck14eKpnozFTaE/uGrvjIdCiLZxm5Jrw8VTPRmAzeV7Y+GH20U+RSjfDTPTLhCVe2Phh9tFPkUo3w0z0y4C0qrTJCsSS5OrSUrPSiyCpiZaS6gkHMEpUCNh2xwVYeWWAf5oW782MebH8YoXk1YVnzVffk3JxthbaCy2sIJ11hO8g7s4pHjY0s7PWvPbf+bR5sAuGK8rLyWJt1ysmw1LyzNTmG22mkBCEJDigEpA2AAdgRaWiBQ6TXLvrbNbpcjUWm5BK0Im5dDyUq4VIzAUDkcuzEimcAJ/ESYcvOWrspJsXAo1REs5LrWplL3swgqBAJGtln2cosjAnBedw0r9RqE1V5aeRNSwYCGmFIKSFhWeZJ7UBYhw8svvQt35sY82M13gA6sDYAoxqid0ZXP8A4Zz9Y/TAdSi3NXaE063RK1U6c26QpxMnNuMhZGwEhJGZibYZ33d05iRaktN3TXn5d6rSjbrTlReUhaS8gFKgVZEEHIgx6cG8HZrE2nVKalavLyAk3UNFLrKl62sknPYRlui27Q0Y6lQbtolYcuOTeRT55ibU2mVWCsNuJUQDrbM8soBo4TDSiu65KPitMStIuCsSEqJRhQZlZ11pAJSczqpUBmYc+F+xkwEn8QL2erkvXJWTaWw00GnJdSyCgZZ5gwCl1S8rnq0i5JVS461OybuWuxMzzrja8iCM0qUQciAfCI4KfbDwwzPFOqnfRI80X50fRonVQEH10SPNF+dAX7gTyQWl4vb/AMYllaolKrssiXrdNkqiwhfCJbm5dDyUqyI1gFAgHIkZ++Y52HtActayqNQ330TDkhLJYU6hJSFkdkAxxMYsRWMNLelKrNU96eRMTYlQ204EFJKFqzzIP9D/ALwHU63dl96Fu/NjHmwdbuy+9C3fmxjzYo3jY0vvYnudo82DjY0vvYnudo82A5WlYpVhzNtosdRttE4iYVMpo56jD5QWwkr4LV1iApWWeeWZ7cVBYV+XfM3xbzEzdVfdZcqMshbblReUlaS6kEEFWRBB3RclVZ4zxbfpJ9QBQM23BNfd+G4faMtXLLLgjv35iP6trRfqdHuKl1JVySTiZObamCgSqwVBCwrIHW7OUA1AhItMjlYY8WMfXdh3RFDY24Fz2I14orUtWpaSbTKNy/BOMKWc0qWc8wR/SgFz0aOW62PhXegcjQQ+1+SFxwt0d6hZd+Um4H6/KTTUktalMol1pKtZtSNhJ/4s4Y/sZQCKY+XpdNMxduSUp1y1uUlGphIbZYn3W0IHBoOQSFADaTHe0YalPXviBN0y852ZuGmopzkwmUqzqptlLqXGglYQ4VAKAUoA5Z5KPbMTvEzR0qN431V68zX5SWbnXQ4llcstRRkhKciQf+GO5gdgdO4b3fMVmarMtPNuyS5XgmmFIIKloVnmSf6H/eAs7rd2X3oW782MebB1u7L70Ld+bGPNiUHZC4VjSkptNq07IrtqdWqWfcZKhNIAVqqKc/a+9AX3Q7dolBLxodHp1NL+rwvUcqhnhNXPLW1QM8szln2zHSdbQ80tt1CVtrBSpKhmFA7CCO1FZ4LYtSuKCqwJSlvyHqcGSrhXUr1+E192QGWWp/3ixKrNin02bnFIKxLtLdKQcirVSTl/2gOB1u7K70Ld+bGPNhRNLujUuh4lU6WotNkqdLKpLTimpRhDKCovPAqISAM8gBn7wiyuNjTMhna89n8bR5sUVjpiFL4lXdKViVkHZFDMiiULbrgWSUuOKzzAH9P/ALQHzR75ZbV+Of8AwVGh6fajwRmlhtcjVo3xSK6/LrmWpF7hVNIUElfsSMgT4YZMaWNLAy9a89ztHmwFMaT3Llc/60v/AAzUd/Q95W/+nP8A0oivMV7rave/6rcMvKuSjU6WyGXFhak6rSEbwB/Rz+WLD0PeVv8A6c/9KIB44IIXW4tJ6nUW4KnS3LbnXVyM07LFxM0gBZQspzA1dmeUAxUeaqfk2a+CX9UxWuDOL8ridN1RmVpMxIdQobWVOvJXr65UNmQGWWrFlVT8mzXwS/qmAy1Vv+QQ5uhRyeVrxoehbhMlb/kEOboUcnla8aHoW4C1cYpuZkcLrpmpGYelplmnvLbeZWULQoJ2EKG0H3xCDKxDvQKP877i3903/Oh88b+SO7vFr31YzjV7Y+GAlHXDvTvvuL5zf86Drh3p333F85v+dEWggJSMQ70777i+c3/OjQTC2ZfnMNLUmZt51+ZepUq4666sqWtRaSSpRO0knbmYzTG+NJsIuSqzvE8p0KYCmdNv3KW58ec6OE+hwdNv3KW58ec6OE+gNVIIIIAhANKPl2ub+y/wrUP/AAgGlHy7XN/Zf4VqA6+iHywM/EZj6Ew9EIvoh8sDPxGY+hMPRAZqYqcp13+OJzp1xFolOKnKdd/jic6dcRaAIIIIBydCf3DV3xkOhRFs4zck14eKpnozFTaE/uGrvjIdCiLZxm5Jrw8VTPRmAzeV7Y+GH20U+RSjfDTPTLhCVe2Phh9tFPkUo3w0z0y4D5pWgnBaqgAk8PLbAM/9MmEPTLvZj7k5+yY1OMfFD2J37u3AQzB55pGFNoJW4gEUmWzBUPzaYl/VDP51v9oRnDjFsxXvDLL8rTXY/rVRD8/B5IDU4zDJ3Ot/tCMuHmHi8vJpz2x/zT24/AHweSNT2drKCSc9Udn3oBbNCVKkW9cwWlST1WzvGX+jMMvABlBAEfwt5tByW4hJ7RUBH9wiulxsxhmt34nL/VMA8vVDP51v9oQdUM/nW/2hGWOfg8kGfg8kBqd1Qz+db/aEUBpoKS9hvSEskOK9VkbEHM/gXu1CYZ+DyQwWhVtxLrHihfTswFA9TvfmnP2TB1O9+ac/ZMan5eHywZeHywCu6D6Fok7vC0qT91ld4y/zXYaIkAEk5AQAZRHcRtuH9y59zJroVwHd6oZ/PN/tCP7QtKxmhQUO2DnGV2fg8kO5obck7/jN/wCo1AXspSUJKlEADsk5R+fVDP51v9oRWukxyI3P8Ez07cZ95+DyQGp3VDP51v8AaEHVDP51v9oRljn4PJBn4PJAancOycgHW88/6QjM+9GXF3hXCltagZ+Y2hJy/CqjhA+DyRpvZA/mbQt/4hL9n+qTALfoP/cF3nw33PMSWWvsz/D9uGSup5pVs1YJcQT1G9sCh+bVC36cuxFl+Gd/8ELVah/nPSN344z0iYDnFh05ENOEED/NMHU735pz9kxqckZjs7z2Y+5eHywGWHU735pz9kwdTvfmnP2TGp+Xh8sGXh8sBlh1O9+ac/ZMXdohJU1i1m6koHqdMbVDLsoh4cvD5Yo3TCH+ST/qLG/wLgLt6oZP+lb/AGhGbOJTLi8RbpUhtakmqzeRCSQfuy4i+fg8kaW4ZD/JxavimU6FEAuehEhaKrdYWlSTwEtvGX+c5DU1T8mzXwS/qmPTlHmqn5Nmvgl/VMBlqrf8ghzdCjk8rXjQ9C3CZK3/ACCHN0KOTyteND0LcBZ+N/JHd3i176sZxq9sfDGjmN/JHd3i176sZxq9sfDAfIIIID6N8aTYRclVneJ5ToUxmyN8aTYRclVneJ5ToUwFM6bfuUtz4850cJ9Dg6bfuUtz4850cJ9AaqQQQQBCAaUfLtc39l/hWof+EA0o+Xa5v7L/AArUB19EPlgZ+IzH0Jh6IQjRerNMoWKTU7WqhKyEoJN9JemXQ2jMgZDM7MzDi9dKxO/Cg8+b+2Ara4tGe3a5cFTq0xWqs29PzTs0tCA1qpU4sqIGac8szHP4qVs93az5GfNi2eulYnfhQefN/bB10rE78KDz5v7YCpuKlbPd2s+RnzYOKlbPd2s+RnzYtnrpWJ34UHnzf2wddKxO/Cg8+b+2A8+E2HEhhtSJ2n0ydm5tqaf6oUqYCc0nVCchqgbNkejGbkmvDxVM9GYOulYnfhQefN/bEUxWxFsyo4Z3TJyN00WYmn6a+20y3OIUpaiggJAB2kmAQlXtj4YfbRT5FKN8NM9MuEJV7Y+GH20U+RSjfDTPTLgJJjReE5YlgTtep0uxMzDDjKA2/rahC1hJz1SDuMLedKy5iPyFRvK950XVpXci1W+HlumTCFQHVumsu3FctUrMy2209PzLkyttvPVSpaiogZ7ctscqJZI4cXpPyTE3JWtWpiVfQl1p1uTWpK0EZhQIG0Ebc48NwWfcduSzcxXqHUqcw6vg0OTUuptKlZZ5Akb8gYDhCNUGPwLf6o+iMrxGqDH4Fv8AVH0QH9xxr0qrtCs6u1eXbQ49T5B+bQheeqpTbalAHLblmI/i4but623mWq/W6dTXXklTaZqYS2VgHIkZnbELv2/rSrljXFSaNclJnqnP02ZlZWVl5pC3X3ltKShtCQc1KUogADeTAUNxrbn7hUbyvedFQYm3tOX/AHQ5XKhKy8q+tpDRbY1tXJIyB9kSY/frW333n17mLn2RHK5RanQZ8yVbkJmQmwkLLMy2W1gHccjASTB205W+MRaVb0/MPS8tNh4qcZy106jS1jLMEb0iGV4qVs93az5GfNijdFrl0tvwTX8M7D+wC6cVK2e7tZ8jPmxx7nteW0bpJu67Yfeqs5Puepa2KiAG0oUC7rDgwk62bSRvyyJ96L5qOIlnU2efkqhdFGlpthZQ6y7NoStChvBBOwxTWkvU5HESy6dS7Dm2LiqTFQTMuytLWJhxDQacSVlKMyEhS0jPtqHbgILxrLnIOVCo2eXbe8+HBpz6pmQln1gBTraVkDcCQD/jGcwwuvsZk2fXtx/1Fz7IeWmYl2RLU2VYfuyhtvNsoQtCp1sFKgkAgjPfATyPDXqa3WKJUKa84ttucl3JdS0ZayQtJSSM9me2PJbt0UK5Q+bfq8hUgwUh3qV9LmprZ5Z5HZnkfIY6k3Msycq9MzbqGZdlCnHHHFaqUJAzJJ7AABMAvPFStnu7WfIz5sRe5L0nNHeoCzbal2KpIutiol+oawcC3M0lPsCBq/cx2M9phgeulYnfhQefN/bCx6RtHqWIF/t1expGZuGlIkWpdU3TGzMNBxKlkoKk5jWAUkke+IDp0TFyq4z1RiwK5ISVPp1ZJbemZMrLyAgF0auuSnaWwNo3ExMOKnbPd2s+RnzYqDBW1Lgs7E6h1266NUKNRZRxwzE9PMKZZZCmlpTrLUABmpSQM+yQIbcYpWJ34UHnzf2wFT8VK2e7tZ8jPmxW2PeCNGw5syXrFMqdQmn3Z5uVKJgN6oSpDiifYpBz9gIcmk1KSrFPZnqXNsTkm8NZt9hYWhYzIzBG/aCPkijtNDkqkfG7PRPQCUCGApWk/cdNpcnItUOkKblmUMpUou5kJSEgn2XvQv0S9jDO95hht5i0644y4kLQtMk4QpJGYIOW7KAvu1TxnDNJur+SPW7qlj1N28L1Rnra/Ca27gE5ZZbz70duY0aLdoTDlWYrVXcekUmaQhYa1VKbGuAck55Zpjh6Lo62qrlOIP8ANr1QEt1J6q/e3VHB8Lr6mvlrauujPLdrDtxdVexHsufolQlJO6qI/Mvy7rbTTc4gqWtSCAkDPaSSABALvxrLnH+wqL2973nRf2AOIE/iRZ05WKnKS0o8zPrlAiXKtUpS22rM6xJzzWfJCUnC6+zkfWfXt36C59kMro1VWQw7sSepN+TjFu1R6pOTTcrVFiXdWyWmkhwJVkSkqQsZ9tJ7UAxkERamYhWfVJ9iRptzUeanH1arTLM2hS1ntAA7YlPYgFnxd0g69ZWIlXt+RpNMmJaTLQQ48XNdWs0hZzyUBvUY4duXzO6QlR9ZdyS0vS5DUM9w8hrF3XbyAT7MkZezPY7EVjpPcuVz/rS/8M1Hf0PeVv8A6c/9KIC2OKlbPd2s+RnzYvu3qW3RKDTaUy4t1qRlmpZC15ayghASCctmZy7EdCIlN4k2VJzT0tNXXRGZhlam3G1ziApCknIpIz2EEZQEtjzVT8mzXwS/qmObb12W/cjj6KBWafUlsAF0Sr6XCgHPLPI7M8jHSqn5Nmvgl/VMBlqrf8ghzdCjk8rXjQ9C3CZK3/IIa/RIvG27dsWrS9ertNp0w5Ui4hqamEtqUngmxrAE7swR8kAxt3UJm5rZqdFmnXGWJ+XXLrcby1khQyzGezOKLOinbJOfq7WfIz5sWz10rE78KDz5v7YOulYnfhQefN/bAVNxUrZ7u1nyM+bBxUrZ7u1nyM+bFs9dKxO/Cg8+b+2DrpWJ34UHnzf2wFTcVK2e7tZ8jPmxfNs0hq37cpdHl3Fus0+ValULcy1lJQkJBOWzPZEf66Vid+FB5839sHXSsTvwoPPm/tgKe02/cpbnx5zo4T6Gl0urtt247ZoLVArdNqTrU44pxErMJcKBweWZAOwZwrUBqpBBBAEIBpR8u1zf2X+Fah/4rm7cGLJuy4JutVumvP1Ga1OFcTNuoB1UBA9ilQA2JEBnkDlug1j2zD7cXbDjuNMc/e86Di7Ycdxpjn73nQCE6x7Zg1j2zD7cXbDjuNMc/e86Di7Ycdxpjn73nQCE6x7Zg1j2zD7cXbDjuNMc/e86Di7Ycdxpjn73nQCE6x7ZgzPbMPtxdsOO40xz97zoOLthx3GmOfvedAIRD76KfIpRvhpnplwcXbDjuNMc/e86LDs+2aXaFBYo9CYUxIMqWpCFOKcIKlFR2qJO8mArrSu5Fqt8PLdMmELT7YeGNOLxtil3hQnqPXmFvyDqkLWhLimySlQUNqSDvEV7xdsOO40xz97zoCWYOAHCiz8wPyTLdGmKi02ABZVAyH+0VdEqGBodLlaJRpKl05styUmyiXZQVFRShIyAzO07BHFvyxaDfcjLSdyyrkyxLul5tKHltZKyIzzSRnsMBmmI1QY/At/qj6IqXi7Ycdxpjn73nRbiQEpAG4DKAUXTcJFxWzkf9Ue6QRSOFJJxRs4EnL1Zk+nRD637hla99zUpMXLJOzLsqhTbRRMONZJJzOxJGe2ODR8BrApFWkqlI0l9ubk30TDKzOvKCVoUFJORVkdoGwwFo6o7Q8kIrpccsMz8Tl/qmHrhFNLnlhmficv9UwHN0WuXS2/BNfwzsP4v2ivBCB6LXLpbfgmv4Z2H8X7RXggM6cdiRi/duRP5Qc/wixtCrbiVWM9v8kL3/DsxXGO3LBdvjBz/AAix9CnlKrHihfTswDnqSMhsG8fTGXlbJ9WZ/afxhz6xjUUjOKle0esOnnnHXKPMFa1FSj1c9tJOZ/zoCttB0kyV35/nZX6rsMDiN7gLl8WTXQrjyWBh5blhJnU2zJuSwnCgvBb63dYo1tX2xOXtjuiR1SRYqlNm5CcSVy000th1IUUkoUkpUMxtGwnaIDLfM9sw7ehuAcJ389v8pv7/ANRqO1xdsN+40xz97zopvFu6argndCLXw6mE06iuSyJ1TLraZk8MsqSpWs4CraEJ2Z5bIC8tJcAYJXPkAPuTXTtxn4FHPeYsa6car3uigzdGrNTYep80EpdbTKNIJAUFDaEgjakRW8BoXo5ci1rfFldKuIZpoclUj43Z6J6FxtnGy+LaoUnR6RU2GZCUSUNIVJtLKQSTvKcztJiy8IblqeOFzvWziO+mo0aXlV1BtlltMsQ8hSEJUVNgEgJdXszy259gQC1jfGm9kJBs6hbB+IS/RJivuLthx3GmOfvedFq0+UZp8jLycqkpYl20tNpJJISkAAZnadgEAr+nLsRZeWzbO7v/AOELTahPrnpO0/jjPSJjRC/8Orbv7qD1zybk11FwnAaj62tXX1db2pGftE74ispo+4eSk0zMMUiYS6ytLiD1c8clA5j/ADu2IC1kpGR2DeYSzTT2Yp0vLZ/IzW74d+HVAyhKtNTlUpfiZrp34CC6PhJxktXMn8c/+Co0OT7UeCM8NHvlltX45/8ABUaHp9qPBAZ/aT3Llc/60v8AwzUd/Q95W/8Apz/0ohnLrwXsm6rgm61WqY89UJopLriZt1AOqkJHsUqAGxIj0WVhHZ9l1r1Vt6nvS87wSmddU044NVWWYyUSOwICfmM0cTSeuPdW0/lWb6ZcaXRVlVwEw/qlTnKhO0mYXNTby33VCdeSFLWoqUcgrIbSYCntB8k1W7Mz/oJb6zkNXVPybNfBL+qYi1g4a2zYb847bMk7LLm0oQ8VzC3dYJJI9sTlvMTB5tLrS21jNCwUkZ9gwGVyt/yCAEjcTD7cXbDjuNMc/e86Di7Ycdxpjn73nQCE6x7Zg1j2zD7cXbDjuNMc/e86Di7Ycdxpjn73nQCE6x7Zg1j2zD7cXbDjuNMc/e86Di7Ycdxpjn73nQCE6x7Zg1j2zD7cXbDjuNMc/e86Di7Ycdxpjn73nQCEkk7yY+Q+/F2w47jTHP3vOg4u2HHcaY5+950BbsEEEARXF3Y0WVaVwzdErdQmGahK6nCoRKOLA1kJWPZAZHYoRY8IDpRg9fa5th/1X+FagGf4xeHPdaa5i95sHGLw57rTXMXvNhC8iN4MfIB9eMXhz3WmuYvebBxi8Oe601zF7zYQqPoBO6AfTjF4c91prmL3mwcYvDnutNcxe82ELyPaMfIDSywr6oV90+ZnbbmXJiXl3eBcU4ypshWqFZZKA7BEdqvVWUoVFnqrUVqbk5NlT7y0pKilCRmTkNp2RQOhQQLGruZ/2kOhRFs4zEHCa8MiPyVM9GYCJ8YvDnutNcxe82DjF4c91prmL3mwhigdY7Dvj5ke0YB9OMXhz3WmuYvebBxi8Oe601zF7zYQvI9ox9SDrDYd8BqJQqpK1yjSNUpyy5JzrKJhlaklJUhQzByO0bDHuiHYOEDCiz8yPyTK9GmJhrDtiA+xUB0i8OQSDVprZ/yD3mxbxI7YjLB4HhnNh9sfpgHx4xeHPdaa5i95sHGLw57rTXMXvNhC8j2jBke0YB9OMXhz3WmuYvebFMYo2VW8ZbrcuywZdueobrLcuh551MuouNjJY1FkK2E9qFxh6tEcgYPSuZ/1yY+sICssCcGL1tLFSi1qt0+XZp8sH+FWmbbWRrMOIHsQcztUIbZftFeCPuY7Yj4v2ivBAZ0Y7csF2+MHP8IkejLetEsW9alUbkmXJeVep6pdCkMqcJWXW1ZZJBO5J2xHcdgeu/duw/lBz/CIHke0YB9OMXhz3WmuYvebBxi8Oe601zF7zYQvI9owZHtGA0lw/wARLdv5M8q2Zp2YEkUB7hGFtapXrauWsBn7UxJKrPsUumTc/OKKZaVZW+6oJKiEJSVE5DadgOyFl0Htkld+ez7rK/VehgsRSDYFy5Efkya6FcBAuMXhz3WmuYvebFO4sWrVcbrnRdGHbCJ+jNyyJJTz7iZc8KgqUpOq4QcgFp25ZbYW3I9ow7mhucsJ389n8pv/AFGoCgeLpiN3JlefM+dBxdMRu5Mrz5nzofTWHbEGsO2IBC+LpiN3JlefM+dFs6NWE922Nf01U7ikWZeTcp7kulaJltw65cbIGSSTuSdsM3rDtiDWHbEB9MVPPaQOH0jOzEpM1SaS+w4ppwCSdOSkkg7dXtiLXJHbG+MyL2B9eNc2H8fmOlVAaEYfYj23f5nxbM27MGS4Ph+EYW1q6+tq+2Az9oqJVOzLUlJvzL5KWWUKcWQM8kpBJ2D3hCs6DWxd6Z7Nklv/AP7wy12EG2KttH4m90aoCtuMXhz3WmuYvebCzaTN6UW+r8kanbkw5MSbVNbllqW0pshYddURkoA7lp2xUqgc9x3CPmR7RgJjg/W5C3MSqBVqu6pmRlJnhHVpQVlKdVQ3Dad43Q4Q0i8OQAPVaa5i95sIZke0YMj2jAPpxi8Oe601zF7zY79k4vWhetb9Sbfnn353glPai5VxsaqcszmoAdkRnZke0YvHQ+2Yt7dn8nTH0ogHiiqqrj5YFLqk5T5ypzKJqUeWw6kSTpAWhRSoZgZHaDFqZjtiM0sTATiNdWQ/2rN9MuAc/jF4c91prmL3mx/TekRh044lCKrNFSiEgdQvbz/+sITke0Y9NMB9UZXYfwqPrCA1KBziC35irali1Rin3JOvS80+zw6EolnHAUaxTnmkEb0nZE4SRkdo3n6YTTTV24h0XLb/ACWOmdgL9oOOtiV2tSVKptSmXJ2cdSwygybqQpajkBmRkItAHMZxnHgiCMXLR2f7SZ+tGjSFDUTtG6Arq7saLLtK4Jmi1uoTDNQlgguITKOLA1khQ2gZHYoR/dm4x2beFdao9Bn3355xC1pQuVcQMkjM7SMt0KTpTAnHCv5D/Mlv4duPXomAjGWQzH+qzPRmAe+KsrOPNhUasT1Mn6nMonJJ9cs8gSTqglaFFKhmE5HaDti0zuMZs4uA9dW8dh/LE30yoB77CxQte/J2alLbnHph6WbDrgXLrbASTkNqgM9sTeE/0JQRddx5/oLfSw4EAQQQQBEbq9h2nWai9P1a26POzr2XCPzEohxa8gEjNRGZyAA8AiSRSuImkFRbIvGoW9PUipTExJ8HrOsqbCFa7aVjLM57lgQEd0obKteg4WPTdFt6kyE2JxhIelpRDawCVZjWAzyMJvDaXBf8lpAU82Rb8pM0uecUJwTE8UqaCWtpHsCTmc+1EZ4qVyd36R+w75sAuMMLogW5RbirNxt16kyFSbalmVNpm2EuhBK1Zkaw2bhHp4qVyd36R+w75sWzo+4QVTDSp1eYqdRkpxE6y22gS6VgpKVEnPWA7cBOZjDGxUsOqFn0DMJJH3g32vBGcB3xqdNfizv6h+iMsTvgO5QLvuO3pZyXoNdqdOYcXwi25WZW0lSsssyAd+QA+SJxhrfF1V/EG3KTW7iq1Qpc7Psy81KTU2txp9pSwFIWhRIUkgkEHYYqqO9YVaZty9aHWZltx1iQnGplbbeWsoIUCQM9meyA0FThhYpSD6z7f5g39kfethYvefb/ADBv7IqEaVtuAAeoFY/ba86Lnw2vCWvu0pWvyMs/LMTC3EJaeIKhqLKTnls7EB5uthYvefb/ADBv7I+HDCxQD/M+3+YN/ZExgIzBEBn/AIj3zdVBxAuOk0W46vT6XI1B+XlZSWm1ttMNIWUpQhAOSUgAAAbABEc6599d+Fwc/d+2L4vnRqr9w3nXayxW6W0zPzr0yhtaHdZKVrKgDkMs9scTipXJ3fpH7DvmwFRdc++j/vhcHP3fth8GsMbFU0gmz6BmUj/UG+14IWzipXJ3fo/7DvmxOBpV242Aj1ArA1dnt2ux/wDtAW91sLF7z7f5g39kRvErDqzJHDm6puTtWhsTLFKm3WnW5JtKkLSyshQIGwggHOOphFidIYlyVQmabIzcmiTdQ0oTBSSoqSTs1Se1HWxX5Lbx8TTnQLgM1YkVFve6aHIpkqNcVWkJNKioMy02ttAJ3nIHLbEdggL70cr7uytYyUCQq9yVidknRMcIxMTa3ELyl3CM0k5HIgHwiHZjN7B67Jax8RKVcM9LvTMvKB4KaZIC1a7S0DLPZvUDDKca23O4FY/ba86AuWoYe2dUp5+cqFr0WZm31Fbrz0k2pa1HeSSMyY8/WwsXvPt/mDf2RUXGttzuBWP22vOg41tudwKx+2150BbvWwsXvPt/mDf2QdbCxe8+3+YN/ZFRca23NuVArH7bXnQw8m+JqUZfSClLqErAO8ZjP/GAVbSiUrDmat1FgKNtJnW5gzQpJ6lD5QW9Qr1MtbLWVlnu1j24qKzr/u+rXbRadVLnrU3ITc8wxMS7864tt5tbiUqQpJORSQSCDvBhpdITCWp4mzNDcplQk5NMgh5K+qErOtrlBGWqD/RMVLKaOldtCaZuSbrFMmJajrTUHWWkuBbiGTwikpJGWZCSBnsgGQ62Fin/AHPt/mDX2QsOkfWKjYOIDdJseemrepapFp9UnS3TLNFxSlgrKEZDWISkE7zkO1Fg8a22+4FY/ba86I1cNlzekTPi8rdmWKTJNIFOLE+FKcK281FQ1ARl90A7ewwFH9c++u/C4Ofu/bB1z7678Lg5+79sTy/tHqt2ZaNRr87WKbMS8klKlNNJcClay0o2ZjLeoRSfZgJh1z7678Lg5+79sHXPvrvwuDn7v2xP7F0d65d9p02vSdZpjDE62XEtupcKkgKKduQy/wA2OTitgjVsOLbZrNRqkhNsuTSJUNsJWFAqStWfsgBl7AwEW6519HMevC4N3dB37YeC2MPbOqVuUqdn7WokzOTEoy6887JNqW4tTaSpSiRtJJJJ7JMZ3jfGnFke42hfEJfokwC46Ug63CbZNgfza6vMz1X6k/evVGpwWpr6mWtq668s92se3FKUHEW856uU+VnLrrj8s/MtNutOTzikrQVgFJGe0EEgiGx0h8KalicKAKZPycn6nGYLnVCVnW4Tg8stUHdqHyiKfY0Z6/Qnm6s/W6U41IKE0tCEu6yktnXIGacs8kwDJdbGxTmfWfb+8/7Pa+yPvWwsXvPt/mDf2RUPGttsbqBWO37drzotnCbEGSxItyYrFNk5mUZZmlShRMFJUVJQhWfsSRl7MeSA/XrYWL3n2/zBv7IOthYvefb/ADBv7ImEEBD+thYvefb/ADBv7Iq7SLotMsPD31Xsmnylv1XqxlnqymNJlnuDUFayNdGR1TkMx2chHVxB0hKJZV4VG352j1KYmJIoCnWVNhKtZtKxlmc9yhELuG+ZPSFp/rLt6VmKVPa4nuqJ4pU3qt5gp9gSczrjsdiAXzrn3134XBz937YdiybCtKs2bQanVrao07UZyQl5iZmpiTbW486tpKlrWojNSiokkneTFB8VK5O79H/Yd82GxtGmO0W1aNS33EOPSUkzLLWgEJUpDaUkjPbkSIDi9bCxe8+3+YN/ZH4T2GljsyT7jVo0FLiG1KSoSDYIIByI2R48XsUqfhkxTHanITc4meW4hHU5QNUoCSc9Yj+l/wBorNelJbs4hUsmg1cKeBbBK2thVs/pe/ALWcTr6GQ9eFwbh/tB37YZLRlp0niFZ9TqV9yrFx1BifMu1M1VAmXG2g0hQQlS8yE5qUchszJMQrip3If9v0fte0d82L3wBw7n8NrYqFMqc5KzbkxOGZSuXCgAng0JyOsBtzSYDzYoWTa9u4eXFV6Db1KptVkpF1+WnJSVQ08w4kZpWhaQClQO4jbCaqxPvoKP88Lg3/p7v2xoDiFQ37lsit0WVdbZfn5RyXQ45nqpKhkCctuUK0dFK5CSfV+kfsO+bAWtgPbNDvPC6k127qRIVutTK3w/P1BhL77uq8tCdZagSckpSkdoACLNo1jWrRJ9E7R7dpMjOIBSl+WlENrAIyIBAz2iOdg5aU1Y2HtNt+fmGZmYlVPFTrIISdd1SxlmM9yhE0gCIrO4dWZPTj83OWrQ35p9xTrrrkk2pTi1HMqJI2kkkkxKoIDh0C0bdt1916g0Om0111IQ4uUlkNFSQc8iQNozjuQQQBBBBAEIDpRj/Ltc39l/hWof6P5U2hRzUhJPbIgEZ0ROWBn4jMfQIeiP5S2hJzShIPbAj+oAz8PkgzjNbFNxYxOu4BagPVic7P8AXri8dCNSlV+6CpRP3qxvP/GqAbOa/Fnf1D9EZYnfGp01+LO/qH6IyxO+A+QQRM8GeVmz/Gst0ggIblD7aKnInRvhpnplxbKWm9Ufc0bv6IhDtKlakY1VgIUUjgZbYDl/oUQD65wQhmimtSsaaTrKUfuEzvP9SqHzgCDOCFy01yU2XQCkkH1RVuP9UqAYwnw+SMr3/wAM5+sfpg4Vz84vymP4gG80Ivc7c3xtno1Rd2K/JbePiac6BcUjoRe525vjbPRqi7sV+S28fE050C4DNWPuUfIenRIQlWD0rrJSfvyY3j/iEAi+UGUaocC3+bR+yI+Kab1T9zRu/oiAyvj7E7x25X7t8YOf4RY2hWArEqsBQBHqQveP69mAX9O/sbjGolD2UaQ3/i7fY/4RHqLTYyIQkHMdgduMv604sVieAWoDqhzs/wDEYDUTOI7iNyf3L4smuhXC/wCg8pSpO79ZRP3WV3n/AIXYaIjMZHdAZWZQ7mhtyTv+M3/qNRenAt/m0fsiEm0xSW8WGNQlP8mMe12f57sAxukuf8iNz/BM9O3GfYG3sRaGjWpS8bbXC1FQ4V3YTn/oHI0ADLf5tH7IgK50cuRa1viyulXEM00OSqR8bs9E9F+JASMgAB2hFB6aHJVI+N2eiegEoG+NOLI9xtC+IS/RJjMcb404sj3G0L4hL9EmA7eccm69tsVfLP8AE3ux/VqhbtORSkosvVURtndx+AhVeFc/OL8sB/Kt/wAgh1NCrkrqnjl3oGISqHV0KuSuqeOXegYgL/ggggM/dJ7lyuf9aX/hmo7+h7yt/wDTn/pRHA0nuXK5/wBaX/hmo7+h7yt/9Of+lEA8cEEEAr+nB+S7T+HmfqtwqtM/KMr8Kj6whqtOD8l2n8PM/VbhVaZ+UZX4VH1hAakp3fKfpj7HxO75T9MfYAgz8PkiEY38kd3eLXvqxnOp1zWP3Re/+kYDU+CKm0WCTgfQCSSdeZ3/ABhyLZgCDOA7jGbeLbixipeIC1AerE32f65UBpJnBCf6EylKuy4ypRP3i3vP9bDgQBBBBAEEEEBA8ab4mMPrKXXJSTanHEzDTPBOrKBkonbmPBC/8bCr97NP5y59kWhpeckD/wAel/pVCLwHTuaqrrtyVWruNJZXPzbs0ptJJCC4sqIBO8DPKJng3ijNYZTlSmJOmsT6p1tDZDrikamqonMZD34rmCAZkaVlXeIa9bNP9n7H8Zc7OztRI+KfSO+aoc2b+2FIlfxln9cfTGp6d3ywGfOPGG8rhpX6dTpOoPzyZqV6oUt1tKCk66k5DI+9EItCtLtu6aTWmmUvuU+abmUtKJAWUKByJG7dDG6XtrXBXbzor1DoVVqTLcgULck5Nx5KVcKs5EpBAOR3RQvW6vbvOuT5rf8ANgLuGlhVwPczT+cufZHapuF8rjvKIv8AqVSmKTNVAlpUnLtpcQjgTwQIUognMIz+WF363V7d51yfNb/mw7GjRTJ+kYQ0mTq0lNSM2h2YKmJlpTTiQXlEZpUARmDnAVfUsMZXAeUVf1NqL9WmpAhlMpMNpaQsPHgySpJJGQVn8kcYaWFXJ9zNP5y59kW5pXci1W+HlumTCFp9sPDAacWPWXLis6iVl5lLLlQk2ppTaSSEFaArIE+GI1jFhrLYl0iRkJuoPyKJWYL4U02lZUSkpy2n346GDnJPZ/imV6NMd+t12kUFlt6uVSQprLitRC5yYQylSss8gVEZnLblALxxT6R3zVDmzf2woridVak9okRpQcRrJ78bb+dGPOhAXcO72U6sps+4yCSQRTH9v/8ArAMhoRe525vjbPRqhhbnpKK9bVWo7rqmW6hKPSinEgEoDiCkkA7yM4XbRZfZsOi1yXvl1u235qYbcYbrChJqeSEEFSA7qlQBIBIi8uuNZHfjbfzox50BSPFPpHfNUObN/bHGqeIczo/zRsalyLNYlmQJsTUy4Wlku+yKdVOY2ZQw/XGsjvxtv50Y86FO0i6LVbyxJfq1oUyer9KVLMtpnaWwuaZK0pIUkLbBTmDvGeyA7/Gwq/ezT+cufZBxr6udnrZp+3Z+MufZFDVSy7ppMi5O1W2q3IybWWu/MyDrTaMyAM1KSAMyQPCY4KfbDwwDayeBshilKtXxOVmbkJmvJ6uclWWULQ0V/wCaFE5kbI89XtZnRrl03ZSJlytv1BXqWqXmkhlCEqBd1805nPNkDL/iMXVgTyQWl4vb/wAYrjTW5NaP43R0D0BBuNhVsxnbNPyz/SnPshbp18zU4++UhJdWpZA7GZz/AMY/CJQjDy9HEJWi0LiUhQBChTHyCD2fawDEaDn4ld/wsr9V6GkhWtFRabBlrjRfShbS5xcuqWTWT1EXwgOBRRwurrZayc8s8tYduL/l7/s6ZmGmJa7LfefdUENtt1JlSlqJyAACsySTllASaKbxZwMkcRboRWpuszUktMsiX4JplKxkkqOeZP8AxRckcSs3dbdEmxK1q4KRTpopCwzNzrbK9U55HVUoHLYdvvQFS4eaO9Osu8qbcEvXZyZdklKUGXGEJSrWQpG0g5/52cXrEV641kd+Nt/OjHnQdcayO/G2/nRjzoCVRB8XsPpfEm2WKPNz70i21NImuEaQlZJSlacsj2PZ5/JHu641kd+Nt/OjHnQdcayO/G2/nRjzoCkeKfSO+aoc2b+2I89pK1O2XV0Jm35J9qmKMkl1cwtKnA17AKIAyBOrnDHnEWycvdjbfzox50IndNi3dP3LVpuRtavTMq/NvOtPM055aHEKWopUlQTkQQQQRvBgLso54z/DJrP8g+t3It9SfduG6ozz1tfLLLgBll/SMfvV9FqkyFKnJsXJPqLDDjoSZZvaUpJy3+9Hn0UgbAVc5vv+bInRKiV9WfvLqjU4XX4PhdXW1ddGeWeWsM94i8bhv2z5yg1GWlLroD8w9LOtttNVFlS1qUggJSArMkkgACAzmIyMW/hBjfPYbWzM0eUo8rOtvTapsuOvKQQVIQnLIDd7AeWIUcOr2z9x1yfNb/mx863V7d51yfNb/mwF3cbCr97NP5y59kHGwq/ezT+cufZFI9bq9u865Pmt/wA2DrdXt3nXJ81v+bAfniRdbt73pUbhmJVuUdnS2VMtqKkp1W0o2E7durn8sWXoe8rf/Tn/AKURXHW6vbvOuT5rf82LV0baRUrKxF9Vbyp85b9L6jdZ6sqrKpRnXUU6qddwBOscjkM8zkYB1YVe6tJ2q0W56vS0W7IuokZx6WStUwsFQQ4pIJGXZyi/uuNZHfjbfzox50I3fVk3XVb2uCoUu2a5OyE3UJh+XmZeQdcaebW6pSVoWlJCkkEEEHIggwHrxlxenMTpWlszlKl5HqFbi0lp1S9fXCRtzGz2sVxTPyjK/Co+sIkHW6vbvOuT5rf82P3kcPb0anZdx20biQ2hxKlKVTHgAAQSSdWA0iTu+U/TFHY7Y1z+GtzyNLlKRKzzczJiZLjrykEHhFpyyA3ex/7xY6cRbJA92Nt7+6jHnQsulFIzd93nS5+yJV+45FiQDDszSGzONtucK4rUUpvWAVkpJyO3Ig9mA98njvUMTJpqyZyiykjL19Qp7ky0+ta2UubCoJIyJHajvcVCkK2+uaobdv4s39sUvhZaFy0HEa3KrXLerFNpcnPNPTM5OSTrLLDaVZla1qSEpSOyScodVOItkhIBvG3M8u6jHnQC71LFSbwLnF4e02mS9VlKVktE5MOqbcc4YcMc0pBAyLhGzsAR5uNhV+9mn85c+yK10k6lI1fGOtztKnZaek3ES4Q/LOpdbVkw2DkpJIORBHyRX1JpVQrM4mTpEhNz82oFQYlWVOrIAzJ1UgnZAMXxsKv3s0/nLn2R35XR9p2IEs1eM1XJyUmLgQKq5LtsIUllT44QoBJzIBVkCe1C5DDq9u865Pmt/wA2NA8LpZ+Sw1tSVnGXZeZZpUq2606goW2oNJBSoHaCDsIMBD8HcGpPDOq1Cdk6tMzxm2UslDrSUBOStbPYYteObW69R6C027XKrIU1p1RShc5MoZCzlnkCojM5Rx+uNZHfjbfzox50BKoIIIAgghT8ccb7xtDFGtUOjPySJCV4Dgw5KpWoazDazmSdu1RgLE0vOSB/49L/AEqhF4sm+sZrsvagLo9dek1yanEOkNSwQrWTnltHhitoAghz7F0fbGrNk2/U5yXnzNTtOl5l0pnFJBWtpKlZDLYMyYrHSZwvtvD+k0N+3WZpt2bfdbdLz5cBCUpIyz3b4Cg5X8ZZ/XH0xqend8sZWoUULSpO9JzEXRxlMQc/xmm8yT9sA9UEIpxlMQf0mm8yT9sHGUxB/SabzJP2wD1wQinGUxB/SabzJP2w1WA90VK8cNadWq2tpc8+4+lZabCE5JdUkbB7wEBwdK7kWq3w8t0yYQtPth4YfTSu5Fqt8PLdMmELGwwGkeDnJPZ/imV6NMVDps+4qgeMVdEqKUoWkBfFDokhSpCYkEykiwiXZCpNKiEIAAzOe05DfHDxDxXua/6bKyNwuyi2Jd0vN8DLhs62qU7SPeJgICI1QY/At/qj6IyvEaoMfgW/1R9EAo2m57orZ+KPdIIWeNGcRcLLbxAnJOZuJqaW7KNqbb4GYLYyUcznlv2iIjxa8Pv0Wo89V9kAikPXojcj0r8cmPrCDi14ffotR56r7IsixLQpdkUFFHoaHkSaXFugOuFxWso5naYCFaUvIXcnhlf4lqECT7YeGH90peQu5PDK/wAS1CBJ9sPDAaL4E8kFpeL2/wDGK401uTWj+N0dA9Fj4E8kFpeL2/8AGOniHYtGv+kS9NuFt9csw+JhAZdLZ1wlSd47GSjAZqp3/IY1Fof5GkPi7f1RFRnRsw+H+q1LtfjqvsihJrSIvyQmXZNiZpwZl1llAMmknVSch2e0ICa6cX47aHwU19ZqF9w6939teM5XpkQxWFLSdIRqpPYjfd10VTbcn1H97ZB0KK9bLPW/Bpy7W3txMq3gTZdr0eer9Kl55NRpbDk9LKcmlLSHWklxBUkjaNZI2dmAvYQkWmRysMeLGPrux4uMpiD2Zqm8yT9sWphnaVMx1t5d138h1+rtvrkUqlHDLo4JsJUkao3nNxW2AUGCG1xowOs208M65WqRLzyZ6UbbU0XJpS0gl1CTmMtuxRhS+zAfIIbnB/AuzLpw2oVZqsvPKnptlS3S3NqQkkLUNgy2bAIjmkfhDath2JK1S32ZtE25UG5cl6YLg1C24o7D2c0iAWob404sj3G0L4hL9EmMxxFw0/SJvyQkJaTl5inBmXaQygGTSTqpSANufaEBZWnN7Sy/DO/+CFptT3T0j44z0iYkGI+Jdw4hini43ZZwSPCFngWA3lr6utnlv9omIhIzTklOsTTGQdZcS4jMZjNJBGzwiA1MTu+Ux9hFTpKYg5n75pvMk/bDJaNl71i/rFnqpcLjC5tqouSySy0GxqBppQ2Ds5rO2AtiCCCAIo7TD5JP+oMfQuK+xtxwvG0cT63Q6O/JJkJVTQaDkqlahrMoWcyd+1Rjw4a3jVccbj9aV+LZeo/ArnNWUbDC+EbyCTrDsezOyAWuNL8MuTi1fFUp0KIro6NeH36LUeeq+yLeo1OYpFIkqbJhQlpNhuXaC1axCEJCU5nsnIDbAeyPNU/ybNfBL+qYpnSbxFr+H0lQHbcdlm1TjryHeGZDmYSlBGWe72xih2NIy/pp9uXcmadqOqDavvJO4nI9n34Ck1b/AJBDm6FHJ5WvGh6FuO4NGzD4/wCq1LtfjqvsiscUa/PYBVqVt7D1TbFNnpfq95M4gTCy6VKbzCjuGq2nZ4e3AMDjfyR3d4te+rGcavbHwxf1q4yXZiBcdNtK4XpNdHrT6ZGbSzLJbWWlnJQSoHYcuzF1jRsw/IB6lqW3/nVfZAIrFy6JnLLIfFZnozDDcWvD79FqPPVfZHesjBa0bMuBqs0RmdROtIW2kuzSlpyUMjsy7UBZcEB3Qmd/6QF80S+7ipUlMU8SklUZiWZCpNKiEIcUlOZz2nIDbATnTb9ylufHnOjhPoaHCyqTOP8AUJ2lYiFL8nTGkzUsJNPU6g4pWocyN4yiyuLXh9+i1HnqvsgLpggggCFBx6wcvq6sWK7WaDRBNU2Z4Dgneq2Ea2qw2hXsVLBHskkbR2Ib6CAzmvDCW9bOoyqrcVHEpIJcS2XBNsueyVuGSFk9jtRBIejS85IHvj0v9KoRjVV2j5IB3rAx0w7pNiW5Tp+4C1OSlNlpd5vqKYVqLQ0lKhmG8jkQdo2REsbZxjHOQpclhcv1bmaY6t6bQQZXgkLSEpOb2oDmUkbMzCmwzWhEQK9dGf6Kx9dUBXatH3ExKSpVuJAAzP3/AC3pIqmNTppSepndo9ors+9GWR3wHyPbRaXOVurydMpjXDT046lhhvWCddajkBmSANvbMeKJngzys2f41lukEBI+L5ib3uJ5/Leki+sK78tzCaypO0b/AKgaVcMmt1x+VDDj+olxZWg67SVIOaVA7D2duRhgkqTqj2Q3duEL0qgTjXWMhn9xluhRAXjitfVu4tWXN2jYFQNVuGbcacZlSw5L6yW1hazrupSgZJSTtPgzih+L3ib3uJ5/Lekj06KYIxppOYy+4TPQqh8lKTqn2Q3duAy6rNMm6LVpymVJrgZ2TeUw+3rBWotJyUMwSDtG8GPFEyxiBOLF4ZA/laa6VUQ4gjeCIAEaoMfgW/1R9EZXiNUGPwLf6o+iAiV8Yk2pY0zKy90VQyTsyhTjSRLOu6yQcic0JOW3txw6Tjph3VqrJ02n18uzk48iXYb6imE67i1BKRmWwBmSNp2RR+m57orZ+KPdIIpHCnlRs7xzJ9OiA0qiB3fi5ZVn1lVKuKsmUn0oS4W+pHnPYqGYOaEEf94nesn+kPLCLaW4Jxhmchn95y/1TAWnj3jFYt14UVujUGtmaqUyWOCZ6kfRrar7aleyUgAbEk7TChp9sPDAQRvBgT7YeGA0XwJ5ILS8Xt/4xPIgWBKgMILSzI/J7f8AjE81k/0h5YAVu+UfTGXVc/LM/wDGHPrGNRFKTkNo3js+/GXdc/LM/wDDufWMBe2itiJa9iStxpumpmRVNuS5YAl3XdcJDmt7RJyy1hv7cXTcWNVg3JQKlQ6NXTMVOpSzsnKsmTfRwjziChCdZSABmpQGZIAz2kQiYBO4ExIsOgRf9tZg/lOV6ZEBNOL5ib3tp5/Leki7MHLopGC9prtnEmb9R62uacnEywaXM5srCUpVrshadpQrZnns3boZAKT2x5YSPTHBOLDGW3+TGN367sBZmOGMtiXPhbXqPRK4ZmozLbaWWuo30axDqFH2SkADYknaexCejfBqq7R8kfQlWY2HyQGhOjlyLWt8WV0q4hmmhyVSPjdnonomWjmQMF7WzIH3srpVxDdM8hWFUjlt/ldnd8E9AJPFoSOAuI89JMTcrbyVsPtpdbV1dLjWSoAg5FzMbCIrEJPaMabWQoCzqGCQPvCX6JMBnnfeHlz2GJI3VTRIid1+AymGndfU1db2ijllrp39uIzKS7s3NMy0unXeeWltCcwM1E5AZn3zDTacnskWXq7ds7u//hC1Wok+uekbD+OM9ImAsDi94m97iefy3pIujBe4qXgja01beJsz6i1qanF1BqXDapnWYUhDaV6zIWkZqaWMic9m7IiGUTu+UwlempyqUvxM1078AyFvY1WDcValKTR64Zifml8Gy11G+jWVkTlmpAA3HeYsXeIzv0e+WW1fjn/wVGh6fajwQGf2k9y5XP8ArS/8M1H96N12UWzcRPVS5JzqOR6jea4TglueyUU5DJAJ7B7EfzpOgnHK58gfbS/8M1FW6qu0fJAP7xhMMu+RXMJn0cWbS5+WqlNlKhIucLKTTKH2V6pTrIUkKScjkRmCNhjLbVPaMaWYZEDDm1QSAfUqU6FEBV2lRYNy31IW81a1OE8uVdfU8C+21qBSUAe3UM/andC/yOj/AIltTsu4u3EhCXEqJ6vltgBH9ZD7ayf6Q8sGsn+kPLACdg+UwmWmtyh0XxWOmdhzoTHTW5Q6L4rHTOwFR4WVWSoeItuVSqPcBIyk80887qKVqICsyckgk/IIdNOkJhkEgeuRW79AmfRwgcGqrtHyQD+8YTDLvkVzCZ9HHZtHF2yburTdJt6smbn3EKWlrqR5vMJGZOakAbvfjOnVV2j5IuTRMBGMshmD+KzPRmAe87jGbGLnKrePjib6ZcaTncYzYxc5Vbx8cTfTLgLm0JPdXcfxFvpIcGE+0JPdXcfxFvpIcGAIIIIAggggOXcVApVyU4yFdkGJ6TKwssvp1k6w3HL5Yi/Wgw/70qR+4/8AuOliTe9PsC2lVurS83MSyXUMlEslJXmrPI+yUBls7cVNxq7N7j3B+6Z9LAKhiNKS8hiDc8nJMoYlZeqTTTTSBklCEvKCUj3gABH42vdletVyYct2qzdOW+kJdVLr1SsA5gHymLwqej7c181KbuymVKjsSFedXVJdqYcdDrbb6i6hKwlsjWAWAciRnnkTHm4ql5d2Lf8A3r/ooCuDi9f5Hutq/wC/iBwwfFUvLuxb/wC9f9FBxVLy7sW/+9f9FAL5Hppk9NUyoS09T31y83LuJdadQclIUDmCPfiW4qYc1TDarSdPrM1JTL0yx1QhUopZSE6xTkdZKduYiO2vRX7juOmUaTcabmZ+YRLNrdJCEqWQATkCctvagJR13sQO+2r/AL+GgwQtShX/AIc0+4bzpUpWq5MuPJenZxGu64EOKQkE+8kAeARUw0VLxI/LFv8A71/0UTi18TaTgZRmbDumUn56rU9SnXH6clCmFB1RdTqlakKzyWAc0jbnv3wHfxxtWh4f4dT1w2XS5Wi1uXdZQzOyaNR1sLcCVAH30kjwGFiGL2IBI/nbV/3/AP8AUX9dGJdJx1oztiWtKT0jVp5SXm36klCWEpaPCK1i2pas8knLJO/tRCBoqXkCP5Yt/wDev+igL1w/w7tG5LGoFbrtvU6eq1RkWZqbmnmtZb7q0BS1qPZJJJPvmKq0srJtq17Soz9v0SRp77s8ptbku3qlSeDUcj72YEMlYNHmLesig0ecW05MyEizLOqaJKFKQgJJSSAcsx2QIpDTZ9xVA8Yq6JUAnIjVBj8C3+qPojK8Rqgx+Bb/AFR9EAo2m57orZ+KPdIIW+QnJinz8tOyTy2JqWcS8y6g5KQtJBSoHtggGHY0iMIa5iVVqPM0Wdpss3JsONOCbW4CSpQIy1UK2bIqLiqXl3Yt/wDev+igK467+IHfbV/38MxgPbdHxFsBmvXxTpauVlcw80qcnU8I4UIICU59oCKu4ql5d2Lf/ev+iibWpiDTMA6QmyLslpyfqjK1TSnqYlK2Sh05pALikKzyG32PymA7GkRhzZ9Awfr1So1u06Tn2TL8G+y1qqRrTDaTkffBI+WEvhvLmxUo+N9FmMPrYk6hJVer6pZfqCUJYRwKg8rWKFKVtS0oDJJ2kbhtiC8VS8u7Fv8A71/0UBV1LxPvWlU6XkKdctTlpOXQG2mW3skoSNwAj1dd7EDvtq/7+LH4ql5d2Lf/AHr/AKKDiqXl3Yt/96/6KArjrv4gd9tX/f8A/wBRBnXFvOrcdUVLWSpSjvJO8wwHFUvLuxb/AO9f9FBxVLy7sW/+9f8ARQHv0RLPt66pS5zcVHk6iqXclg0ZhvW1AoO55eHIeSLwu3DSzKLa1YqlKtumylRkpN6ZlphprJbLqG1KQtJ7BCgCPBEDwptuu4FtVJmrUao3IqrqbW2bel1TAYDQUDwpXqZE8IMss88lbsomNaxAnbjo89RGrBvaUdqTDkmiYmaclLTKnUlAW4QskIBVmSAcgCcjAKJ13sQO+2r/AL+GP0faHTMS7Gcrd+yTFfqyJ12WTNzyeEcDSUoKUA9oFSj8pit+KpeXZrFv/vX/AEUMRgHYdSw8slyjViYk5iZVOOTAXKqUUaqkoAHskpOfsT2ID29aDD/vSpH7j/7gOENgZH+aVI/cf/cSm5asqh0SZqLdOn6mpgAiUkGw485moD2KSRnlnnv3AxATizNZcnF/fNiPSQCz4t3tcll4iVu37UrM7SaJIvBuWkpVzUaZSUJUQkdjaon5YkOjxWajibfEzRb/AJt64KU1IOTbcrPq4RCHkrbSlYH9IJWsZ9pRiJ4r2leF34g1qu06yrlalJ14ONofkFBYAQlO0DMdg9kx9wfrzuC9/Oz970OsSwmac402wGAhw6ziCFZLKfY/c1DPPfANucIcPx/ulSP3H/3CaXHife1KuCp0+nXNU5eSlZp1hhlt7JLbaVlKUgdoAAQwnGrs0kZ0i4cs/wA0x6WE/uKebqVfqU8wlaWpmZdeQleWsApZUAcuztgGY0aj11VXEMRf5x+pol+o/VD7pwHCcLr6va1uDRn+qIvJjCWw2Hm3WbVpSHG1BaVBnaCDmDvhTNHLFWjYZKuA1uTqEz6oiX4LqRKFavB8Jnrayk/0xllnuMXjT9KG0Z6flpRqkV8OPupaSVNs5AqIAz+6e/AX2NkJVpqcqlL8TNdO/Dqg5wvmkFgpX8R70k6vRp+ly0uzIIlFImluBZUlxxRI1UKGWSx2e3ALlo98stq/HP8A4KjQ9PtR4IVjC/R2um07/olcn6nRXpWSf4VxDLjpWRqkexzbAz29kiGoGwCAiNcw3s+u1R+pVi3adOTz+RcfdazUvJISMz4AB8keHrQYf96VI/cf/cRi/dIK2rKuyft+pU2svTcmUBbku20UHWQlYy1nAdyh2Ij/ABq7O7j3B+6Y9LAWP1oMP+9KkfuP/uE7vHEm8aFd1bpNHuKoyVMkJ5+VlZZl3VQy024pKEJHYASAAPei/eNXZvZo9w/umPSxXNR0ernvSoTN0U6pUZiRrbq6kw0+46HENvKLiUr1WyNYBYzyJGeeRO+ArDrvYgd9tX/fx+8ji3fzk7LoVdlXKVOJBHDdjMe9FgcVS8u7Fv8A71/0Uf03ou3fJOJmnKvQChkhxQDr2ZCdpy+5e9AOcnd8phMtNblDovisdM7Fl8aqzRnlR7hy3/gmPSxELxtua0kJ9i5rMdYp0lT2vU51qrEocU4FFzNIbCwU5ODeQcwdnZgKLwjkJWqYm2zI1CXbmZSYn2m3WXBmlaSraCO1D0pwhsApB9aVI3fmP/uF4ouBlw4a1aUvStVCkzFMoTqZ+ZalFuKeW23tIQFISkq7WZA9+LBGlVZyRl6j3Bs2fgmPSwFj9aDD/vSpH7j/AO46NAw7tK3qmioUW36fJTqEqSl5lrVUARkRn74j04fXbJXzakncFMZmWJSaLgQ3MBIWNRakHPVJG9J7MSKADuMZsYucqt4+OJvplxpOd0KTfGjVddfvSv1iVqtDbl6hPvzTaHHHgtKVuKUArJsjPI9gmA8mhJ7q7j+It9JDgxRGjxg9XcNq5VpytTtMmWpuWQygSi3CoEL1jnrITsyi94AggggCPhIHb8kfYQrSdqM6xjjcrbM3MNtp6mySh1QA+9muwDAMTpd7cH38gfx2X7HvqhF49T8/OTDfBvzT7qM89VbilDyEx5YDSzCrkwtDxPJ9AiJQTl//AMiL4VcmFoeJ5PoERSWmtMvy1DthUu860TNP5ltZTn7BPagGU1h7/kMfYy9l6rUDMNAz03kVj/TK7fhjUJO75YBNtNfbfdCGYz9TT2f65cVPg0MsWbPzI/Kst2f6wRozMyMrMrCpmWZdUBkC42FED5RELxep8nLYW3Y9Lysu08ilzCkLQ0lKkkNnIggbDATpKhqjYd3aMIVpV8tdY+BluhRFYqq1R1j9/wA3++V9seR952YcLj7i3HDvUtRUT8pgLb0UuWqk/ATPQqh9YQrRS5aqT8BM9CqH1gCFy02fcVQPGKuiVDGwuWmz7iqB4xV0SoBORGqDH4Fv9UfRGV4jVBj8C3+qPogP6JA7fkg1h7/khS9NSbmZa4ra6nmHms5R7Pg3CnP7oO0YpbCypz7mJ1oIXOzKkKrEmCkuqII4dGzfAaPQiulvtxhmsiPxOX7P/CYeqPM/T5OYcLj8qw6sjLWW2lR8pEAhei2Msc7bzy3TXZ/5Z2H81h7/AJDFR6TEpLyGClwzEkw1LzCDLarrSAhSc5hoHIjaNmyEW9Vqj+nzf75X2wGousPf8hg1h7/kjLr1WqP6fN/vlfbEwweqU87itaKHZyZWhVVlwUl5RBHCD34DRaCPifajwRx7puKQtqlqnak4QjPVShO1Sz2hHkzERzL7x47ZLRSkczLsEA7wDBqp7Q8kUQ/j0pM7k1RQqWB25u+yy+iLVsi7qdd9LM5TVKSpB1XWV+2bPv8Ave/EdM1LzxWWTsaGfWjnJXiEjggj4YlYb6du+PmqntDyRXN84pSNuzy5CTYM7OI/CZKyQg9onsmOTbWMsrOTrcvWJLqRLhyDyFayUn3xEU56RPbytadE3smH59cc9vn6/jytzVT2h5ITLTWy64dFAy/JQ2f/ANnYctCkrQlSCFJUMwRuIig9NBpvrXyDvBo4X1VZTr6o1suCe2Z9qJVUSqPuqfe8sA3xpZZdLkHLQoalyUqpRkZfMllOZ+5J96AzT1T73ljq2oMrnpG78cZ7P9YmNMfUinfoEp+5T9kcu6KZItW3VVtyUslaZR4hQZSCDwat2yA74OXb3nsR/QOcZcmq1AZAT03uH+mV9sOZoZzD0zhfU1zDzjqxWHQFOKKjlwLGzbAX1BBBAZ+6T3Llc/60v/DNRVwGcWjpPcuVz/rS/wDDNR3NERlp/FgofabdR6nvnVWkKG9HbgKSyPveWNLcMSDhvapBBHqTKbR8CiOx6kU79AlP3Kfsj2oQltCUISEpSMgAMgBAfY81U/Js18Ev6pj0wEAjI7oDK1QzPY3Dsw5mhTye1rxoehbi+PUinfoEp+5T9kemWlmJVJTLMttJJzIbQEgn5ICG438kd3eLXvqxnGr2x8MaOY38kd3eLXvqxnGr2x8MA/WivyH0D9eZ/iHItknKKm0V+Q+gfrzP8Q5Hn0rnXGMHp5bLi21ial8lIUUn8J2xAXBrD3/IY+xlyKtUc/x+b/fK+2NG8JlqcwttBa1FS1UiUJUTmSeBTtgJXBBBAEEEEARQmJ+juzfV81K413G7JKneCzYTJBwI1GkN+21xnnqZ7uzF9wQCSYw4Bs4eWa5XEXA7PqS+2zwKpMNg6xO3PXO7LtRQ0PRpeckD/wAel/pVCLwGlmFXJhaHieT6BERzGzCxGJ8jS5ZyrLpoknVuayZcO6+skDLapOW6JHhVyYWh4nk+gREogFdb0TJdDiVC73/YkH8nJ9LDRDZASACScgIjvr4tU/7y0T5wZ86ArjHDGt7DKvyFObobdRTNS3VHCKmi1q+zUnLIIOe7POK5RpAP4kLFlLt5qnpuA+phmxOF0sB32Gvqag1ss88sxn2xEY0w6tTqvelEepU/KTrSKeUqXLPpdCTwqzkSknI5RV+EcwzKYo2pMTTzbLDVTl1uOOKCUoSFjMknYBAMFxS5Y7fXe/t//HJ9LBxSpfvvf+bk+lhgU3xaoSP5y0Td3QZ86OzTahJ1SUTNU2bl5uWUSEusOJcQSDkclJJGwjKApPCzR8asK9JS4G7idniw24jgFSYbCtdBTnra53Z57ovYnIEwR8V7U+CAWi8tJuYty7azRRazL4p847Kh0z5TwgQop1suDOWeW7OOZL15Wk0o2/MS4txNK+/+HbX1UXc/uepqkIy9tnnmd26KjxYtC5JzE+7JiVt+sPMO1SZW243IuqStJcVkQQnIj34tTQ8t+sUe8a45VaTUJJtcglKVzMstpKjwqTkCoDbAe/ilS/fe/wDNyfSx4+NlMt+w9aDHsfY/lFXY/wD5w2B3Rme7ZN1KdWRbVbyKj/s97zYCTY14orxPqFMmnKSimmSZW1qpmC7r6ygc9qU5boj+FHKlZ3jmT6dEcWrUWp0ZbaKtTpyRU4CpAmWFtFQByJGsBnHawo5UrO8cyfTogNKooXF/H1/D283aEi3mp9KGW3uGVOFsnXGeWWod3hi+oSvSmtqu1XFiZmKbRanNy5lJdIdYlHHEEhJzGaUkQH44n6Q719WPUrdXbjUkmc4L7umdLhRqOJX7XUGeerlv7MUMBmQIkPrIurvarfze95sfU2RdQUCbarfze95sBd9haNUvdVnUeuKud6WVPy6XyyJELCM+xnwgz8kTaztGRi27rpFaRdD0wafNNzPBGRCQvUUDq58Ics8t+RidYQ3JRKLhnblNrFYpshUZWSQ0/KzU0206ysb0rQogpPvERNZW8Lbm5lqXlbgpDz7qghttudaUpajuAAVmT7wgO4BkAIojSKcfNVpTRKupuBUoDsa2eR/7RfEQ3FK103NbTqGkgzstm6we2eyn5REWes3pMQteibVNXdpkyePH259OSjOJKHCFb4mOFN1qtS6mXnVESExk1Mp/4TuV8hiN1BhQzJBC0nJQPYjwRVVtNZ5huW9qxzbFbxJ6mlpcbSttQUhQBSobiIjmIVyN2zbcxN5jqlY4NhOe9Z+zfENwEu/1XoK6RPOgzlPHsCo7Vtdg/Juiu8W7pNxXGtqXXnISZLTWR2KP+cqLHJniMfdHu1fpXR7bG98m8fxr6z9vb8oVMPOTD7jzyytxxRUpR3kmPzVuMESOwbcdue42JJIIl0nhH19pA+3dFbWJtPEOnZsuPWxTkv6VrBisNHJhyx6Qqbz4TgQBnv1ex/2iq9NDkqkfG7PRPRe8sw3LS7TDKAhptISlI3ADdFKaXlLn6thnIy9LkZqdfFVaWW5ZlTqgkNPZkhIJy2jb74i6rHERDi+fJGXLbJEcczMkcG+NOLI9xtC+IS/RJjOkWRdWfuarZ/6e95sPzaV323J2vSJaauCkMzDMmy2405OtJUhSW0hSVAqzBBBBB3ZR6iTiOVdnuYq/xN7o1R+lIrlKrJd9SKnIz3BZcJ1LMId1M88s9UnLPI7+0Y/O7PcxV/ib3RqgMwVb/kEOpoVcldU8cu9AxCVq3/IIdTQq5K6p45d6BiAv+CPwnpyWp8o7NT0wzLSzQ1nHXlhCEDtlR2ARxPXxavfLRPnBnzoBH9J7lyuf9aX/AIZqOLhBfqsOrs9W0U9NQPU7jHAqeLQ9lltz1Tu1d2UdPSPnZWoYz3HNSEyxNSzimCh5hxLiFZS7QOSgSDtBHyRAKXTJ+rTPU1LkpmcmNUr4KXaU4rIbzkkE5QDMcbWZ70GPnFXo4ONrM96DHzir0cL76x7q72q383vebHBmGXZd9xmYbW082ooWhaSlSVA5EEHaCD2IBoONrM96DHzir0cfpLaWEy/MNNC0WBrrCc/VFWzM5fm4VePVTPyjK/Co+sIDUoHMQR8Tu+U/THLq1xUWjvoYqtXp0k8tOulEzNNtKUnPLMBRBIzB2wEdxv5I7u8WvfVjONXtj4Y0FxYuWh1nDa5adSKzTZ6oTUg60xKy022668sp2JQhKiVE9oDOEcVZF1FRItqt5eL3vNgHY0V+Q+gfrzP8Q5EoxYslOIFnP0Fc8qQDrrbnDpaDhGorPLVzG/wxB9HmtUu2sJaNS7iqUlSqmyp8uSk9MIYebCn1qSVIWQoZggjMbQQezFj+vi1e+WifODPnQC+8UqWH+97/AM3J9LHkXpDP4fLVZiLcankW8fUkTZnS2Xwx9y4Qo1Dq62rnlmcs8szDGm+LVy90tE+cGfOhE8SbXr9VxEuioUyiVSckJqqTL0vMy8m44282p1RStCgkhSSCCCNhEBb3G1me9Bj5xV6ODjazPegx84q9HC++si6u9qt/N73mwesi6u9qt/N73mwGmUEEEAQQQQFJ6XnJA/8AHpf6VQi8aXYh2XTL8t1VGrS5lEop1DxMu4ELzSTltIOzb2oq7ivWJ+frfO0ejgLPwq5MLQ8TyfQIiUQl1Zx6uyyqxPWtR2qUqmUN9ymSpfl1LcLTCi2jXUFjNWqgZnIZnsCPHxoL7/MUTmi/SQDsTX4s9+ofojLExei9J++lIUksUTIgj8UX6SKLMB8ggiQ4eUeWuC+6BSJ8uCUnp5mXdLatVWqpYByORyO2Aj8Ptop8ilG+GmemXHFGi/YhAPD1vnaPRxa1hWlT7ItmWoVHVMLk2FLUgzCwtea1FRzIA7J7UBIYIIIAygygggCDKCCAUPTd90Vs/FHukTFI4UcqVneOZPp0Q9GJuEtv4jTsjNV5yoIclG1NNiWeSgEKIJzzSe1EZoOjlZlErlOqsm9WDMyMy3NNByaQU66FBQzGoMxmBAXRBlBCy48Y3XTYuID9GozdMVJol2nQZiXUteagSdoWPogGayj4r2p37oVvBTHi7L0xMpFBq7VKTIzQeLhYl1JX7BlaxkSs5bUjsQ0pGYIgM58duWC7fGDn+EebBrbizZ+fdWW6QQ390aPVn3JcVQrNQeq4m554vuhqZSlAUd+QKDkPlj87c0dbNoFfp1XkXqwZqRmETLQcmklJUk5jMagzGY7cBcqfajwR9gAyAEEAumNtqCkVv1TlW8pGeJKgBsQ52R8u+KndlVBR4PaIcq7aGxcVAmqdMgZOJ9goj2ixuI+WFNqki/TKjMSU2gofYWULB7Y7MVmzi7Ld0eJdF6Bt06lrfIzf3p+eHipDs3TZnqiVmFsOlJQS2ciUkZER+kEEY3LaMGvTBHFIABJAAzJ2ACGawktYW5baHJhGU/OAOvHspHYT8kVNg1axrtwidmW9aQkSFqz3LX/mj/GGSEZ2pi/3LSfizqfdMaWOfHrb9R+33KCCF40jMYbkw7u2nU6gt05ctMSImF9UsKWrW4RadhChsySIzmkGGMZj3v7sq78fmOlVFuDSgvvP8BQ+aL9JFvU7R3s64pCWrU+9VxOVFtM48G5lCUBbgC1ao1DkM1HIZmAiegz7e9PBJf8Anhlrs9zFX+JvdGqFqxGHFuFPVh/919X+EE36p/d8uA1dTU1dTL8MvPPPPZuyiCz2kve87JTEq8xReCfbU0rKVWDkoEHL7p78BSCt/wAgh1NCrkrqnjl3oGISsnOLKw1xluXDyhP0mhN05Uq9MqmlGZYUtWuUpSciFDZkgQDi6QnI1dXxP/5pjPBW8wxVr4wXHinXpOyblbpyKPWl9SzKpRhTbwTkVZoUVKAOaRvBi0hov2IRnw9b2/8ANo9HAJFF5aHp/wArZ8XP/SiLs4r1ifn63ztHo4jl92VTMBKJ68bJVMuVbhUyWrUXA81wbmZUdVISc/YDI59uAZnKM0cTtuI91Z91pvplxaPGgvv8xQ+aL9JFt0fAK0rwpMlctWeqoqNZYRUZkMTCUNh15IcXqpKDknWUchmdnZMAlseqmflGV+FR9YQ6nFesT8/W+do9HH8PaM9jybS5lt6t67ILic5tGWado/0fvQF8J3fKfphMtNblEop//FjpnY8B0oL7B/AUPt/ii/SRPsPrdktIilzFyX4XmqjT3vU5oU1YYbLQSHMylQX7LWcVtz3ZbICgsEeVy0fGTP1o0bT7Ub90LzcOCdr4c0SevGguVNdVobSp+VTMzCVtFxsZpC0hAJGe8AiKpOk/fYOXAUTZ/wAov0kBwdKflxr/AOpLfw7cVPDhWbhnQ8ardlb8u5c63W6mVofTIvBpnJpRaTqpUlRHsUJz2nbn4I7fFesT8/W+do9HAJEN8aTYR7cKrOzz/I8n0KYrbivWJ+frfO0eji5repUvQqDTqRJFwyshLNyrRcOaihCQkZnIZnIdqA6GUGUU/pH4i1rDqiUiboCJNTk1MracEy0VjVCMxlkodmKC40F9/mKJzRfpIB3YIIIAiCXNi3ZFsVuZpFcrrUpUZbV4VlTDqinWSFDalBG1Kgd/ZidwgOlHn19rm/sv8K1ANf1+cNu+djmz/o4Ovzht3zsc2f8ARxn3kffgyPvwHfxBnpaqX7ck/IOh6UmqnMvsuAEBaFOqUlWRAO0EHbEfgj7ACUlSglIzJOQEWd1hsSc/cw/zlj0kVrKg9UtbP88fTGpwy97fAZ99YbEnvYf5yx6SO3ZOFV6Wdd9GuS46G7JUWkzbU7OzKnmlhlltQUteqlZUcgCcgCfeh6tnvRDMZuSa8PFUz0ZgOGMeMNgAPXOxs/5Z/wBHE5ta4qVdVGZq1Bm0zdPdUpKHkoUkKKVFJ2KAO8HsRmGoHWO/fD66KnIpRvhpnplwFjXVcdKtSjO1WvzaZOntKSlbykKUAVEJGxIJ3ntRB+vzht3zsc2f9HHP0ruRarfDy3TJhCoDQXr84bd87HNn/RxILNxItS9J5+Utqrtz0ww2HXEJacRqpzyzzUkDeRGbe334Y3Qn92tf8Xp6VMA40VicecNgSDc7Gz/ln/RxZx3Rle/+Gc/WP0wGgPX5w2752ObP+jj1UvGvD+qVOUp8hcTL05NvIYZbEu8Cta1BKRmUZbSRvjPHbEqwpz66NneOZPp0QGlMKVpG4WXndmJcxU7fobs5IqlWWw6l5pIKkpIIyUsH/tDawQCUYT2HcmGN/Uy7r5pblJt2nh0TU4txtxLXCNLaRmltSlHNa0jYDv7UMR1+cNu+djmz/o48+lLyF3J4ZX+JahBE+2HhgNRKFVpKu0iUqlKfExIzTYdZdCSnXSdxyIBHyiPyrdeptDcpyKpMhhVRm0SUqClR4R5QJSjYDlnqnach78RbAnkgtLxe3/jHLxw/H8OP/wDLJP6jkBaA2iCPifajwR9gPkUzjzauu03cEm37JGTc0EjeOwr/AAi54889KMT0m9KzTaXGHklC0HcQYjyUi9e2Wd07evo7Fc9fbz9Y9yZx+snLOzk2zLSyCt51YQhI7JMW1XMFZxM4tVFnmVSyjmlD+YUgdrMb4lWHeGDNtziajUn0Tc8kfcwkZIb9/bvMV9da824mHQ9j4m0qYJyY7c249I9+fqllj2+1bVuS1PbALgGs6r+ks7470EfYs4iIjiHMsuW2a85LzzM+ohRNNWhVJVwUivCVV6kIlUySpjWTkHi46sIyz1vajPPLL34buKD00OSqR8bM9E9HqMlA3xpxZHuNoXxCX6JMZjgHtRpxZHuOofxCX6JMBTGljYdy3sm1xa9Lcn+ozNcPquNo1NfgdX2yhnnqq3dqF4mcDcRZaWdfftp5DTSFOLUZhjYkDMn2/aEaExybs9zFX+JvdGqAzCMTGzsM7uvKlu1G2qM5PSbbxYW4l1tACwlKiMlKB3KT5Yh6gc93YEOnoV7MLKnn3Zd6BiAq3BvB++7fxOt6qVe33peQlpnXedL7KghOqoZ5BZPZHYh0RsSPBBs96CAgdyYuWPbVbmaRW681K1GWKQ6yph5RTrJChtSgjcoHYezFX40XTR8XbP8AW1h3OprVb6pbmupW0KaPBICtZWs4Ep2aydmee2KK0nc+vlc/60v/AAzUd/Q95W/+nP8A0ogI51hsSu9d/nLHpIaK1cX7Gtu2aRQ63XmpSq0yUZkpuXUw8otPNICFoJSgg5KSRmCRs2GLjjNHE3lHurxrN9MuAd/r84bd87HNn/Rx+U1jnhzMyzrDNzMKcdQUJHU7+0kZD/R9sxn/AB6qZ+UZX4VH1hAWMrAbEnP3Lv8Aa/GWPSRduBlZkMGbbnqJiXMpoVUnJszjEu4lTpWzqJRr5tBQHskKGROezdDKpyyO7efphNNNblDouXcsdM7AXDfeKVm3rZ1Ytq2a21PVuqyq5SSlUsuoLzqxklOspASMz2SQIWc4D4kkk+td/b/zLHpI4+COfXctHxkz9aNGkEaid26AoPCa+bcwvsOnWlfVTbpNwyKnVTMmttbhbDjinEZqbSpJzQtJ2E7+3FjWtitZd1VhulUCuNTk+4lS0tJZdSSEjMnNSAN3vwnmlPy4V/L+hLfw7cezRMz68sh8VmejMA98V1VcasP6VVJynT9xMszko8th5sy7x1FpJSoZhBByII2RYp3GM2MXOVW8fHE30y4BicdahK400im07DN0V2dp76pmaaaBZLbak6oVm6EA7dmQzMUx1hsSe9h/nLHpIsTQl91dx/EW+lhwcoAggggCIRceFVl3JWZirVugS03UJjV4V5a3AVaqQkblAbAkD5Im8VFfmPtqWVdc9b9WlKw5OyfB8IqXYbUg67aVjIlwHcodjfAdTrHYc960n+8d8+DrHYc960n+8d8+IZxp7G/Qbg5q16WDjT2N+g3BzZr0sAo+IUlL02/rlkZFpLMpLVOZZZaTnkhCXVJSkZ7dgAEW1oo2bb941e4GblpjNQbl5dpbQcUoahK1AkapHYAin72qjFbvKvVWTDiZaen5iaaDgAUELcUoawBIByIz2mLJ0csS6LhvU61MV5mfdROMtttiUbSsgpUSc9ZSe2IBpXcEcOm2lrTa0nrJSSPuju8D9eFBOOGI3fTOfu2vMhjV6UVjvJLSZG4NZY1R96tdnZ+dipDos3zn+P29zp30UBdWirdtdu+06xN3JUXZ+YZng02twJBSng0nL2IHZJi46vTZSsUubp1RZS/JzTSmXmlEgLQoZEbNu6FosWvSujjIP2/fSXpudqbnV7KqSkPNpbADeSisoIVmgnIAjLLbEm409jfoNwc1a9LATPrHYc960n+2758TW2bfpdsUdql0KURJyDRUpDKCSElRKjvJO8mKX409jfoNwc1a9LFtYf3dIXza8tXqQ1MtScwpxCEzKEpXmhZScwCRvHbgIFpXci1W+HlumTCFjeI0WxvtGoXzh5PUKjuSzc4+6ytKplZSjJDgUcyATuHahZBos3yCPv63+dO+igLqwywfsOr4dWzUKhbco9OTVNl3nnVLczWtTYJUcldkxYdoYeWtZ86/N23R2JCYeb4JxbalkqTnnl7JR7IEeywKPMW/Y9Ao88ppU1ISLMs6pokoKkICTkSAcsx2o5WKGI1Iw4pknPV1ieeZmniwgSjaVkKCSrM6yk7MhATQ7oyuf/DOfrH6YdXjTWN+g3BzVr0sJS4oKcUobiSYBktFKwbYvGh1565KQxPuy8y0hpTilgpSUEkexUOzDAUzBywqZUpSfkbblGZuVdQ+y4lbmaFpIUkjNWWwgGKn0Ivc7c3xtno1QxNwVVihUGpVacS4qWkJZ2adS2AVFDaCohIJAJyBy2iA98EUHxp7G/Qbg5q16WLVw6vWnX7baK3R2ptqUW6toJmkJQvNJyOxKlDL5YCIaUvIXcnhlf4lqECT7YeGH90peQu5PDK/xLUIEk5EGA0XwJ5ILS8Xt/4xKqzQ6dWl09dTlUTCpCaROyxUSODeSCErGR3jM78xC34aaRNoWxYVCos/J1tc3IyqGXVMy7akFQ35EuA5fJEm409jfoNwc1a9LAX4Nggig+NPY36DcHNWvSwcaexv0G4OatelgL8gimaHilWsSEvOYVSdODcgQmeFwhxkkrzLfBcCpWY9ivPPL/Ny7MdCZquK1Kl3ajWpSyhS5RJmJvqZ6aU7wKBrL1AoAFeqDkCQM8s9kBa0EUHxp7G/QLg5q16WO3Rr9u/ECUNYw0k6EKGlZl1Cul5qY4ZORVkGipOpkpOW3PPPPsQFwwRALbcxPVW5UXHLWeik5nqhUi9MqeA1TlqhY1fbZb+xnE/7EARUl4yEtduM0nalxNJn7eFCVUhJOZhAmUzHBpdzTkrPUUpO/LI7o7VwuYoitTYt6Ws5dK1h1OqdemUvFOQ9uEjVzzz3djKOZaFtXs7iim6ryTb7TbdIXTUN0t15RJLyXASHE+8rs9rZAes4HYcke5aT/eO+fFhyUqzJSjMrKoDbDKEttoG5KUjIDyAR+x2RRlT0mrLp1Sm5KYka8XpZ5bKymWaIJSopJH3XdsgLzj8pqXampZ2XmEBbLqChaTuUkjIjyGILhXipQsS1VMUBioM+p/BF3qtpCM+E18tXVWrP2hz3diJvUJtuQkJibeCi2w2p1QSMzkkEnL39kBXwwOw5AA9a0n+8d8+KFx5rtSwhvCUoGHM0uhUiYkUTzstLgKSt9TjiFLJWFHMpbQN+XsYscaU9j5DOQuEe8ZVr0sLxpD39SsRb1kqvQmpxqWZp6JVSZttKFa6XHFEgJUoZZLHZ7cBLcGcWb4r2J9u02q3DNTMjMTOo6ypDYC06qjkckg9iHVTtSPBGbGFdwydqYgUSt1JD65OSf4VxLCQpZGqRsBIHZ7cNYNKaxgAOobg5q16WAsS4sKbKuOszNVrVAlpuoTBSXXlrcBVqpCRuUBuSB8kfva2GdoWpVfVK36JLyU7wamuFbWsnVVlmNqiOwIrTjT2N+g3BzVr0sSnDjHC2b/uP1FosrVm5rgVv60yy2hGqnLMZhZOe3tQFpmM0cTeUe6vGs30y40uMZo4m8o91eNZvplwEZj+m1qbcStByWkgg9oiP5j9GGlPPNtIy1lqCRnuzJygLGOOOIxPupnP3bXmRemAtHkMX7Zn6ziPLIr1TlJwybExMEpUhng0LCPYFIy1lqO7PbFenRZvjM5T9vH3+qnfRROLFuOT0cqa/bV9Ifm6hUHfVFpdJSHm0tlIbyUVlB1s21bACMstvYgJvf+GdoWdZdauK26HLSFapkq5NSc02pZUy6kZpUApRByPbBhXjjhiMCR66ZzZ/wNeZF/13HC2MSaPOWZQparM1SutKkJZybYQhlDjgyBWUrUQnPfkkn3orI6LV8k59XW/t2/jTvooC3MILJt3ErD+m3Ve9LZq9wTqnUzE68pSVuht1TaMwkgbEJSNg7EWRbOF1m2xV26nQqFLSc82lSEvIWskBQyI2qI3RT9pYn0TBGgy1g3axPzFZphUt92nNJcYIdUXk6qlqQo5JcTnmkbc9++Oxxp7G/Qbg5q16WAvw7jGbGLnKrePjib6ZcNWdKaxv0G4OatelhRL7q0vXr2uCrySXEys/PvzTSXQAsIW4pQCgCQDke2YC9tCT3V3H8Rb6SHBhPtCT3V3H8Rb6SHBgCCCCAIQDSj5drm/sv8K1D/wgGlHy7XN/Zf4VqAquDLweWLj0UZKVn8WGWJ6WYmWTJPng3m0rTmAMjkQRDq+tO3u4VK5m15sBmNBEmxOabYxJutpltDbSKtNpQhCQlKQHlgAAbAPeiMwH6yv4yz+uPpjU4Hw7+1GVoORzGwx2vXZcPd2q88d86AvDTY93NB8Wnplwukeyo1OeqbiHKjOTM2tCdVKn3VOFIzzyBUTkMzEjwgZamMU7TZmG0OsuVOXStC0hSVAuDMEHeICI5eDyw+2ipswTo3aL0z064sFNp28Uj+QqVu/Q2vNhMNJCpz9BxbqshRJ2ap0ihqXUiWlHlMtJJZSSQhJAGZJJyG+AevPw+SDPw+SMxvXZcPd2q88d86Pouy4cx/LtV54750BpxC46bHuKoHjBXRKi4cI3nZjC60nn3FuuuUqWUta1FSlEtpzJJ3mJFUqZI1NtCKjJy02hCtZKX2kuBJyyzAUDkYDLfLweWDLweWNOPWnb3cKlcza82D1p293CpXM2vNgKC0I/c9cwzH42z0aou7FfktvHxNOdAuO9TaVIUtK002SlZRKzmsMMpbCj2zqgZxwcV+S28fE050C4DNWHr0R9mD0rmD+OTHY/4hCKR05Gv1eny4l5GqT8swCVBtmZWhIJ3nIECAerSk24F3Jlnvlf4lqEDy8Hli49HSq1Cu4xUGn1qemqhIOiY4SWm3lPNLyl3FDWQokHIgEZjeAYdX1p293CpXM2vNgMx8vB5YMvB5Y049advdwqVzNrzYPWnb3cKlcza82AzHy8Hlgy8HljTj1p293CpXM2vNg9advdwqVzNrzYBdtB38Tu/wCFlN36r0MFiMf8n9y+LJroVwuWl+o2xNWum3CaSl9uZLwkPvfhCC1kVamWeWZyz3ZntxSViXHW5u9rfl5qr1F6XdqEu2407NOLQtJdSClSSciCCQQd8BCMvB5YdzQ2P+Sd/wAZv7v1Gotz1p293CpXM2vNhRdKmemrdxKZkqBMvUuTNPZcLEk4WGyoqczVqoyGZyG33hAOrn4fJBn4fJGY3rsuHu7VeeO+dB67Lh7u1XnjvnQGnOfh8kGfh8kZjeuy4e7tV54750HrsuHu7VeeO+dAacE+Hf2ozIvYfzxrvx+Y6VUAuy4e7tV54750aDWjbVDmbVo78xR6a685JMLW4uVbUpSi2kkkkZkkknMwFDaDWxd6+CS/88MrdZztir7/AMTe7H9WqFs0wh6102mbb/kkzBm+G6g+9+F1eB1dbUy1stY5Z7sz24oG27mrsxcNMZfrNTcacmmkrQubcIUCsAggq2giAihG3sbu3HzLweWNNxadvEfkKlb/ANDa82PvrTt7uFSuZtebAZj5eDywZeDyxpx607e7hUrmbXmwetO3u4VK5m15sBmPl4PLF46Ho/ytnxc/u8KIcf1p293CpXM2vNin9KSQlLewyE7QZZimTnVzKOHkm0sOapC806yADkchs96AvrPw+SM0sTQeuPdXb9Vpvplx5PXZcPd2q88d86H+w9tyizthW3NTdJp78y9TZZx112WbWtxamklSlKIJJJJJJ2kmAzny8Hlj003ZUZUkjLhUdn/iEaX+tO3u4VK5m15sfhULWoDcjMLRRKWFJbUQRJtbDkdvtYCQJOQ7O89iEz01tuIlF7fqUOmdilTddwg/l2q7v0x3zoazRKlmLlsarTNxMtVWYbqRbQ7PID60I4Js6oUvMgZknLdtMAt+COzFy0c8vymz2f8AijRpJ9iN+7tRXGLtCpNLwxuedptMkZScYp7rjL7EshtxtQTsUlQAII7YhEFXXcIUQK5Vd/6Y750BPdKbbjjX8stiJb+Hbip8vB5Ye3RypchXcIKJUK1IytQn3FTAXMzbKXnVgPrAzWoEnIAAZncAIsv1p293CpXM2vNgMx8vB5Y+RpybTt7L8hUrmbXmxnhiqy3L4n3cyw2hplurTaEIQkJSkB5QAAG4QF06EnuruP4i30kODCfaEnuruP4i30kODAEEEEAQv2Kejqq+78qdxi5xIid4L736g4XU1GkN+24QZ56me7swwMc+arVLlJhTE1UZNl5OWshx9CVDMZjME57jALInDw6O59fSqmLhDf3n1CGOpM+F2a3Cay92ru1dvbEf3xuE95avnX/0xLtLCr06dwkfbk5+Tfc6tlzqNPoWrLNXYBhJYBqTo5m/T67xdAkBcH8rdSGn8LwHVH3Xg9fhBrauvlrZDPLPIborLG7Bs4XyFLmTXRVOrXVtaolOB1NVIOeeurPPP3ob3DCv0hnDW02napIIcRSJRKkqmUApIZRmCCdhildNCpSM/QraEjOS0wUzTxUGXkrI9gnfkYBU2kcI6hGeWsQM4aXijq7F6j5q/wDdCuS2yZaz/pj6Y05Fx0UZj1Xp2/8ASm/tgEGxrw0OGNckKcasKn1VLdUcJ1NwOr7Mpyy1lZ7s84ill1v1tXbR62Zfqn1Pm25ngdfU4TUUDq62Ryzy35GL10vWXa7edFeora6iy3TyhbkokvJSrhVnIlOYBy25RQ3rcrXcio81c+yAZUaW6QAPWWr50/8ATFB4r3kL+vaduASJkBMIaRwBe4XV1EBPttVOeeWe6ON63K13IqPNXPsjnzcq/JvlmbZdYeABKHUFKhmMxsO2AlWFNl+v+9ZS3+r/AFP4dt1fD8DwurqIKstXWTvyy3xfI0SFA+7RPzV/7orDRbmWJTGOlvTTzTDQYmc1urCUj7krsmHl9cdF7rU7nTf2wH8WbRfW3adHopmOqfU+UaleG1NThNRITrauZyzy3ZmIjjZiaMMaLT6gaSan1XMGX4MTPA6mSCrPPUVnuyyiY+uOi91qdzpv7YXvTLqchP2ZQkyU7KzCk1BRKWnkrIHBK25AwHg43CexZavnX/0w07atdCVbsxnGVojVBj8C3+qPogP7iK4r8lt4+JpzoFx3p6qSEgtCJ6dlpdSwSkPPJQSPezMQ/FGv0h7DK7mmqpILcXSJxKUpmUEqJZXkAAdpgM54II98pRqlOMB6Up84+0SQFtMLWnMbxmBAd3Cy7xYd9024zJdXiTDo6n4XgtfXaWj22qrLLWz3diGAGlukkD1lq+dP/TCxzVFqcowp+ap04yynLWW4wtKRmchmSMo8CfbDwwGmtiXD667PpNd6m6k6vl0v8BwnCcHn2NbIZ+HIR3ogeBPJBaXi9v8AxieQATkIV2d0sUys4/LmzFK4JxSNb1UyzyJGf4H3oaFW75R9MZdVz8sz/wAYc+sYBnFMcaT74Sr1r+t/7nqkdW9UcPtzz+56urwXv563Yy2++3NFlVGuCmVP13pe6immpng/UzV19RYVq58Kcs8ss8jHm0HPxK7/AIWV+q9DSQAISLTI5WGPFjH13Yd2Ei0yOVhjxYx9d2ArDDS1PXve9Lt7qzqHq1a09UcFwmpqtqX7XMZ+1y3jfDAcUdXfon5r/wDdFRaOD7MtjRbT0y62y0lx0qW4sJSPuDm8nZD5i46L3Xp3Om/tgFp4o6u/RPzV/wC6IFjPgUcNLUYrRuIVLhZtErwIkuBy1kLVra3CK/oZZZdmHklZhmaYQ9LOtvMrGaVtqCkq8BGwxRGmhyVSPjdnonoBKBvjTiyPcbQviEv0SYzHG+NOLI9xtC+IS/RJgILjphIcUxRQK0KX6ml87ZXh+E4Tg/8AjTllwfv55+9FUjReVQD6sG7g+JD774L1N1eE4P2ernwpyz1cs8jlDVxyrs9zFX+JvdGqAWvjbpH+5au3+Vf/AExdWCuIoxNtaarIpZpnATi5TgTMcNraqEK1tbVT/Tyyy7EZ1q3/ACCHU0KuSuqeOXegYgL/AIIIIAiDYx2EcRrR9RBUhTvvht/hixw3tdbZq6yd+tvz7ETmCAVTijq79R81f+6P6GkgLHHrUNrGdND/AJM6qFQ4Ph+A+5a+pwR1dbUzyzOWeWZ3w1JjNHE3lHurxrN9MuAdTBDGIYozdWZFDNL6gbbXrGb4bhNcqGXtE5Zavv74tWaa4eWdaz1ddBTnlnlmMoVDQf8AyrdnwEt9ZyG0gFUOiQo/76J+av8A3R9Tc/Fk/msqU9cxqX8p9VBzqLg8/uWpqZOZ/g888xvyy2Zw1UJ9pk0ufn8QKOuSkZqYQmmAFTTKlgHhnNmYG+A/i+NJpN0WhV6H601SvqhLLl+G9Udfg9YZZ6vBDPwZiFwJzJMdF+g1Zhlbr1Mnm2kDWUtcusBI7ZJGyObAP3or8h9A/Xmf4hyLZiptFfkPoH68z/EORbMAHdC1XdovquG66zWvXcJf1RnHpvgfU3X4PhFlWrrcKM8s8s8hDKxzHq/SGXVtPVSRQ4hRSpCplAKSN4IJ2GArDBHBdWGFWqU6a8Kn1YwlnUEnwOpkrWzz11ZxcUcr1x0XutTudN/bB646L3Wp3Om/tgOrBBBAEIDpRn/Lrc27/Vex/wAq1D/QgGlHy7XN/Zf4VqAqvPweSPkWJgTZNNv+/G6JWXptmUVLOvFUqtKV5pAy2qSoZbe1DI8VWx+6lyc5Y9DAJXn4PJATnDqcVWx+6lyc5Y9DFP6ReEVBw1plGmKFN1R9c48424Jx1tYASkEZaqE9uAoqPuZ97yR/TKQt5CDnkpQByh0hoq2Of9qXJzlj0MB49CjbYtd7XqkN2z/QohitUe/5YU696/NaN8+xb9jNsT0lUm+r3l1hJdcS4CW8klstgJyQN4Jzz2xHONVfHcu2+bP+mgHU1R7/AJYQnSr5a6x8DLdCiJFxqr47l23zZ/00VHiBd8/fN0TNeq7MqzOTCUIUiWSpLYCEhIyClKO4duAjo2QZn3vJE7wSs+n31iFI0KruzTMm+08tS5VSUrBQ2VDIqSobx2oZk6KtjgE+qlyc5Y9DAJXmfe8kBOcd6/qPL29e9eo8kt1crITz0s0p0grKULKQVEADPIdgCJ1o74cUjEi4anIV2Yn2GZWVD6DJuIQoqKwnbrJVsyMBU4jVBj8C3+qPoig+KrY/dS5Ocsehi/kJCUhI3AZQCiabmy47ZOQz6ke7H9YIWjPweSNDcUsIaBiVOyM1XZuqMOSbammxJutoBCiCc9ZCtuyINxVbH7qXJzlj0MAlUPVoj7cHpXMn8cmOz/xCOVxVbH7qXJzlj0MQS78QargJWFWTZzEjOUplCZpLtUQpx8qdGagVNqQnIZbPY+WAuPSkGWBdyZE75Xs/8y1CBp9sPDDKWrinW8bq7LYfXXK02UotW1i+9TW1tzCeBSXk6qlrWkZqbSDmk7Cdx2xYB0VrISMxU7k2bfxlj0MBYeBPJBaXi9v/ABieQnNexuuTDCsTdlUCSpExSqG4ZKWdnWXFvLQncVlLiUk7ewkD3o8HGqvjuXbfNn/TQDqK3fKPpjLquflmf+MOfWMXidKm+D/su2+bv+mihZp9UzMuvuABbqyshO7MnPZANXoOfiV3/Cyv1XoaSFb0HPxK7/hZX6r0MfdlRepFr1epSyW1Pycm9MNpcBKSpDalAHIg5ZjtwHVhItMjlYY8WMfXdj0caq+O5dt82f8ATROLMsynaQ1JVeN6vTclU23VU8NUlaWmeDbAUDk4lw62biszrZbBsgFJEfQdo3eSHT4qtj91Lk5yx6GPvFVsfupcnOWPQwE10cRlgta2Qy+91dKuIZpoclUj43Z6J6Lhsq2pO0LYkKFTXJh2UkkFttcwoKWQVFW0gAb1HsCOZidYNLxGt9qj1t+dYlmphMyFSi0pXrJSpIBKkqGWSz2O1AZtDfGnFke42hfEJfokxTZ0VrHH+1Lk5yx6GKwntI+77bnX6JI06guSlNcVJsqeYeK1IaJQkqIdAJySM8gNvYEA50cq7PcxV/ib3RqiqNG/FauYmquEV6Vpsv6niX4LqJtaNbhOEz1tZas/aDLLLsxa92e5ir/E3ujVAZgq3/IIdTQq5K6p45d6BiErVv8AkEWfhhjXceHFAfpFDk6Q/LPTKppSpxpxawtSUJIBS4kZZIHY7cBoJBCVcaq+O5dt82f9NBxqr47l23zZ/wBNAOrBCVcaq+O5dt82f9NFj4C443LiDfPqNWpKjsyvUrr+tKMuJXrJKctqnFDLaexAMcYzRxN5R7q8azfTLjS4xmjibyj3V41m+mXAX1oP/lW7PgJb6zkNpGc+FeKFaw0fqD1ClqdMKnkIQ51Y2tYAQVEauqtP9I784smT0pb2em2WlUy3Ala0pOUu9nkTl+egHPgIz7flj4k5j5YX/SHxnuLDi6qfTKHJ0l9iYkhMLVONOLUFcItOQKVpGWSR2ICycbdmEd3ZE/kx7s/8MZyq9sfDDF0PHK5sSqvJ2ZXZKjsUuuupkJl2TZcQ8htw5EoKnFJCu1mkj3osgaK1kKGZqdybdv4yx6GAk2ivyH0D9eZ/iHItmFAurFGt4H1yYsC05anTdGpgStl6pNrcfUXUh5WspC0JOSnCBkkbMt++OTxqr47l23zZ/wBNAOqdxjNjFs5Yq3jkB+WJvsf1y4tLjVXx3Ltvmz/popG46s/X7gqdYnENImahMuTTqWgQhKlqKiEgknLM7MyYDn5n3vJBmfe8kW3o7YbUfEmt1aTrsxUGGpSWQ8gybiEEkr1duslWzKL54qtj91Lk5yx6GAv+CCCAIQDSj5drm/sv8K1D/wAIBpR8u1zf2X+FagP60aLhpNs4mtVCvTzMjJJlHkF13PLWIGQ2Aw3PXqw876qd5V+bGeG6DM9swGpdNnZepU+VnpF1L0pMtJeZdTuWhQCkqHvEEGKL0srQr920i32bcpcxUHGJh5boZy9gChIBOZHaMWphXyY2h4nk+gREoIB35QGeTODGIaHm1G1KjkFA7kdv9aNDRuj5kntCPsAm2mx7uqF4tPTLhf6VT5qrVKVp9OZU/OTLiWWWk71rUcgBn78MBpse7qheLT0y4qfBnlZs/wAay3SCA6PWWxD71aj5EedB1lsQ+9Wo+RHnRockDVGwbo+6o7QgEpwXtGvYb4gSVy3vTJijUKWbdbenZnLUQpaClAORJ2qIG7swyZxpw8IP86qd5V+bHD0rQBgtVshl93lumTCGZntmAk+KE/K1TEe55+nvJfk5mpTDzLqNy0KcJBHhEWVoo3XQ7TuqszVxVJinsPSQbbW9nkpXCJOQyB7AijY+g5boDQ/r1Yed9VO8q/NixEkKAI3GMrQT2zGp7H4Fv9UfRARy7L8tm0ZiXYuOsS1PdmElbSXtb2QByJGQPZjk07F2xKlUJWRkblkHpuZdSyy0krzWtRASkex3kkCKA03DlcVs5foj3SCKRwpJ66NnbT+WZPp0QGlMKFpJ4b3fc+J8xUKFQZydkjKsIDzWrqlQScxtPYhvYMgewIBNNHvDG8rdxdoVUrVvzsnIMCY4R9zV1U6zDiRnkeySB8sOUrak+CDIDsCPsAj2LuFN8VnEy5ahTbbnpiSmJ1bjTqAnJaTuI9lFb3Xh7dVp09ueuKiTchKOOhlDroTkVkEhOwnbkkn5I0oyHaEL7pqgDDWj5D/a6OgegEvG2LBbwZxBcbQ4i1qgULAUkgI2g7f6UV8nf8hjUWhgeo0hsH4u39UQCz6O7icIZeuN4kH1vLqS2VSYnP8AThsLC9XVz3a6M8/6QizrqxUsmu2zVqTSbhkpqoz0o9Ky0u3razrrjakIQMxlmVED5YqfTh2TtoZbPuU19ZqF+w6JN/21tP5TlemRASHrLYh96lR8iPOhhcBrgpeFllOUHECcaoVYXOOTSZWbz1y0pKAlY1QRkShQ+SGKAHaEJHpkbMWGMtn8mMfXdgGZ69WHnfVTvKvzYOvVh531U7yr82M8Mz2zBme2YDQ/r1Yed9VO8q/Ng69WHnfVTvKvzYzwzPbMGZ7ZgNDzjTh4f96qd5V+bCh3DhNfNXr1RqNOtuemJKbmXZhh5GrquNrWVJUPZbiCDFWgntmNNrIANnUPMD8Ql+iTALho6jrQKuA4k/zeFUEv1F1Z/p+C4ThNXVz9rwiM8/6Qi17ixisCaoFSYZuinqdclnUISCvaSggD2vbiq9OXYiy8tm2d/wDBCqZntmAFb4+QQQHvolJnq5VZam0mWXNT0wrUaZRlms5Z5DPwGJr1lsQ+9Wo+RHnQaPnLLavxz/4KjQ5KRqjYN0Bnj1lsQ+9Wo+RHnRYmBVuVbC+9/XBf0i7Q6N1K7LdVzWWpwi9XVT7Ek5nVPkhy8k9oRR2mDkMJNmz+UJf6FwEu69OHnfVTvKvzYUq7sLb0uC66zWaNb85OUuoTr83KTLWrqPMuOKWhacyDkUqB+WKlzPbMaW4ZAHDi1cwPyVKdCiARXrLYh96tR8iPOj9pTBvECXmmXnbWqCW21pWo5I2AHM/50aE6o7QjzVMD1OmsgPwS/qmAggxpw8H+9VO39tfmxQukDSZ/Fm6afV8O5Vyv0yVkxKPTEplqoeDi1lB1sjnqrSflELYonPedwhy9Cnbh5Ws9v8qHoW4Cl8PcOLutG+KHcFxUKckKNTZtuam5p0J1GWknNSjkScgIapONOHgSB66qds99fmx7cbgBhHd2QH5Ne+rGcqidY7TvgLG0h63TbixarNTok23OSDyJcNvN56qtVhCTv7RBEQy2rfqlzVRFNoUk7Ozy0qWllrLWISMydpEcuLk0TOWWQ+KzPRmAj3WWxD71aj5EedB1lsQ+9Wo+RHnRofqjtCDJPaEApGj5IzOElaqs/iMyq35Oel0sSzs3udcC9YpGrn2NsXp16sPO+qneVfmxWGm1stS3Mtn385u+ChP8z2zAapwQQQBCAaUfLtc39l/hWof+EA0o+Xa5v7L/AArUB/Gjha9Hu7Elql3FJCdkVSrzhaLi0eySBkc0EH/vDYdYHDPvYRzyZ9JC06IfLAz8RmPoTD0QCJ3ZjBfVrXTWLfoNdVKUekzj0hJS4lmVhlhpZQ2jWUgqOSUgZkknLaSY5PX+xM7518zlvRxFsVOU67/HE5064i0BazGPmJa3m0m515FQB+85bt/Bw/w3RlhK/jLP64+mNT07vlgIdemGdpXtPsTtz0hM9MsN8C2svut6qMyrLJCwN5O+IJemE1k2ZaVYua2qGiSrdIlHJ2SmRMPOcE82kqQrVWspVkQDkoEdsRKMSMXbbw9qsrT6+J7h5hnh0dTscINXWKdp1htzBiA3Fjdal/UKoWjQ/VH1VrjC6fKcPLBDfCujVTrK1jkMyMzkcoCgDj9iYCR6517P+TlvRw3Wj5cVVurC6mVavzZnKg84+lbxQlGYS6pI2JAG4DsQsh0Zb9Jz/kfb/wA4fMho8DLVqNl4b0+iVngOrWHHlL4FeunJTilDI5DsEQEf0ruRarfDy3TJhCxvEaJ462pUr1w4nqJReA6tedZWnhl6ickuBR25HsCFdGjJfoI/I/PD5kBdeGmCeH1Zw9tqpVG3kPTs3TmH33Oq30661IBUcg4AMyewIkvWBwz72Ec8mfSRMcPKTM0GxLfpM/qdVyMgzLu8GrWTroQAcj2RmIkMBVvWAwz72Ec8mfSRaKQEpAG4bBH2CAiN7YcWre8zKzF0UpM89LIU20ovut6qScyMkKGe0dmILduEFjWpatZuKgUJMnWaRJPVCSmBMvrLL7TanG16qllJyUkHIgg5bQYlGJWK9u4eTslK3AJ3hJttTjfU7AcGSSAc/ZDLfEAruOto3rRKhatG9UvVSuS7lMlOGlghvhn0ltGsrWOSdZQzORyEAvnX+xM7518zlvRw2Wjlc9Yu3DViqXDOGcn1TLzZdLaEZpSoADJIA/7QtvFkv3/8Pzw+ZDN4BWfVLHw+Zo1c6n6sRMPOngHNdOqogjbkID9cfbgqlrYT1usUGaMpUZcscE8EJXq6z7aVbFAjaFEbR2YUBOP2JhUB6518zlvRw4+N9r1C8sMqxQqPwPV00WeD4Zeoj2DyFnM5HsJMKuNGS/QQf5H54fMgG0wlq09XcNrdqlVfMxPTUmh150pSnXUc8zkkAD5BHuvSzqDe1NZkLnkBPSjLwfQ2XVt5LCSnPNCgdyj722PPhfRJu28P6DR6lwfVklKIZd4NWsnWHaPZiUQFWKwBwzy9zCNuz8dmfSQrE/jriPJTr8rLXItDDDimm0dRy51UpOQG1vtAQ/Kto+WEmqOjVfczUJl9HqQEuOrWM5w7ion+hATPAppGOLNYexSHq85SVNIkio9T8CHQsr/A6mtmW0e2zyy2ZZmLdp+BmHVPn5adk7cQ3MyzqHmlibmDqrSoKSci5kdoG+Khw0eTo6N1BnEL29cLbkp6nffGxkKC9bPVy/Cpy357e1Fg0nSNsiqVWSp8qKt1RNvoYb1pQAay1BIzOtsGZgLnhItMjlYY8WMfXdh3YSLTI5WGPFjH13YCiI+jfHasu2p677lkqHSeB6tm1KS3wy9ROaUlRzOR7CTFrjRkv3P/AGPzw+ZAWzgrg5Ydx4X0Cq1mgImahMsKW86Zp9OseEUNyVgDYBuERjSewvs+y8PpSo21RkyM6uotMKdEw85mgtukjJayN6R2OxF/4QW9PWphxRKLVeC6tk2VId4JesnMrUrYchnsIiO6Rlj1e/7HlaTQOpuqm59uZV1Q7wadRLbiTkcjtzWNnhgM/wAb404sj3G0L4hL9EmE44sl+juPzw+ZDoWzJu063aZJzOrw0vKtMr1TmNZKADke1mIDkXxYFs3z1F66aYmf6j1+Azecb1NfV1vaKGeeqnf2og1w4E4cSlBqMxL20hLzUs64hXVkwclBBIO1ztiJVibidQcOfU31w9Wff/CcD1OzwntNXWz2jL24/wC8V9P6RFk1qSfpcn6q9UzrapZrXlQE66wUpzOtsGZEAkp3w0Oi9hhZ962BP1G5qOmenWqm5LocMw63k2GmlAZIWBvUrsZ7Yh50ZL9z30ftfjh8yGN0cbFq+H1jztKr/U3VT1Rcmk9TucInULbSRtyG3NBgOnQMGbCt+sylVpFATLT8qvhGXRNPq1VZEZ5KWQd53iLC3CCCATzHfGC+rYxXr1HodeVK06WUyGmRLMr1dZltR2qQSdqidp7Mfng3dVZxhu71sYjTprVD6ncm+pVNoY+6oKdVWs0EK2aytmeRz2iIJpPcuVz/AK0v/DNR39D3lb/6c/8ASiAZHrAYZ97COeTPpIsmmSMtS6dKyEi3wUpKtIYZbzJ1UJSEpGZ2nIAb49MEBQ2lVfdyWRIW85a9TVILmnX0vEMtua4SlBHt0nLLM7u3C9yuPGJEzMtMPXKtTTqghaeo5faknIj8H2jDJaS2G1exEk6C1b3UmtJuvLd6oe4PYpKAMthz9qYotnRsvqUeRMOepGoyoOKynDuG0/5vvQDGJwBwzy9zCNmz8dmfSRMrKsyg2TT35G2JASMq+7w7iA645mvVCc81qJGxIirhpN2EB/tjt/iY8+LFw3v6j4hUmZqNAE11PLv9Tr6oa4M62qlWwZnZkoQHlxv5I7u8WvfVjONXtj4Y0cxv5I7u8WvfVjONXtj4YD5Fy6JnLLIfFZnozHOsjAy7bytmUrtH9TeoZkrDfDTJQv2Cyg5jVOW1Ji4MCMErssjESUrVZ9Tuom2Hm1cDMlas1IyGzVHZgGgO6EfxFxtxCpGIFzU2n3EtmSlKnMsMN9SS6tRCXVJSnMtknIADbth4DuMZsYucqt4+OJvplwF44H1Gaxtq1RpuJ7vq7JU5hMzKtKSJfg3FK1SrNkIJ2dgkiLk6wOGfewjnkz6SKQ0JPdXcfxFvpIcGAIIIIAhANKPl2ub+y/wrUP8AwgGlHy7XN/Zf4VqA6+iHywM/EZj6Ew9EIvoh8sDPxGY+hMPRAZqYqcp13+OJzp1xFolOKnKdd/jic6dcXDoc0SlVutXI3WaZI1BDcsypCZuXQ8EErVmRrA5QC9S34y1+uPpjU4boi79h2ihhxSbWoIUlJIPqczsOX6sZ9G/rvz91Vf8AnF7zoC5dNj3dULxaemXFT4M8rNn+NZbpBDH6K8pL3raVWm7xYZr82xPcCy/VUCbW2jg0q1Eqc1iE5knIbMyYsbE+1LeouHVy1OkUKkyFRlKe+/LTUrJtNOsuJQSlaFpSClQO0EHMQFlp9qPBH2M0Tft3gkC6q984vedDt6M1Qnapg/SZupzkzOTS3ZgKemHVOLUA8oDNSiSchsgLTggj4r2p8EB9gjPvFe9LoksTrrlpS5K2xLtVSZQ203PupShIcVkAArIAdqIr6/rv76q/84vedAaXQRmj6/bv76q/84vedGlbJzZQTv1R9EAo2m57o7Z+KPdIIpHCjlSs7xzJ9OiNFazblErbrTlZo9OqDjSSlCpqVbdKATmQCoHIbIh2IloW3SsP7mqFMt+kSc/KUuamJeZl5Jpt1lxDSlJWhaUgpUCAQQQQRmICxoIzR9f1399Vf+cXvOh0NFmpT1Wwpl5qqTs1OzJm30l2ZeU6sgKGQ1lEnKAt6CKy0k6hOUvBi4JymzcxJzbZltR6XcU2tOcw2DkpJBGYJHywj3r+u/vqr/zi950BpdBGaPr+u/vqr/zi950Hr+u/vqr/AM4vedAaXQRmj6/rv76q/wDOL3nQev67++qv/OL3nQF/acX47aHwU39ZqF9w6939teM5XpkQxuichN7y1yrvNIuBcouXTLqqo6rLIUHCoI4TW1cylOeWWeQ7UXLe9m2zT7Nrs5IW7Rpabl5CYeZfZkWkONLS2pSVpUEgpUCAQRtBEBYAhItMnlYY8WMfXdirjf1399Vf+cXvOhrNGKmSF4YdvVK7ZKWrtRE+6yJqptJmnQ2lLZSjXcBOqNZWQzy2ntwC+aNHLda/wrvQORoKN0cKn2fbVNnWpun2/R5WaaJLbzEi02tBIIOSgkEbCR8sd2AIIIIAggO6M6Lwvi62LsrTTNz1xtpE6+lKE1B4BIDigABrbBAXdpze0srwzv8A4IWq1PdPSPjjPSJhk9Ewm+FXSLz/AJwCTEqZb1W+++A1+G19ThNbV1tVOeWWeqM9wi9bjsm1ZWgVKYlraojL7Us64243T2UqQoIJCgQnMEEAgjtQE1Tu+Ux9jNJV/Xfn7qq+Sdv5Se86Pnr+u/vqr/zi950BpdBGaPr+u/vqr/zi950Hr+u/vqr/AM4vedAS3Se5crn/AFpf+GajvaHvK3/05/6URS9Sn5ypzrk5Upp+bm3ctd59xTi1ZAAZqUSTsAHyRdGh7yt/9Of+lEA8cEBjPLES9rqlb/uViWuWttMNVOaQhtFQeSlCQ8oAABWQAHYgNDY81T206ay/NL+qYza9f1399Vf+cXvOj4q/LuUkpVdNeIIyINRe2j9qAjat/wAghzdCnk8rXjQ9C1CYx16Pc1dosutij1qpyDC1a6m5WbcaSpWWWZCSATkAM4DQbG7bhHd3i176sZxq9sfDHfnL0uidlXpacuOtTEs8kocadn3VoWk7wQVZEe8Yj8A/eixyH0D9eZ/iHItmMx6bd1x0uSbk6ZX6vJyjeZQzLzrraE5nM5JSoAZkkx6vX9d/fVX/AJxe86A0uO6M2MXOVW8fHE30y4/D1+3f31V/5xe86Hmw3tK3Kvh7bNRqtApE7UJumSz8xNTMk04684ppJUta1JJUokkkk5knMwFDaEnuruP4i30kODCz6VUuzZVvUSZs5lugTExNLaedpSRKLdQEZhKi3qlQB25HswtPr+u/vqr/AM4vedAaXQQQQBC8Yr6PE1fN/wBUuNq4ZeTRO8FkwuUUsp1GkN7wsZ56me7sww8fg7OSzSyh2YZQsb0qWARAUVg5gJNYe3o3XHq8xPISw4zwKJVTZOsBtzKj2ovyPN6oSf6Ux+8T9sHqhJ/pTH7xP2wC03Zowzldums1dNzyzKZ+demw2ZNSigOOKVq56+3LPLOJ5gTg7MYY1GqzL9YZqCZ1ptsJRLlvU1VE57VHPfFteqEn+lMfvE/bB6oSf6Ux+8T9sB+7yOEaWgHLWSRnCm8Uye77JXmKvPhq/VCT/SmP3iftg9UJP9KY/eJ+2Ar7AzDV7DOg1CnTFSbqBmprqgLQyWwkagTlkSe1EvveiKuSz6zRW30y66hKOywdUnWCCtJGeXZ3x0vVCT/SmP3iftg9UJP9KY/eJ+2AVQ6Jk8Tn67JXmKvPhgsI7OcsOxpK33pxE6uXW6svIbKArXWVbiTuzy3xKfVCT/SmP3iftj92nUOoC2lpWg9lJzEBFMU7zRYNmzVfdklzqGHG0FlDgbJ11hOeZB3Z9qKM42cidnrTmtv/ADyfMiwdK7kWq3w8t0yYQtPthANE9o/zWIrq70ZuCXkW7gJqiZVUqpwsB72YQVBQ1iNbLPIZ5bo/jimT3fZK8xV58X5hBOyreFVoJXMsJUKTLAguDMfc0+/EzZmWH1FLLzbhG0hCwcvJAKhxTJ7vsleYq8+GybTqoSnfkAI/qCAI5N30lVftOtUdDoZVUJJ+UDpTrBBcbUjWy7OWeeUdF6ZYYIDzzbZO4LUBn5Y/hM9KrUEpmWConIAOAknywCp8Uye77JXmKvPj3SmIjWj40LFnKe5XHWT1X1Yy6JdJ4X2WrqEKOzLfnDTQjWlnLPvYwTRaYdWOo5falBI9qYCwJrFhjHRhWHcrSXaO9WMimedfDyWuBPDnNASknMNFO8ZZ59iPBxTJ7vsleYq8+K60Y2HpXG63XZlpxlpImc1uJKUj72d3kw+HqhJ/pTH7xP2wCqcUye77JXmKvPg4pk932SvMVefDV+qEn+lMfvE/bH9szTD6ill5pxQGeSVgnL5IBUeKZPd9krzFXnwcUye77JXmKvPhtIIBVZF7iv67E+PXF64MnElj724DgNhB1tbWz4X3stX349DukhK3i2q2mrcmJVysg05MwubStLRe+5hZSEAkDXzyzGeUeXTcYdfnrRDLTjmTU1nqJJy9k12ooHD2SmkX7balyz6UipyuZLZyH3ZHvQF7cUye77JXmKvPj2yd7N6OLRsudkl15x0+qIm2HBLgBz2OpqqCto4LPPPsw04hItMjlYY8WMfXdgJ7xs5LvTmufJ8yDjZyXenNc+T5kKc22t1YQ2lS1nclIzJj9+oJz9Ff/dq+yAarjZyXenNc+T5kHGzku9Oa58nzIVXqCc/RX/3avsj83pV9lOs8w62nPLNSCBn8sA13Gzkezac1z5PmQrVenk1Ot1CfQ2W0zUw4+EE5lIUsqyz7O+PBHpEjNkAiWfIO0ENn7IC0cBcWWMLjXDMUl2o+qIYy4N8NcHwfCb80nPPX/wC0WyvSdk68g0hFsTLKp8dShxU6khBc9hrEam3LWzyhVuoJz9Ff/dq+yOna8lNIuWkqXLPJSJtnMlsgD7on3oBg+KZOn/eyVPY/EVefBxTJ7vsleYq8+GqE/KDMGaYzzP8ApE/bH7svNvpKmXEOJByzSoEZ/JAJffujfNWjZ9VrztyS8ymRZ4Uspk1JK9oGWeuct/ahfzsMaIaQSVLwcupKElSjJ7ABmfbpjPhUhOZn71mP3avsgLvw10d5q97JplxNXDLyiJ0OEMLlFLKNVxSN4WM/a57uzEuk7Dc0dnfXtOzyK61l1B1Iy0ZdWbu3X1yVDZqbsuzFraNMwzLYJ201MuttOpS/mhxQSoffDvYMR/S9mWHsJcmXmln1QY2JWCdy+1ARbjaSPenNc+T5kLBdVUTW7mq9VbaUyienHpoNqVrFAWtSsichnlnlnlHKggLMwVwqexPmaqyxVWqcZBDayVsF3X1yodhQyy1f+8WpxTJ7vsleYq8+DQf/ACrdnwEt9ZyG0JyG2AUvimT3fZK8xV58HFMnu+yV5irz4av1Qk/0pj94n7Y/Vl5p9JUy4hwA5EpUD9EAm156NE3bFqVatuXLLTCZCWXMFpMmpJXqjPLPXOXkheSMiRGjmN/JHd3i176sZxq9sfDAXthjo9TV92VIXCzcMvJomy4AwqVUsp1HFI3hQzz1c93ZiU8Uye77JXmKvPi1NF2bl2cEaAl19lCteZ2KWAfxhyLZam5d1eo0+0tR7CVgmAVLimT3fZK8xV58dJnSElcPmkWa9b0xOuW8BSVTSZtKA+WPuZWE6h1QrVzyzOWe+GiO4xnBizJTS8U7wUiWfUk1ibIIbOR+7K96AvadrCdJpKaLIsm3lUg9WF19XVIdCvYaoCdXLLfntjycUye77JXmKvPjz6FUu8zddxcM043nJN+2SR/pPfhvIAggggCEB0ozljrc27/Vex/yrUP9CAaUfLtc39l/hWoCq9Y+95INY+95IsHAyyZC/wC+m6JVZial5ZUu69ryxSF5pAy9sCMtvahjOKnaXdqu/tM+jgEy1j73kg1j73khzeKnaXdqu/tM+jg4qdpd2q7+0z6OATLWPveSDWPveSHN4qdpd2q7+0z6ODip2l3arv7TPo4BMtY+95INY+95Ic3ip2l3arv7TPo44N+6NtsW7ZNdrMrVqy5MSEk7MtocU1qqUhJIByQDls7BgFQ1j73kh9tFPkUo3w0z0y4QkjIkQ+2inyKUb4aZ6ZcB/OldyLVb4eW6ZMIVGl2I1nSd92rM0GpTExLyz621qclynXBQoKGWsCN47UU8dFS0gCfVqu/tM+jgEzzPveSGN0J9t7V85DP1OT2P61MUfftHYt69q9RpRxxyXkJ56WbW7lrqShZSCcgBns7Ai8NCf3a1/wAXp6VMA40EEEAoem5suO2TkM+pHux/WCKSwpJ66NnbvyzJ9j+vRF26bnuitn4o90gikcKOVKzvHMn06IDSqPhAPb8sfYXDG/Ha4LBvx6iUym0qYlUS7ToXMBzXzUCT7VYGXyQE40pBlgZcmWe+V7P/ADLUIHrH3vJDL27ipVsb6wxh9cclISNKq+sXpiQCw8jgUl9OrrqUnapoA5g7CezE1OipaQBPq1Xf2mfRwCZ6x97yQwWhVtxLq5IGfqQvsf17MVDiTQZa177rlEkXHnZaRmlsNreIK1Adk5ADPwARb2hTylVjxQvp2YB0YI+KOQhOqhpS3ZLT8ywmjUMpadWgEpezyCiPzkA4xGfb8sfNUe/5YTLjWXb3FoX7L3pI6lraTV01e5qRTXqRRENTk4zLrUhL2sErcSkkZr35GAbqEi0yOVhjxYx9d2HdEJFpkcrDHixj67sBF9Gc5Y3Wxkcvur3QORoIEjLs+UxmZYV0TVl3ZT6/T2GH5qSUpSG3wrUUVIUjbkQdyj2YubjV3b3FoX7L3pIBzdUe/wCUxQmmeMsKpHf+V2ez/VPRVvGsu3uLQv2XvSR2rUu6c0jKkuz7sYl6ZT5Zo1NL1MCg6pxshsJPCFQ1cnlHdnmBt3wCwDfGnFkjOzqGST+IS/Z/qkxSnFTtPu1Xf2mfRxfdIkUUylyci0pa25ZlDKVLyzISkJBOXZ2QHq1R7/lMcq6xlbFX3/ib3Z/q1R1o5V2e5ir/ABN7o1QGYROXa3dqHU0K+SyqeOXegYhKlb/kEOpoVcldU8cu9AxAX+RnHzVHv+Ux9ggM/tJ0nr5XP2fZS+/b/qzUVaTn2vJFo6T3Llc/60v/AAzUePAixqfiDfBotWmZqXl+pXX9eWKQvWTq5D2QIy29qArmCHO4qdpdmtV39pn0cKRd9Maot11qlyy1uMSU6/LNrcy1lJQ4pIJy2Z5CAYnQf/Kt2fAS31nIauqfk2a+CX9Uwqmg/wDlW7PgJb6zkNhMNB9hxpRIC0lJI37RlAZYk5Hsbh2IczQp5Pa140PQtwcVS0+7Vd/aZ9HFo4VYd07DaizdMpM3OTTMxMdUqVNFJUFaqU5DVAGWSRAfzjfyR3d4te+rGcavbHwxo5jfyR3d4te+rGcavbHwwADl2vJFyaJu3GWQzA/FZnsf1ZiZ4NYAW9fGHdMuCo1OrMTU0p4LbYLQQNR1SBlrIJ3JHZi3cOcBaBYd0s12mVOqzEy0242G5gt6hC05HPVQD/3gLfj5qj3/ACx9ggADLt+WCCCAIIIIAhANKPl2ub+y/wAK1D/wgGlHy7XN/Zf4VqA6+iHywM/EZj6Ew9EIvoh8sDPxGY+hMPRAQ6exOsmRnZiUnLppDMzLuKadaXMpCkLScikjsEEER+PXZsLvuovOkwhmKaiMTrvyJ/LE5064i2srtnywGjnXZsLvuovOkwddmwu+6i86TGcesrtnywayu2fLAaeW3ctFuaWdmLfqcpUWGl8Gtcs4FhKss8iR2cjHExm5Jrw8VTPRmKm0KDnY1dz7pDoURbOM3JNeHiqZ6MwGbyvbHww+2inyKUb4aZ6ZcISr2x8MPtop8ilG+GmemXAWbXa1TaBTnJ+tTrEjJIKUqefWEoBJyGZ98xFzixYRB/ndRedJiMaV3ItVvh5bpkwhesrtnywEoxUnJaoYlXTOSL7cxKTFTmHWnW1ayVpLhIUD2QRFnaJNyUW2rsrcxX6pKU5hyRShC5lwIClcKk5DPecoomAEjccoDRzrs2F33UXnSYOuzYXfdRedJjOPWV2z5YNZXbPlgL/0ubnolzVy33rfqsnUW2ZZ1LipZ0LCCVggHLdFU4UcqVneOZPp0RFiSd5ziU4UcqVneOZPp0QGlUJ1pNWHdVwYpzE7RLfqc9JmUYSHmGCtBIScxmO1Dix8KQd4EAj2CFp1+xsTqPcN4Uido1Dkw/1RPTrRaZa12VoTrKOwZqUlI98iGqVixYRSR67qLu/SkxwNKQAYGXGQADnK/wAS1CCpUrWG07+3AW7ihY10XTiDX63btBqNSpE9NrflZyWYK2nmzuUlQ2EHtxMNG+lT+Gt5VCrX9KP29TH5BUq1NVFPAtrdLjaggE71FKFnLtJMMPgSAcILSzAP8nt/4xXOmqNXDWj5bP5XRu+AegLLOK9hHIeu6ibx/rSYzvq60u1WcW2oKQp5akqG4gqORjy6yu2fLH8wHdtq0bgudEwq3qPPVJMuUh0yzRXqFWeWeW7PI+SJjaOHN40a6qNU6rbVVlKfJzrExMzD0upKGWkOJUtaj2AACSe0IuLQdAMld+Yz+6yv1XoYHEVIFgXKQAD6mTXQrgOX12LCH+91F50mFp0h6LUsRr8brNiSMxcFKRJNS6punILzYdSpZUgqGzMBSTl74hetY9sw7ehuAcJ3sxn/ACm/v/UagFa609/d6Na5qqDrT393o1rmqo0b1U/0R5INVP8ARHkgM5OtPf3ejWuaqi59FGx7ntvEicnK9QajT5VVMdaS7MMFCSsuNEJzPZyB8kNpqp/ojyQBIG4AQH2IZMYpWNLTDrD910dt5pRQtCplIKVA5EH5Ymat3yxmPeyj68a7tP4/MdKqA0ctm7aBdBmRb1Xkql1Nq8N1M6F8HrZ6ueW7PVPkj97s9zFX+JvdGqFp0GiS5emZz2SX/nhlrs9zFX+JvdGqAzBVv+QQ2Wibe9sW1hzUJOv12nU+aXVXHUtTLwQooLLICsj2M0kfJCmq3/IIASNxIgNHOuzYXfdRedJg67Nhd91F50mM49ZXbPlg1lds+WAsXSFqshW8YLhqFInGJ2ReUwW32FayF5MNg5H3iCPkiV6HvK3/ANOf+lEUedu+Lw0PeVv/AKc/9KIB4zGaOJvKPdXjWb6ZcaXGM0cTeUe6vGs30y4C4dEO6aFbNQuVy4atJU1L7LAaMy6Ea5Cl55Z78sx5YZbrs2F33UXnSYzjBI3HKDWV2z5YDRzrs2F33UXnSYOuzYXfdRedJjOPWV2z5YNZXbPlgHuxcxJsuqYZXPJU+56TMTb9PdbaZbmUqUtRTsAHZMIir2x8MGse2Y+QDp6OeINo0HCCi0+sXHS5KeaXMFxh98JWnN9ZGYPbBB+WLK67Nhd91F50mM4wSNxMGsrtnywGjnXZsLvuovOkwddmwu+6i86TGcesrtnywayu2fLAaOddmwu+6i86TB12bC77qLzpMZx6yu2fLBrK7Z8sBqnBBBAEIBpR8u1zf2X+Fah/4QDSj5drm/sv8K1AdfRD5YGfiMx9CYeiEX0Q+WBn4jMfQmHogM1MVOU67/HE5064i0SnFTlOu/xxOdOuItAEEEEA5OhP7hq74yHQoi2cZuSa8PFUz0ZiptCf3DV3xkOhRFs4zck14eKpnozAZvK9sfDD7aKfIpRvhpnplwhKvbHww+2inyKUb4aZ6ZcB/OldyLVb4eW6ZMIWN4h9NK7kWq3w8t0yYQtPth4YB18N8DMP61h9bdTqNEcdnZynsPvuCdfTrLUgFRyCwBtO4RXWlBhjadjWvSJu2aYuUmH5wtOLMy67rJ4MnLJaiBtAhkcHOSez/FMr0aYqLTZ9xVA8Yq6JUAnIh+GtHrDVTaFGgO5kA/j8x58IOIe1vSOw8S2lPV89sAH4i5Ae3i84adwHefzHnx66RgTh7SKrJVKQojjc5JvomGVmdfVqrQoKScivI5EDYY5PGQw8/T57mLkeyi4/WJWKxI0yRnZxU3OvtyzKVSa0grWoJSCextI2wFsQqOkRi5elnYkv0q3qsiWkEyzLgaMoy5kpQJJzUkn/ALw10KzpA4O3femIz9WoUpKuSKpZlsKcmkNnWSCDsO2ApS68ZL4uugTVFrtXbmadM6nCtCUZQVaqgseySgEbUjcYr0bDnFlXhgpeVo25N1utSko3T5XU4RTc0hahrLCBkBtO1QitQMzlAWTQcb7+oFGk6VSqy2zIyjYaZbMkwrVSNwzKCT8sWdgzX6jjhcc5b2Jj4q9JlJQz7LKG0yxQ+FobCtZoJUfYuLGROW3dsEV3buBF8XBQ5GrU2Tk1yU40HmVKnEJJSd2YO6LGwot6oYDV6auTERtuUpU7LGnsrlnBMKLylpcA1U7ctVpe33h24C4eLzhp3Ad5/MefBxecNO4DvP5jz48fGQw8yP3/AD3MXIuGWeRMS7TzRJQ4kLTmMthGYgFWxsdXgQ/SGsLz6jt1dDq50L++uFLRQEH7trauQcXuyzz27hEBt/Gu/Llr1OodYrKH6ZUplqSmmkybCC4y4sIWkKSgEZpURmCCM9kXdpQYa3HiBNW8u25dh5MmiYS8XX0t5FRbyyz3+1MVJZ+j9ftLuyiz81IyQl5WeYecKZ1skJS4lRIHZ2AwF/8AF5w0P+wHOfzHnxSuL90VfBW60WzhxNClURyWbnVS620zJ4ZZUlStZ0KVtCE7M8tm7fDhiFi0jcIrsvm/26pb8rLOyaZFpgqcmUNnXSpZIyO3/OEBUPGGxL7vtcwl/Mg4w2Jfd9rmEv5kezi4Yh/oEjz5uDi4Yh/oEjz5uA8fGGxL7vtcwl/Mg4w2Jfd9rmEv5kezi4Yh/oEjz5uDi4Yh/oEjz5uA8fGFxLP+32x7/UEv5kMrRcDsP67SJGrVOiOOz88w3NTDgnX0hbi0hS1ZBeQzUSchs7ULtxcMRP0CR5839sMBScebGoFLk6RUZ2cROyDKJR9KJNakhxtIQoAjYRmk7YCC43DrDJoxwu/kc1ovCe1/vrheB1OD/Da2rlwrm7LPPbuEVvS8dcQqvUpSnT9cbclJt5Eu8gSTCSpC1BKhmEZjMEjMbYsjF48YIUoYbffhoZdM71V97avDanB5a/ts+BXnluyHbiA03AG+6PUJapTsjJJlZN1Ew8UziFEIQoKUQOzsB2QDHcXrDQ5n1AcG3d1fMefBxecNO4DvP5jz48Y0j8PB/r89zFyLAsC9qNflGeqluvOuyjT6pZSnWi2dcJSojI+8sbYCF8XnDTuA7z+Y8+Di84adwHefzHnxbMEBU3F5w07gO8/mPPju2ZhLZtmVn1Ut2lLlZ7g1M8IZp1z2KssxkpRHYEc+7sbbMtO4pyiVmbm25+UKQ6lEqtYGshKxkRsOxQj0WNjDaV7Vz1JoE1NOznBKe1XJZbY1U5Z7T4RAWJFYVTAfDyqVObn52iOOTU08t95fVr6dZa1FSjkF5DaTuiz4qWraQNh0qqzlPnJ2dTMyj65d0Jk1kBaFFKsj2doMBRelNhza9iU+3nLXpypNc08+l4qmHHdYJSgj26jlvO7txQEi2l2dl21jNCnEpI94kQ0+Lkw3j/LU2Ww3JnHaOtx2bE0OptVLgSEZa/ttqFbt0VzL6O+IMq+3MOyEiG2lBxX363uBzP0QDJ8XrDQ5n1AcG07Or5jz4WjSfsug2PeNLkLZklScq9IB5xBeW7rL4Vac81knckbPehixpH4eD/X57t/iLkVZixQZ7HmtylwYdIRN0yRl+oH1zKxLqDwWpzLVVtI1XE7fsgKNwspUlXMRbcpdUZ4eRm55pl5vXKdZBVtGaSCPkMOgnR5w0KQfUB3n8x58UBaWD13WDc1Muy45WVZo1GmETs443NIcUlpBzUQkbScuwIvQaR+HgAHV89s/5FyA9nF5w07gO8/mPPg4vOGncB3n8x58eTjIYefp89zFyDjIYefp89zFyA9fF5w07gO8/mPPg4vOGncB3n8x58eTjIYefp89zFyLXodTlq3RZCqSClKlJ1hEyypSdUlC0hSSR2NhEAo+lFhpaljW9RZm2KaqTfmJpbbqlTLruskIzAyWogbe1C4Q9mk3YNev2hUaVtxhl52Wmluuh15LYCSjIb9+2F44uGIf6BI8+bgHvggggCEA0o+Xa5v7L/CtQ/8ACAaUfLtc39l/hWoDr6IfLAz8RmPoTD0Qi+iHywM/EZj6Ew9EBmpipynXf44nOnXEXyjSybw+s2cmnpqbtSgPzLy1OOuuU9pSlrJzKlEpzJJJJMfj1tbG7zrc+bWfNgM2coMo0m62tjd51ufNrPmwdbWxu863Pm1nzYCodCf3DV3xkOhRFs4zck14eKpnozEgoVApFvy7jFCpcjTWXFa625OXSylSsssyEgZnLsxH8ZuSa8PFUz0ZgM3le2Phh9tFPkUo3w0z0y4QlXtj4YfbRT5FKN8NM9MuA/nSu5Fqt8PLdMmELT7YeGH00ruRarfDy3TJhC0+2HhgNI8HOSez/FMr0aYqLTY9xVA8Yq6JUW7g5yT2f4plejTHdrtAo9wMNs12lSFSZbVroROS6HkpVllmAoHI5QGX+UfI0n621jjb6zrc+bWfNjNt4AOrA2AKMB/ESrCjlSs7xzJ9OiL60P7XoFwUG4XK7Q6ZUnGpppLapyVQ8UAoJIBUDkIYmUw+s2Sm2ZqTtSgsTLC0utOtU9pK21pOYUkhOYIIBBgJPBBBAVTpS8hdyeGV/iWoQJPth4Yf3Sl5C7k8Mr/EtQgMBoxgSf8AJBaXi9v/ABiuNNXk1o/jdHQPQqchft306SZk6fdNdlZRlIQ0yzPuoQhI7ASFZARdOjDUZ2/r3qVNvmbmLkpzNOVMNStXcM20h0OtpC0pczAVkpQzG3JRHZgFzTv+QxqJQyPUaQ+Lt/VEcA4bWOMj6zrc3j/ZrPmwh9UxEvSXqU2yxd1wNstvLQhCKi8EpSFEAAa2wCA0dzHbgzHbjNjrlXz343H85PedHdsPEK85u97fl5m7bgeYdqMshxtdReUlaS6kEEFW0EbMoDQqDOAQn2ldeFy0LE1mVolwVenSppzKyzKTjjSCoqczOqkgZ7Bt96AcHMQQjmj5fF11bGC3JKqXNW5yTdcdDjExPOuNryZcIzSVZHaAfkh4xugCCCKT0ta3VaDhrJTVDqU7TplVUabLso+ppZSW3SUkpIOWYGz3hAXWSMt/ZjMe9/djXfj8x0qo6XXJvg7PXjcfzk950PPa9g2fULbpU5P2rQpmbmJRl1596ntLW4tTaSpSlFOZJJJJO8mApTQZ9vengkv/ADwy12e5ir/E3ujVH80G2aFbxf8AUCjU6mcPq8L1HLIZ4TVzy1tUDPLM5Z9sx/V2e5ir/E3ujVAZgq3/ACCHU0KuSuqeOXegYhK1b/kEOpoVcldU8cu9AxAX/BBBAZ+6T3Llc/60v/DNR39D3lb/AOnP/SiOBpPcuVz/AK0v/DNRXlFrNToc51XRajOU+a1SjhpV5TS9U7xmkg5bBAai5jtxmjibyj3V41m+mXH79cq+e/G4/nJ7zoi81MPTc09Mzbzj8w8suOOuKKlLUTmVEnaSSSc4Bm9B/wDKt2fAS31nIauqfk2a+CX9Uwqmg/8AlW7PgJb6zkNmtKVpKVgKSRkQRmCIDK5W/wCQQ5mhTyeVrxoehbi2etrY3edbnzaz5sduhUGkUCWXL0KlyNNl3F8ItuUYSylSsgNYhIAJyAGfvQEaxv5I7u8WvfVjONXtj4Y0cxv5I7u8WvfVjONXtj4YAgyh2dG6ybVrODtEnatbVFnpxxcxrvzMi244rJ9YGalAk5AAfJFm9bWxu863Pm1nzYDNkDbGk2EZ/wAlVneJ5ToUwHDWxsvcdbnzaz5sJNiJe91UW/7lpdHuWtSFMkqlMS0rKSs6400w0hxSUNoQlQCUpSAAAMgBAaDZwQq+iDdNwXBc1eartcqlSaak21IROTa3koPCZZgKJyOUNRAEEEEAQgGlHy7XN/Zf4VqH/hANKPl2ub+y/wAK1AcjBO+JXD+9kVuelH5tlMu6zwbKglWagMjmdnYhg+NfQu9yp/vm4T6CAcHjX0Lvcqf75uDjX0Lvcqf75uE+ggHB419C73Kn++bg419C73Kn++bhPoIBweNfQu9yp/vm44d86StGuOza3RmaDUWXZ+TdlkOLebKUFaSATl2NsK1BAfScyTD7aKfIpRvhpnplwhEPvop8ilG+GmemXAfzpXci1W+HlumTCFp9sPDD6aV3ItVvh5bpkwhafbDwwGkeDnJPZ/imV6NMeHF/EmUw0pMjPz0hMTqJp8sBLC0pKSElWZz8Ee7Bzkns/wAUyvRpiotNn3FUDxirolQH48a+hdm3Kn++bhQHFazilDskmP5ggG80Ivc7c3xtno1Qw1zVZFBtuq1d5tTrVPlHZtTaCAVhtBUQM+ycoXnQi9ztzfG2ejVF3Yr8lt4+JpzoFwFLca+hd7lT/fNxcuFt7y+IFqt1yTlHpRpbzjQaeUFKzQcs8xsjNmHr0RuR6V+OTH1hAdPSl5C7k8Mr/EtQgMP9pS8hdyeGV/iWoQGAIsvAXEOUw2uqeqs/JTE63MSSpUIZUlJBLiFZ7ex7A+WK0ggHB411COWduVTLP883CjVB8TU/MPpBSl1xSwDvGZJ/xjzwQFm4O4ST+JzFVckKlKyXUCmkqD6FK19cKIy1f1IsuW0c6vZ8w1cszXJCZYo6xUXGW2lpW4lk8IUpJ2AkJIGcdjQc/Erv+FlfqvQwWI3uAuXxZNdCuAo7jX0Lvcqf75uODW7KmdIqcF50Oaao8q0gU4y84kuLKm81FQKNmR4QD5DCumHd0NuSd/xm/wDUagOBhVo81ey7/pFwTVbkJliSWtSmm2lhStZtaNhOz/OhlYIIAiuMd8P5vEiz5ajyE6xJutTqJouPIUoEJQ4nLZ2fZjyRY8EAn3FRrvfHTP3LkSpjSUo9ssN0N+hVB56mJEkt1DrYStTQ1CoA7QCU57YZdW75YzGvf3Y134/MdKqAe/BvFmRxPVVxIU2akvU4MlfDrSrX4TXyy1e1qHyxNbs9zFX+JvdGqFo0Gfb3p4JL/wA8MvdnuYq/xN7o1QGYKt/yCL4wHxupuG1nzdHnqTOTjr08ubDjLiEgBTbactvZ9gfLFDq3/II+QDg8a+hd7lT/AHzcHGvoXe5U/wB83CfQQEwxbuuXvbEGrXDJyzsqxOlopadUFKTqtIQcyNm9JPyx/WFViTOId0GiyU4xJu8At/hHkqUnJOWzIfrRDYvHQ95W/wDpz/0ogJFxUK73x0z9y5BxUK73x0z9y5DgwQCqUGVVoyrenK+oVtNdAZaTI/cy0Ws1Eq19+fCDLLtGO2xpV0R55ttNu1PNagkfdm+yco5+nB+S7T+HmfqtwqtM/KMr8Kj6wgNSgcxBHxO75T9MfYCEY38kd3eLXvqxnGr2x8MaOY38kd3eLXvqxnGr2x8MAx2EOkDSbGw/ptvzdFn5l+VU6VOtOoCVa7qljIHbuUBEy419C73Kn++bhPoIBweNfQj/ALuVP983EXnNH6q3/OP3jJ1qQlZW4FqqrUu604VtIfPCBCiNhICsiRszELON8aTYRclVneJ5ToUwFfYB4OVHDStVScn6pKTrc3LpZSlhtaSkhetmdaLugggCCCCAIIIIAggggCCCCAIIIIAggggCCCCAIIIIAggggCCCCAIIIIAggggCCCCAIIIIAggggCCCCAIIIIAggggCCCCAIIIIAggggCCCCAIIIIAggggCCCCAIIIIAggggCCCCAIIIIAggggCCCCAIIIID//Z"
+                                        style="width: 200px" />
+                                </div>
+                                <div class="text-center mb-3">
+                                    BUI HAI TRONG
+                                    <br />
+                                    Thời gian hoạt động:
+                                    <strong>
+                                        19h30 - 7h30
+                                    </strong>
+                                </div>
+                                <div class="table-responsive mb-3">
+                                    <table
+                                        class="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                                        <thead class="badge-primary text-white">
+                                            <tr>
+                                                <th class="text-white">
+                                                    Cược min
+                                                </th>
+                                                <th class="text-white">
+                                                    Cược max
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tablePhone">
+                                            <tr>
+                                                <td>
+                                                    5,000
+                                                </td>
+                                                <td>
+                                                    2,000,000
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="content h-100">
+                                <h3>
+                                    Lưu ý
+                                </h3>
+                                <div class="alert alert-warning">
+                                    <p class="card-text">
+                                        <strong>
+                                            Mã QR sẽ thay đổi
+                                        </strong>
+                                        vào lúc
+                                        <strong>
+                                            7h30 và 19h30
+                                        </strong>
+                                        hàng ngày, vì vậy hãy chú ý load lại web để lấy QR mới nhất.
+                                    </p>
+                                    <p>
+                                        Sau thời gian 1 - 2 phút nếu
+                                        <strong>
+                                            thắng
+                                        </strong>
+                                        mà bạn vẫn chưa nhận được tiền thưởng, vui lòng nhắn tin hỗ trợ, chúng tôi sẽ xử
+                                        lý gấp cho bạn.
+                                    </p>
+                                </div>
+                                <div class="table-responsive mb-3 hiddenmb">
+                                    <table
+                                        class="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                                        <thead class="badge-primary text-white">
+                                            <tr>
+                                                <th class="text-white">
+                                                    NH
+                                                </th>
+                                                <th class="text-white">
+                                                    Tài khoản
+                                                </th>
+                                                <th class="text-white">
+                                                    TÊN CTK
+                                                </th>
+                                                <th class="text-white">
+                                                    Cược min
+                                                </th>
+                                                <th class="text-white">
+                                                    Cược max
+                                                </th>
+                                                <th class="text-white">
+                                                    QR
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tableStatus">
+                                            <tr>
+                                                <td>
+                                                    TpBank
+                                                </td>
+                                                <td>
+                                                    ****8960
+                                                    <a class="copy-text" data-clipboard-text="000037808960">
+                                                        <i class="fas fa-clipboard"
+                                                            style="color: #626060; font-size: 21px;"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    BUI HAI TRONG
+                                                </td>
+                                                <td>
+                                                    5,000
+                                                </td>
+                                                <td>
+                                                    2,000,000
+                                                </td>
+                                                <td>
+                                                    <button class=" btn btn-primary qrc"
+                                                        data-content="00020101021238560010A0000007270126000697042201127879678978790208QRIBFTTA53037045405200005802VN62180814686868112233 C63044B00"
+                                                        data-type="MBBank">
+                                                        <svg class="bi bi-qr-code-scan" fill="currentColor" height="16"
+                                                            viewbox="0 0 16 16" width="16"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z">
+                                                            </path>
+                                                            <path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z">
+                                                            </path>
+                                                            <path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z">
+                                                            </path>
+                                                            <path
+                                                                d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z">
+                                                            </path>
+                                                            <path d="M12 9h2V8h-2v1Z">
+                                                            </path>
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="alert alert-warning hiddenmb" role="alert">
+                                    Nếu quá 5 phút chưa nhận được tiền vui lòng dán mã vào đây để kiểm tra.
+                                </div>
+                                <div class="text-center mb-3">
+                                    <a href="https://t.me/WolfHuntingMoneyBitcoin" target="_blank">
+                                        <button class="btn btn-info">
+                                            <i aria-hidden="true" class="fa fa-users">
+                                            </i>
+                                            Kênh Hỗ Trợ
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sections>
+
+                <sections id="history_win">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="content">
+                                <h3 class="text-center card-title">
+                                    <img src="./MBbank/history.png" style="width: 30px" />
+                                    <b>Lịch Sử Thắng Của Người Chơi Khác</b>
+                                </h3>
+                                <div class="table-responsive">
+                                    <table
+                                        class="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                                        <thead class="badge-primary text-white">
+                                            <tr>
+                                                <th class="text-white">Tài khoản</th>
+                                                <th class="text-white">Tiền cược</th>
+                                                <th class="text-white">Tiền nhận</th>
+                                                <th class="text-white">Trò chơi</th>
+                                                <th class="text-white">Đã chọn</th>
+                                                <th class="text-white">Kết quả</th>
+                                                <th class="text-white">Thời gian</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tableHistoryWin">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sections>
+
+                <sections id="mission_day">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="content">
+                                <h3 class="text-center card-title">
+                                    <img src="./MBbank/mission.png" style="width: 30px" />
+                                    <b>
+                                        Nhiệm Vụ Ngày
+                                    </b>
+                                    <img src="./MBbank/mission.png" style="width: 30px" />
+                                </h3>
+                                <div class="alert alert-warning">
+                                    <p>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    - Thật tuyệt vời ! Mỗi ngày chỉ cần chơi trên
+                                    <strong>
+                                        MBbank.game
+                                    </strong>
+                                    chắc chắn bạn sẽ nhận được tiền.
+                                    <br />
+                                    - Khi chơi đủ mốc tiền, tiền thưởng sẽ tự động chuyển vào tải khoản của bạn theo các
+                                    mốc như sau:
+                                </div>
+                                <div class="table-responsive mb-3">
+                                    <table
+                                        class="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                                        <thead class="badge-primary text-white">
+                                            <tr>
+                                                <th class="text-white">
+                                                    Mốc chơi
+                                                </th>
+                                                <th class="text-white">
+                                                    Thưởng
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    500,000
+                                                </td>
+                                                <td>
+                                                    <span class="text-success">
+                                                        + 5,555
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    1,000,000
+                                                </td>
+                                                <td>
+                                                    <span class="text-success">
+                                                        + 11,111
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    5,000,000
+                                                </td>
+                                                <td>
+                                                    <span class="text-success">
+                                                        + 55,555
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    10,000,000
+                                                </td>
+                                                <td>
+                                                    <span class="text-success">
+                                                        + 111,111
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    30,000,000
+                                                </td>
+                                                <td>
+                                                    <span class="text-success">
+                                                        + 333,333
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    50,000,000
+                                                </td>
+                                                <td>
+                                                    <span class="text-success">
+                                                        + 555,555
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    100,000,000
+                                                </td>
+                                                <td>
+                                                    <span class="text-success">
+                                                        + 1,111,111
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    200,000,000
+                                                </td>
+                                                <td>
+                                                    <span class="text-success">
+                                                        + 2,222,222
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    500,000,000
+                                                </td>
+                                                <td>
+                                                    <span class="text-success">
+                                                        + 5,555,555
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sections>
+                <section id="top_tuan">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="content">
+                                <h3 class="text-center card-title">
+                                    <img src="./MBbank/cup.png" style="width: 30px" />
+                                    <b>Đua Top Đại Gia Tuần</b>
+                                    <img src="./MBbank/cup.png" style="width: 30px" />
+                                </h3>
+                                <div class="table-responsive mb-3">
+                                    <table
+                                        class="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                                        <thead class="badge-primary text-white">
+                                            <tr>
+                                                <th class="text-white">#</th>
+                                                <th class="text-white">Username</th>
+                                                <th class="text-white">Tiền thắng</th>
+                                                <th class="text-white">Phần thưởng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="topWinnersBody">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                </section>
+                <div class="alert alert-secondary text-center">
+                    Đua TOP bắt đầu từ 0h00 Thứ 2 đầu tuần và chốt lúc 23h59 Chủ Nhật cuối tuần.
+                </div>
+        </div>
+    </div>
+    </div>
+    </sections>
+    <div class="mainbar">
+    </div>
+    </main>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-md-12 col-sm-12 mt-3 mt-lg-0 text-center">
+                    <b>
+                        MBbank.game
+                    </b>
+                    ©
+                    <script>
+                        document.write((new Date).getFullYear())
+                    </script>
+                    <script>
+                        document.write((new Date).getFullYear() + 2)
+                    </script>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="" id="back-to-top" style="display: inline;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <script>
+        let iconNotify = '<img src="../themes/images/logo.png" alt="" srcset="" width="30">', isAuthenticated = "true", numberAccount = "686868112233"
+    </script>
+    <script src="./MBbank/simple-notify.min.js">
+    </script>
+    <script src="./MBbank/jquery-3.2.1.min.js">
+    </script>
+    <script src="./MBbank/popper.min.js">
+    </script>
+    <script src="./MBbank/bootstrap.min.js">
+    </script>
+    <script src="./MBbank/app.js">
+    </script>
+    <script src="./MBbank/lib-qr-code-styling.js">
+    </script>
+    <script src="./MBbank/custom.min.js">
+    </script>
+    <script src="./MBbank/clipboard.js">
+    </script>
+    <script src="./MBbank/axios.min.js">
+    </script>
+    <script src="./MBbank/socket.io.js">
+    </script>
+    <script src="./MBbank/main.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div aria-hidden="true" aria-labelledby="modelTitleId" class="modal fade" id="modalMuster" role="dialog"
+        tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Điểm Danh Nhận Quà Miễn Phí
+                    </h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">
+                            ×
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="addMuster">
+                        <div class="form-group">
+                            <label class="form-label">
+                                Số điện thoại
+                            </label>
+                            <div class="row gutters-xs">
+                                <div class="col">
+                                    <input class="form-control" name="phone"
+                                        placeholder="Nhập số điện thoại cần điểm danh.." type="number" />
+                                </div>
+                                <span class="col-auto">
+                                    <button class="btn btn-outline-primary" data-original-title="Điểm danh"
+                                        data-placement="top" data-toggle="tooltip">
+                                        <i class="fas fa-user-crown">
+                                        </i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive mb-3">
+                        <table
+                            class="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                            <thead class="badge-primary text-white">
+                                <tr>
+                                    <th class="text-center text-white" colspan="2">
+                                        Điểm Danh
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Mã phiên
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <b class="text-info" id="muster-session">
+                                            #524141
+                                        </b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Thưởng
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <span class="text-danger">
+                                            5,000đ - 100,000đ
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Tổng
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <span class="text-warning">
+                                            <b class="muster-count">
+                                                0
+                                            </b>
+                                            người
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Thắng phiên trước
+                                        </b>
+                                    </td>
+                                    <td id="muster-winner">
+                                        0926***653
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Tổng thưởng
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <span class="text-info" id="muster-bonus">
+                                            0đ
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Thời gian
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <span class="text-primary">
+                                            <b class="muster-time">
+                                                0
+                                            </b>
+                                            giây
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive mb-3">
+                        <table
+                            class="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                            <thead class="badge-primary text-white">
+                                <tr>
+                                    <th class="text-center text-white">
+                                        Mã Phiên
+                                    </th>
+                                    <th class="text-center text-white">
+                                        Tổng
+                                    </th>
+                                    <th class="text-center text-white">
+                                        Số điện thoại
+                                    </th>
+                                    <th class="text-center text-white">
+                                        Số tiền nhận
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableMuster">
+                                <tr>
+                                    <td colspan="12">
+                                        <div class="text-center">
+                                            <img src="./MBbank/404.png" />
+                                            <p class="font-weight-bold">
+                                                Không tìm thấy dữ liệu...
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        - Mỗi phiên quà các bạn có 10 phút để điểm danh.
+                        <br />
+                        - Tài khoản điểm danh phải chơi mini game trên hệ thống ít nhất 1 lần trong ngày. Không giới hạn
+                        số lần điểm danh trong ngày.
+                        <br />
+                        - Khi hết thời gian, người may mắn sẽ nhận được số tiền của phiên đó.
+                        <br />
+                        - Game
+                        <strong>
+                            Điểm danh miễn phí
+                        </strong>
+                        chỉ hoạt động từ
+                        <strong>
+                            7h - 24h
+                        </strong>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        Đóng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="modelTitleId" class="modal fade" id="notiModal" role="dialog"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Thông báo
+                    </h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">
+                            ×
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 style="text-align: center;">
+                        <strong>
+                            <font color="#ff0000">
+                                Hướng dẫn chơi game
+                                <span style="caret-color: rgb(255, 0, 0);">
+                                    MB Bank
+                                </span>
+                                kiếm tiền
+                            </font>
+                        </strong>
+                    </h3>
+                    <p style="text-align: center;">
+                        <strong>
+                            <br />
+                        </strong>
+                    </p>
+                    <p style="text-align: left;">
+                        <strong>
+                            Bước 1
+                        </strong>
+                        : Mở app MB Bank, chọn quét QR, chọn mã QR vừa chụp trên web.
+                    </p>
+                    <p style="text-align: left;">
+                        <img alt="" src="./MBbank/R3s4vNT.png" />
+                        <br />
+                    </p>
+                    <p style="text-align: left;">
+                        <strong>
+                            <br />
+                        </strong>
+                    </p>
+                    <p style="text-align: left;">
+                        <strong>
+                            <br />
+                        </strong>
+                    </p>
+                    <p style="text-align: left;">
+                        <strong>
+                            Bước 2
+                        </strong>
+                        : Nhập số tiền chơi và nội dung trò chơi
+                        <br />
+                    </p>
+                    <p style="text-align: center;">
+                        <img alt="" src="./MBbank/temp-Imagem51lt8.avif" />
+                        <br />
+                    </p>
+                    <p style="text-align: left;">
+                        <strong>
+                            <br />
+                        </strong>
+                    </p>
+                    <p style="text-align: left;">
+                        <strong>
+                            <br />
+                        </strong>
+                    </p>
+                    <p style="text-align: left;">
+                        <strong>
+                            Bước 3:
+                        </strong>
+                        Xem kết quả dựa trên số cuối của mã giao dịch
+                        <br />
+                    </p>
+                    <p style="text-align: center;">
+                        <img alt="" src="./MBbank/temp-Image9b6tyb.avif" />
+                        <br />
+                    </p>
+                    <p style="text-align: left;">
+                        <br />
+                    </p>
+                    <p style="text-align: left;">
+                        <strong>
+                            Lưu ý:
+                        </strong>
+                    </p>
+                    <p style="text-align: left;">
+                        1. Nếu kết quả
+                        <strong>
+                            thắng
+                        </strong>
+                        , tiền thưởng sẽ tự động chuyển vào TK MB Bank của bạn trong
+                        <strong>
+                            1 phút.
+                        </strong>
+                    </p>
+                    <p style="text-align: left;">
+                        <span style="text-align: center;">
+                            2. Sau
+                            <strong>
+                                thời gian 1 - 2 phút
+                            </strong>
+                            , nếu
+                            <strong>
+                                thắng
+                            </strong>
+                            mà bạn chưa nhận được tiền thưởng, vui lòng
+                            <strong>
+                                nhắn tin hỗ trợ
+                            </strong>
+                            , chúng tôi sẽ xử lý gấp cho bạn.
+                        </span>
+                        <strong>
+                            <br />
+                        </strong>
+                    </p>
+                    <p style="text-align: left;">
+                        <span style="text-align: center;">
+                            3. Nếu bạn
+                        </span>
+                        <span style="text-align: center; color: rgb(255, 0, 0);">
+                            <strong>
+                                CẦN HỖ TRỢ, BÁO LỖI
+                            </strong>
+                        </span>
+                        <span style="text-align: center;">
+                            hãy nhắn ngay với Nhân viên hỗ trợ.
+                        </span>
+                        <br />
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block" data-dismiss="modal" id="closeNoti" type="button">
+                        Đã đọc
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="modelTitleId" class="modal fade" id="modal-qr" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        MBbank.game QR
+                    </h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">
+                            ×
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center" id="canvasQr">
+                        <canvas height="200" width="200">
+                        </canvas>
+                    </div>
+                    <div class="text-center mt-3">
+                        <p class="text-center mt-2 mb-1">
+                            <button class="btn btn-primary" id="qr-download">
+                                Tải ảnh QR về máy
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="modelTitleId" class="modal fade" id="modalDetail" role="dialog"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Chi tiết giao dịch
+                        <b class="text-primary" id="detailTransId">
+                            #27628912804
+                        </b>
+                    </h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">
+                            ×
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table
+                            class="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                            <thead class="badge-primary text-white">
+                                <tr>
+                                    <th class="text-center text-white" colspan="2">
+                                        Thông tin giao dịch
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableDetails">
+                                <tr>
+                                    <td colspan="12">
+                                        <div class="text-center">
+                                            <img src="./MBbank/404.png" />
+                                            <p class="font-weight-bold">
+                                                Không tìm thấy dữ liệu...
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-gray" data-dismiss="modal" type="button">
+                        Đóng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="modelTitleId" class="modal fade" id="modalGift" role="dialog"
+        tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Mã Quà Tặng
+                    </h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">
+                            ×
+                        </span>
+                    </button>
+                </div>
+                <div id="checkGift">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="form-group">
+                                <label class="form-label" for="">
+                                    Số điện thoại
+                                </label>
+                                <input class="form-control" name="phone" placeholder="Nhập số điện thoại của bạn"
+                                    type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="">
+                                    Mã quà tặng:
+                                </label>
+                                <input class="form-control" name="code" placeholder="ABCXYZ" type="text" />
+                            </div>
+                            <div class="alert alert-warning">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="btn btn-gray" data-dismiss="modal">
+                            Đóng
+                        </span>
+                        <button class="btn btn-primary" type="submit">
+                            Kiểm Tra
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let qrDownloadCount = 0;
+
+        $('.btn.qrc').on('click', function () {
+            $('#qr-img').attr('src', '/Client/qrcode.png');
+            $('#modal-qr').modal('show');
+        });
+
+        $('#qr-download').on('click', function () {
+            qrDownloadCount++;
+
+            const a = document.createElement('a');
+            a.href = '/Client/qrcode.png';
+            a.download = `qr_code_${qrDownloadCount}.png`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+    </script>
+
+    <script>
+        (function () {
+            const GAME_OPTIONS = ['Chẵn Lẻ'];
+            const CHOICES = ['C', 'L'];
+            const RESULTS = ['Thắng'];
+            const INTERVALS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 15, 25, 30, 60, 90, 120, 180, 240, 300, 360, 480]; // phút (30 phút -> 12 tiếng)
+            const FORMAT = {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: false
+            };
+
+
+            function randBet() {
+                const bets = [];
+                let current = 10000;
+                const maxBet = 1500000;
+                const steps = [40000, 50000, 100000];
+
+                while (current <= maxBet) {
+                    bets.push(current);
+                    const step = steps[Math.floor(Math.random() * steps.length)];
+                    current += step;
+                }
+
+                return bets[Math.floor(Math.random() * bets.length)];
+            }
+
+            function maskAcc() {
+                const prefix = Math.floor(100000 + Math.random() * 900000).toString();
+                return prefix.slice(0, 6) + '****';
+            }
+
+            const records = [];
+            const now = new Date();
+            const todayStart = new Date(now);
+            todayStart.setHours(0, 0, 0, 0);
+
+            const yesterdayStart = new Date(todayStart);
+            yesterdayStart.setDate(todayStart.getDate() - 1);
+
+
+            const minTimestamp = yesterdayStart.getTime();
+            const maxTimestamp = now.getTime();
+
+            for (let i = 0; i < 1000; i++) {
+                const bet = randBet();
+                const rate = 2.4;
+                const receive = bet * rate;
+
+                const isToday = Math.random() < 0.7;
+                let timeRangeStart, timeRangeEnd;
+
+                if (isToday) {
+                    timeRangeStart = todayStart.getTime();
+                    timeRangeEnd = now.getTime();
+                } else {
+                    timeRangeStart = yesterdayStart.getTime();
+                    timeRangeEnd = todayStart.getTime();
+                }
+
+                const randomTime = new Date(timeRangeStart + Math.random() * (timeRangeEnd - timeRangeStart));
+
+                records.push({
+                    acct: maskAcc(),
+                    bet: bet.toLocaleString(),
+                    receive: receive.toLocaleString(),
+                    game: 'Chẵn Lẻ',
+                    choice: CHOICES[Math.floor(Math.random() * CHOICES.length)],
+                    result: RESULTS[0],
+                    time: `${randomTime.getDate().toString().padStart(2, '0')}/` +
+                        `${(randomTime.getMonth() + 1).toString().padStart(2, '0')}/` +
+                        `${randomTime.getFullYear()} ` +
+                        `${randomTime.getHours().toString().padStart(2, '0')}:` +
+                        `${randomTime.getMinutes().toString().padStart(2, '0')}`
+                });
+            }
+            const pick = [];
+            const all = [...records];
+            for (let i = 0; i < 10; i++) {
+                const idx = Math.floor(Math.random() * all.length);
+                pick.push(all.splice(idx, 1)[0]);
+            }
+
+            const tbody = document.querySelector('#tableHistoryWin');
+            tbody.innerHTML = '';
+            pick.forEach(r => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+            <td>${r.acct}</td>
+            <td>${r.bet}</td>
+            <td>${r.receive}</td>
+            <td>${r.game}</td>
+            <td>${r.choice}</td>
+            <td><span class="badge badge-success">${r.result}</span></td>
+            <td>${r.time}</td>
+        `;
+                tbody.appendChild(tr);
+            });
+        })();
+    </script>
+
+    <script>
+        (function () {
+            const rewardByRank = [2000000, 1000000, 700000, 500000, 300000];
+
+            function maskAcc() {
+                const prefix = Math.floor(100000 + Math.random() * 900000).toString();
+                return prefix + '****';
+            }
+
+            function generateRealisticWin(base, minDiff = 5_000_000, maxDiff = 15_000_000) {
+                const wins = [];
+                let current = base;
+
+                for (let i = 0; i < 1000; i++) {
+                    const randomL = Math.floor(Math.random() * 900000) + 500;
+                    let win = current - randomL;
+                    win = Math.floor(win / 10) * 10;
+                    const decrease = Math.floor(Math.random() * (maxDiff - minDiff + 1)) + minDiff;
+                    current -= decrease;
+
+                    wins.push({
+                        username: maskAcc(),
+                        win
+                    });
+                }
+
+                return wins;
+            }
+
+            // Trả về key theo tuần tính từ 0h thứ 2
+            function getWeekKey() {
+                const now = new Date();
+                const day = now.getDay(); // 0: CN, 1: T2, ..., 6: T7
+                const diffToMonday = (day === 0 ? -6 : 1 - day); // CN thì -6, T3 thì -1,...
+                const monday = new Date(now);
+                monday.setDate(now.getDate() + diffToMonday);
+                monday.setHours(0, 0, 0, 0);
+
+                return 'topUsers_' + monday.toISOString().split('T')[0];
+            }
+
+            const key = getWeekKey();
+            let topUsers = JSON.parse(localStorage.getItem(key));
+
+            // Nếu chưa có dữ liệu tuần này => tạo mới và lưu
+            if (!topUsers) {
+                const users = generateRealisticWin(305_600_000);
+                users.sort((a, b) => b.win - a.win);
+                topUsers = users.slice(0, 5);
+                localStorage.setItem(key, JSON.stringify(topUsers));
+            }
+
+            // Render ra bảng
+            const tbody = document.getElementById("topWinnersBody");
+            tbody.innerHTML = "";
+            topUsers.forEach((user, index) => {
+                const reward = rewardByRank[index] || 0;
+                const row = document.createElement("tr");
+                row.innerHTML = `
+            <td><b>${index + 1}</b></td>
+            <td>${user.username}</td>
+            <td>${user.win.toLocaleString()}</td>
+            <td><span class="text-success">+ ${reward.toLocaleString()}</span></td>
+        `;
+                tbody.appendChild(row);
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
